@@ -1,6 +1,6 @@
 ---
-title: "Getting started"
-permalink: /getting-started/
+title: "Image effects"
+permalink: /image-effects/
 excerpt: "How to quickly install and setup Quibli."
 toc: true
 ---
