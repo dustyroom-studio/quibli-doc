@@ -8,12 +8,12 @@ docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /docs/getting-started/
+        url: /getting-started/
       - title: "Installation"
-        url: /docs/installation/
+        url: /installation/
       - title: "Upgrading"
-        url: /docs/upgrading/
+        url: /upgrading/
   - title: Customization
     children:
       - title: "Image Effects"
-        url: /docs/image-effects/
+        url: /image-effects/
