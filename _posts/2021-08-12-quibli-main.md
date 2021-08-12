@@ -1,6 +1,6 @@
 ---
 title: "Quibli"
-permalink: /docs/
+permalink: /
 excerpt: "How to quickly install and setup Quibli."
 redirect_from:
   - /
