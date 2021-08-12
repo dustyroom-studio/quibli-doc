@@ -8,7 +8,7 @@ docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+        url: /docs/getting-started/
       - title: "Installation"
         url: /docs/installation/
       - title: "Upgrading"
