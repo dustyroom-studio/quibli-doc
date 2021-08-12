@@ -3,3 +3,18 @@ main:
     url: /posts/
   - title: "About"
     url: /about/
+
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+  - title: Customization
+    children:
+      - title: "Image Effects"
+        url: /docs/image-effects/
