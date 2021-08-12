@@ -1,6 +1,6 @@
 ---
 title: "Getting started"
-permalink: /getting-started/
+permalink: /
 excerpt: "How to quickly install and setup Quibli."
 toc: true
 ---
