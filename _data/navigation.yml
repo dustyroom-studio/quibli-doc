@@ -8,10 +8,10 @@ docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /getting-started/
-      - title: "Installation"
+        url: /
+      - title: "Item 2"
         url: /installation/
-      - title: "Upgrading"
+      - title: "Item 3"
         url: /upgrading/
   - title: Customization
     children:
