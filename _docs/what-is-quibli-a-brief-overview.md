@@ -32,12 +32,12 @@ toc: true
 
 
 
-Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/docs/themes/) for easier use, and 100% compatible with GitHub Pages when used as a remote theme.
+## What Is Included in Quibli?
 
 {% include mermaid.html %}
 <div class="mermaid">
 graph TD
-A[**Quibli**] --> B(Shaders)
+A[Quibli] --> B(Shaders)
 A --> C(Post Effects)
 A --> D(Additional Tools)
 A --> E(Demo Scenes)
@@ -61,15 +61,14 @@ T --> U[Clouds Scene]
 </div>
 
 
-{% include mermaid.html %}
-<div class="mermaid">
-graph TD
-A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[fa:fa-car Car]
-</div>
+**TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).  
+{: .notice--info}
+
+**NOTE.** If you turn off the ‘cast shadows’ option in the foliage model’s Mesh Renderer, the self-shadowing would be also turned off. It is the way the Universal RP works — in URP you cannot make the object cast a shadow onto other objects but not on itself. But there is a workaround (read the tip below).  
+{: .warning--info}
+
+
+
 
 **If you enjoy this theme, please consider [sponsoring me](https://github.com/sponsors/mmistakes) to continue developing and maintaining it.**
 
