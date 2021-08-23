@@ -1,8 +1,12 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "About"
-    url: /about/
+  - title: "Quibli on AS"
+    url: /
+  - title: "Report an Issue"
+    url: /
+  - title: "FAQs"
+    url: /faqs/
+  - title: "Contact"
+    url: /contact-details/
 
 docs:
   - title: Getting Started
