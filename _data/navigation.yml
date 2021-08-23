@@ -7,13 +7,38 @@ main:
 docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
+      - title: "What Is Quibli?"
         url: /
-      - title: "Item 2"
+      - title: "Quick-Start Guide"
         url: /installation/
-      - title: "Item 3"
-        url: /upgrading/
-  - title: Customization
+  - title: Shaders
     children:
-      - title: "Image Effects"
+      - title: "Stylized Lit Shader"
+        url: /
+      - title: "Cloud2D Shader"
+        url: /installation/
+      - title: "Light Beam Shader"
+        url: /installation/
+      - title: "Gradient Skybox Shader"
+        url: /installation/
+      - title: "Stylized Grass Shader"
+        url: /installation/
+      - title: "Stylized Foliage Shader"
+        url: /installation/
+      - title: "GPU Instancing"
+        url: /installation/
+  - title: Post Effects
+    children:
+      - title: "Stylized Detail Post Effect"
+        url: /stylized-detail-post-effect/
+  - title: Additional Tools
+    children:
+      - title: "Wire Renderer"
+        url: /wire-renderer/
+      - title: "Foliage Generator"
+	url: /foliage-generator/
+  - title: Demo Scenes
+    children:
+      - title: "Demo Scenes Included"
         url: /image-effects/
+
