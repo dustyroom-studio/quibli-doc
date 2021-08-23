@@ -65,7 +65,7 @@ T --> U[Clouds Scene]
 {: .notice--info}
 
 **NOTE.** If you turn off the ‘cast shadows’ option in the foliage model’s Mesh Renderer, the self-shadowing would be also turned off. It is the way the Universal RP works — in URP you cannot make the object cast a shadow onto other objects but not on itself. But there is a workaround (read the tip below).  
-{: .warning--info}
+{: .notice--warning}
 
 
 
