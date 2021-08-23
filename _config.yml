@@ -80,10 +80,8 @@ footer:
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://dustyroom-studio.github.io/quibli-doc/"
+    
 
 defaults:
   # _docs
@@ -106,6 +104,8 @@ defaults:
     values:
       layout: single
       author_profile: false
+
+logo: "/assets/images/quibli_logo_bw_transp_64"
 
 mermaid:
   src: https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js
