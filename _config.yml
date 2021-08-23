@@ -105,7 +105,7 @@ defaults:
       layout: single
       author_profile: false
 
-logo: "/assets/images/quibli_logo_bw_transp_64"
+logo: "/assets/images/quibli_masthead_logo_64.png"
 
 mermaid:
   src: https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js
