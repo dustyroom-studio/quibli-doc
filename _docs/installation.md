@@ -6,7 +6,7 @@ toc: true
 ---
 
 ## Importing Quibli
-First of all you need to import Quibli into your project. Please, make sure you have the Universal RP project (not Built-In or HDRP).  
+First of all, you need to import Quibli into your project. Please, make sure you have the Universal RP project (not Built-In or HDRP).  
 In Unity, go to **Window** ▶︎ **Package Manager**. On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import. Click **Download** (if it is not downloaded yet), then click **Import**.  
 
 ## Finalizing Quibli Installation

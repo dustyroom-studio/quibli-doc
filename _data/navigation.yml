@@ -43,7 +43,7 @@ docs:
         url: /demo-scenes/
   - title: Help
     children:
-      - title: "Frequently Asked Question (FAQs)"
+      - title: "FAQs"
         url: /faqs/
       - title: "Contact"
         url: /contact/
