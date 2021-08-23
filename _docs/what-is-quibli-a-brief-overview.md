@@ -22,7 +22,7 @@ Of course, it is very important to have the fitting and stylistically correct mo
 graph TD
 A[Quibli] --> B(Shaders)
 A --> C(Post Effects)
-A --> D(Additional Tools)
+A --> D(Scripts)
 A --> E(Demo Scenes)
 B --> G[Stylized Lit Shader]
 G --> H[Cloud2D Shader]

@@ -31,7 +31,7 @@ docs:
     children:
       - title: "Stylized Detail Post Effect"
         url: /stylized-detail-post-effect/
-  - title: Additional Tools
+  - title: Scripts
     children:
       - title: "Wire Renderer"
         url: /wire-renderer/
