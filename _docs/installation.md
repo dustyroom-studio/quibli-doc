@@ -1,6 +1,6 @@
 ---
 title: "Quick-Start Guide"
-permalink: /installation
+permalink: /installation/
 excerpt: "How to quickly install and setup Quibli."
 toc: true
 ---
