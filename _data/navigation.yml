@@ -7,8 +7,6 @@ main:
 docs:
   - title: Getting Started
     children:
-      - title: "What Is Quibli? A Brief Overview"
-        url: /what-is-quibli-a-brief-overview/
       - title: "Quick-Start Guide"
         url: /
       - title: "Item 2"
