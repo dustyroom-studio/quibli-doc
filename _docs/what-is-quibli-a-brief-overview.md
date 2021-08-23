@@ -37,17 +37,17 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 {% include mermaid.html %}
 <div class="mermaid">
 graph TD
-A[Quibli] --> B[Shaders]
-A --> C[Post Effects]
-A --> D[Additional Tools]
-A --> E[Demo Scenes]
+A[**Quibli**] --> B(Shaders)
+A --> C(Post Effects)
+A --> D(Additional Tools)
+A --> E(Demo Scenes)
 B --> G[Stylized Lit Shader]
 G --> H[Cloud2D Shader]
 H --> I[Light Beam Shader]
 I --> J[Skybox Shader]
 J --> K[Foliage Shader]
 K --> L[Stylized Grass Shader]
-L --> M[Stylized Detail Post Effect]
+C --> M[Stylized Detail Post Effect]
 D --> N[Wire Renderer]
 N --> O[Foliage Generator]
 E -->|with all models + materials| P[Nature Scene]
