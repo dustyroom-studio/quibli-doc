@@ -37,6 +37,33 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 {% include mermaid.html %}
 <div class="mermaid">
 graph TD
+A[Quibli] --> B[Shaders]
+A --> C[Post Effects]
+A --> D[Additional Tools]
+A --> E[Demo Scenes]
+B --> G[Stylized Lit Shader]
+G --> H[Cloud2D Shader]
+H --> I[Light Beam Shader]
+I --> J[Skybox Shader]
+J --> K[Foliage Shader]
+K --> L[Stylized Grass Shader]
+L --> M[Stylized Detail Post Effect]
+D --> N[Wire Renderer]
+N --> O[Foliage Generator]
+E -->|with all models + materials| P[Nature Scene]
+P --> Q[City Scene]
+Q --> R[Kitchenware Scene]
+R --> S[Mugs Scene]
+S --> T[Unity Default Sample Scene Quiblified Scene]
+T --> U[Clouds Scene]
+
+
+</div>
+
+
+{% include mermaid.html %}
+<div class="mermaid">
+graph TD
 A[Christmas] -->|Get money| B(Go shopping)
 B --> C{Let me think}
 C -->|One| D[Laptop]
