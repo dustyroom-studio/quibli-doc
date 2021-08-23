@@ -54,7 +54,7 @@ Both Quibli and Flat Kit are the type of tools where a small parameter change ca
 If you use both Quibli together with Flat Kit, you have the best of both worlds. Create perfect eye-candy materials with Quibli, apply Outlines and Fog from Flat Kit.  
 
 
-## Quibli and Flat Kit Comparison Chart
+### Quibli and Flat Kit Comparison Chart
 
 | Asset | **Quibli** | **Flat Kit**
 | --- | --- | --- |
