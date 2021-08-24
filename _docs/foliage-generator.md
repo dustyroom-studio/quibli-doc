@@ -22,21 +22,25 @@ To start working with the _Foliage Generator_ as a Prefab, please do the followi
 * Locate the **Foliage Generator prefab** in  
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Prefabs** folder_;  
 * Drag it to the Hierarchy panel or directly into the scene;
-* Adjust needed parameters or load a preset;
-* Click _Export Mesh_ button;
-* Locate an exported model in the export target folder. By default, it is:  
-_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Common Models** folder_;
-* Add this model in your scene (it looks pink) and apply the material to it.
 
 #### Loading Method #2 — Component
 
 Another way to add the _Foliage Generator_ to the scene is to use it as a Component.  
 
-* Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**  
-* Select the created empty Game Object  
-* In the **Inspector panel**, please, click **Add Component**  
-* Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found.
-* It is ready to be tweaked.
+  * Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**  
+  * Select the created empty Game Object  
+  * In the **Inspector panel**, please, click **Add Component**  
+  * Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found.
+  * It is ready to be tweaked.
+
+#### Operating the _Foliage Generator_ After Loading. 
+
+  * Adjust needed parameters or load a preset;
+  * Click _Export Mesh_ button;
+  * Locate an exported model in the export target folder. By default, it is:  
+_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Common Models** folder_;
+  * Add this model in your scene (it looks pink)
+  * Apply the material to it.  
 
 ## Parameters of the Foliage Generator
 
@@ -128,8 +132,11 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## The Next Steps After Using the Foliage Generator
 
-If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always update the exported mesh — change the _Particle Scale_ or _Particles_ parameters — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful.  
+If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
+
+![Using the Preset menu for the Foliage Generator](/quibli-doc/assets/images/manual_images/foliage_generator_presets_menu.png)  
+*Using the Preset menu for the Foliage Generator*
 
 The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look as, let’s say, a bush or a tree, the material is needed. With Quibli you can have it done in two ways.  
-  * Use the _Stylized Lit_ shader. Although the _Stylized Lit_ shader is not designed *specifically* for plants, its wide range of use cases encompasses foliage as well. Choose colors in the Gradient Editor, apply a cutout texture, maybe add details and you are good to go.  
-  * Use the specialized _Stylized Foliage_ shader. Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. 
+  * Use the [Stylized Lit shader](../stylized-lit-shader). Although the _Stylized Lit_ shader is not designed *specifically* for plants, its wide range of use cases encompasses foliage as well. Choose colors in the Gradient Editor, apply a texture and adjust alpha cutout, maybe add details and you are good to go.  
+  * Use the specialized [Stylized Foliage shader](../stylized-foliage-shader). Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. 
