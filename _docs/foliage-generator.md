@@ -35,6 +35,8 @@ Another way to add the _Foliage Generator_ to the scene is to use it as a Compon
 
 ### Operating the _Foliage Generator_ After Loading 
 
+When you have the _Foliage Generator_ loaded to the scene, you'll probably want to [adjust the parameters or load an existing preset](#parameters-of-the-foliage-generator) and will need to [apply a material to an exported mesh](applying-materials-to-the-exported-mesh) — to finalize the plant model. Please, keep reading this chapter to get acquainted with the details of doing these steps.  
+
   * Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   * Click _Export Mesh_ button;
   * Locate an exported model in the export target folder. By default, it is:  
@@ -138,6 +140,8 @@ If you didn't change the name of the exported model after you created and used i
 
 ![Using the Preset menu for the Foliage Generator](/quibli-doc/assets/images/manual_images/foliage_generator_presets_menu.png)  
 *Using the Preset menu for the Foliage Generator*
+
+### Applying Materials to the Exported Meshes
 
 The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look as, let’s say, a bush or a tree, the material is needed. With Quibli you can have it done in two ways.  
   * Use the [Stylized Lit shader](../stylized-lit-shader). Although the _Stylized Lit_ shader is not designed *specifically* for plants, its wide range of use cases encompasses foliage as well. Choose colors in the Gradient Editor, apply a texture and adjust alpha cutout, maybe add details and you are good to go.  
