@@ -138,4 +138,13 @@ _Rendering options_ is a collapsible/expandable group of parameters that deal wi
 **TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader).
 {: .notice--info}
 
+## Troubleshooting
 
+Below you can find answers to the typical possible questions when working with Stylized Lit shader.
+
+#### Can't apply the texture
+  * Please, make sure the model you are applying the material to is UV-unwrapped.
+  * If you are using a custom texture, please, make sure the format is supported.
+
+#### Can't turn off the cast shadows
+  * In URP there is no option to turn the cast shadows off from a shader. You'll need to set _Cast Shadows_ to _off_ on the _Mesh Renderer_. Please, refer to this [chapter](#lighting-parameters), where the working with shadow is described.
