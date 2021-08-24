@@ -23,25 +23,30 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 **TIP.** There are ‘smooth’ and ‘fixed’ color gradations in the Gradient editor. You can have a sharp transition from one color to another by selecting a _Fixed_ mode (using 1 color stop), or _Smooth_ mode (using 2 tightly located color stops). You can have a smooth color transition only if you use the _Smooth_ mode.  
 {: .notice--info}
 
-**Shading Offset** _Shading Offset_ moves the gradient. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.  
+**Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.  
 
-**Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.  
+**Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.  
 
 **Enable Rim** Clicking this tick box turns Rim on or off and opens a set of _Rim_ parameters.  
 In some cases it can be used as a contouring pseudo-outline effect, it can accentuate the edges of the models on the scene. _Rim_ depends on the main light’s rotation and the normals of the shaded model.
-_Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.  
+_Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.    
+
+Please, note that _Rim_ is not a substitution for the proper outline effect, like the advanced [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect)
+{: .notice--warning}
 
 **Rim Color** Sets the color of the Rim. This parameter is in HDR.  
 
-**Light Align** Moves the Rim on the model toward the main light. This can be helpful to add stylization on larger rim values.
+**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger rim values.
+
+GIF HERE!!!!!
 
 **Rim Size** How much of the model the Rim covers.  
 
-**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading.  
+**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look.  
 
 **Enable Height Gradient** Ticking this box turns _Height Gradient_ on and opens the parameters for its adjustment. _Height Gradient_ is a world-space ‘color-to-transparency fade-out’ gradient overlay placed over the material. _Height Gradient_ is an HDR effect.  
 
-**NOTE.** _Height Gradient is world-space, which means if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different.  To make these objects look similar you need to create a separate material for each one.
+**NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.  
 {: .notice--warning}
 
 **TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.  
@@ -62,7 +67,7 @@ Once you enable _Height Gradient_, the following parameters will appear.
 
 **Gradient Angle** Rotates the _Height Gradient_ around the **Center X** and **Center Y** values in world-space.  
 
-**Enable Vertex Colors** If enabled, the final shading of the object is multiplied by the mesh’s vertex color values. It is a debug parameter, usually this does not change the look.
+**Enable Vertex Colors** If enabled, the final shading of the object is multiplied by the mesh’s vertex color values. It is a debug parameter, usually this is not used for changing the look.
 
 ### Texture Mapping Parameters
 **Texture Maps**
@@ -92,7 +97,7 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 **Override Shadows** Once enabled, a few shadow-related parameters appear.  
 
-**Shadow Attenuation Remap** The range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.  
+**Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.  
 
 **Shadow Color** This control picks up the color of the cast shadow.  
 If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity’s native shadows. In other words, Alpha influences the Shadow Color’s impact.  

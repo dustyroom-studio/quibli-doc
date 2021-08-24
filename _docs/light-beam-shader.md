@@ -5,19 +5,19 @@ excerpt: "Quibli Light Beam Shader"
 toc: true
 ---
 
-### Light Beam Shader Brief Overview
+## Light Beam Shader Brief Overview
 
 The _Light Beam_ shader can be used for the light rays as seen in the anime movies, as well as for other creative cases. For example, it can play the role of a foggy halo in the background, or a light sword.  
 The _Light Beam_ shader has an ability to decay with distance — once the needed parameters are set up, the halo, for instance, will be visible from distance but will gradually become less visible (more transparent) as the camera approaches it.  
 The _Light Beam_ is in HDR colors, meaning that it can glow if the scene has some kind of a bloom in it.  
 
-### Beginning to Work with Light Beam Shader
+## Beginning to Work with Light Beam Shader
 
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Light Beam**.  
 Now you can apply this material to a 3D game object on your Scene or in the Hierarchy panel. 
 
-### Parameters of Light Beam Shader
+## Parameters of Light Beam Shader
 
 **Color** The parameter for selecting the color of the shader. As the _Light Beam_ is in additive blending mode, you cannot make dark colors with it.
 
