@@ -5,16 +5,16 @@ excerpt: "Quibli Stylized Lit Shader"
 toc: true
 ---
 
-### Stylized Lit Shader Brief Overview
+## Stylized Lit Shader Brief Overview
 _Stylized Lit_ shader is a main lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges between a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
 
-### Beginning to work with the Stylized Lit Shader
+## Beginning to work with the Stylized Lit Shader
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Stylized Lit**.  
 Now you can apply this material to a 3D game object on your Scene or in the Hierarchy panel.  
 
-### Parameters of the Stylized Lit Shader
-#### Main Shading Parameters
+## Parameters of the Stylized Lit Shader
+### Main Shading Parameters
 **Gradient** Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
 
 **TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
@@ -64,7 +64,7 @@ Once you enable _Height Gradient_, the following parameters will appear.
 
 **Enable Vertex Colors** If enabled, the final shading of the object is multiplied by the mesh’s vertex color values. It is a debug parameter, usually this does not change the look.
 
-#### Texture Mapping Parameters
+### Texture Mapping Parameters
 **Texture Maps**
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
@@ -84,7 +84,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 **Bump Map** The input for normal maps.  
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description. 
 
-#### Lighting Parameters
+### Lighting Parameters
 **Lighting**
 _Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.  
 
@@ -106,7 +106,7 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 
 **Override Light Direction** This is a particularly useful parameter. By enabling it, the material skips the light rotation information from the main light (usually Directional Light) and lets you control the lighting/shading positions manually and independently per material. In other words, if you want to rotate the shadow, specular, rim etc separately and specifically for any given model, you can do it using this feature.  
 
-#### Wind Parameters
+### Wind Parameters
 **Wind** The _Wind_ part of the shader allows you to apply a shader-based displacement to the mesh(-es) the material is applied to. The movement is reminiscent of grass bending in the wind.  
 
 **Enabled** Enables the _Wind_ section of the shader.  
@@ -121,7 +121,7 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 
 **Noise Amount** Introduces nonlinearities to the object’s motion.  
 
-#### Rendering Parameters
+### Rendering Parameters
 **Rendering Options**  
 _Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
 
