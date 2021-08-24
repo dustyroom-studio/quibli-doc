@@ -135,7 +135,7 @@ _Rendering options_ is a collapsible/expandable group of parameters that deal wi
 
 **Enable GPU Instancing**  Enabling turns on the manipulation of the main parameters in the code.  
 
-
 **TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader).
 {: .notice--info}
+
 

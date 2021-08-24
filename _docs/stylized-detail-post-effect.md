@@ -23,7 +23,7 @@ The _Stylized Detail_ is a post effect designed to add another layer of ‘that 
 {: .notice--info}
 
   * Select a camera;  
-  * Press **Add Component** on the bottom ot _Inspector_ panel;  
+  * Press **Add Component** on the bottom of _Inspector_ panel;  
   * Type **Volume** in the search box, or locate it manually in **Miscellaneous** ▶ **Volume**, click on it once found;  
   * Click **Add Override** in the Volume;  
   * Select **Quibli** ▶ **Stylized Detail**.
