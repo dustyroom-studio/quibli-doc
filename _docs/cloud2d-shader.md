@@ -5,7 +5,6 @@ excerpt: "Quibli Cloud2D Shader"
 toc: true
 ---
 
-## Cloud2D Shader
 ### Cloud2D Shader Brief Overview
 _Cloud2D_ shader is an easy and flexible way to add the clouds to your scene. It works with 2D planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads, meaning, there is no real topology in the clouds, which is very beneficial to the performance.  
 
@@ -60,7 +59,7 @@ _Random Offset_ can be used as a parameter to change the seed of random. Animati
 
 **Face Camera** It is a ‘billboard’ aka ‘always look into the camera’ effect, which is helpful in situations when the clouds may be approachable by the camera and not desired to be seen from an angle. So, as you are getting closer to the clouds, _Face Camera_ parameter makes sure the cloud will always rotate to look into the camera.  
 
-#### Misc Info About the Cloud2D Shader
+### Misc Info About the Cloud2D Shader
 The _Cloud2D_ shader is made inside the Shader Graph. You can tweak and customize its core as you like. If you want to save your customization work, please do so through saving as a new shader file in order not to break the default one.
 
 **NOTE.** In order to use a custom plane model, please make sure it is UV-unwrapped.

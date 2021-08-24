@@ -1,5 +1,5 @@
 ---
-title: "Quibli of Flat Kit"
+title: "Quibli or Flat Kit"
 permalink: /quibli-or-flat-kit/
 excerpt: "Quibli or Flat Kit"
 toc: true
