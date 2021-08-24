@@ -14,7 +14,11 @@ Instead of two colors that you pick in two color choosers to form a gradient in 
 {:.image-caption}
 *Pic. Quibli Skybox Shader Interface*
 
+![Quibli Skybox Shader Interface](/quibli-doc/assets/images/manual_images/quibli_skybox_shader_interface.jpg)  
+*Pic. Quibli Skybox Shader Interface*
+
 ![Quibli Skybox Shader Interface](/quibli-doc/assets/images/manual_images/quibli_skybox_shader_interface.jpg)
+
 *Pic. Quibli Skybox Shader Interface*
 
 
