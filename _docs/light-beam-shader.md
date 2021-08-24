@@ -26,13 +26,17 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 **Depth Fade Distance** Controls the visibility of objects behind the light beam. If 0, the _Light Beam_ occludes the objects behind it. If the value is high, the objects behind the _Light Beam_ are fully visible.  
 
-_Depth Fade Distance_ with higher values is useful for making a pseudo-fog effect.
+**TIP.** _Depth Fade Distance_ with higher values is useful for making a pseudo-fog effect.
 {: .notice--info}
 
 **Camera Distance Fade Far** Sets the far point in the scene where the shader fades into full transparency.  If the camera is farther than this value, the beam is 100% visible (alpha is ‘1’).  
+
 **Camera Distance Fade Close** Sets the close point in the scene where the shader fades in from transparency. If the camera is closer than this value, the beam disappears.  
+
 **UV Fade X** Sets the intensity of the transparency-to-color gradient on the X axis.  
+
 **UV Fade Y** Sets the intensity of the transparency-to-color gradient on the Y axis.  
+
 **Enable GPU Instancing**  Enabling turns on the manipulation of the main parameters in the code.  
 
 **TIP.** Most of the parameters of the _Light Beam_ shader work similarly to the according parameters in the analogous _LightPlane_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [LightPlane chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#37-lightplane-shader).
