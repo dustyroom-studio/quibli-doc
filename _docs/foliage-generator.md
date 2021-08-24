@@ -39,6 +39,7 @@ Another way to add the _Foliage Generator_ to the scene is to use it as a Compon
 * It is ready to be tweaked.
 
 ## Parameters of the Foliage Generator
+
 #### Generation Parameters
 
 **Generation**  
@@ -126,6 +127,9 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 {: .notice--info}
 
 ## The Next Steps After Using the Foliage Generator
+
+If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always update the exported mesh — change the _Particle Scale_ or _Particles_ parameters — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful.  
+
 The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look as, let’s say, a bush or a tree, the material is needed. With Quibli you can have it done in two ways.  
-Use the _Stylized Lit_ shader. Although the _Stylized Lit_ shader is not designed *specifically* for plants, its wide range of use cases encompasses foliage as well. Choose colors in the Gradient Editor, apply a cutout texture, maybe add details and you are good to go.  
-Use the specialized _Stylized Foliage_ shader. Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. 
+  * Use the _Stylized Lit_ shader. Although the _Stylized Lit_ shader is not designed *specifically* for plants, its wide range of use cases encompasses foliage as well. Choose colors in the Gradient Editor, apply a cutout texture, maybe add details and you are good to go.  
+  * Use the specialized _Stylized Foliage_ shader. Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. 
