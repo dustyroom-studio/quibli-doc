@@ -10,7 +10,6 @@ The _Gradient Skybox_ shader is a modified version of the Flat Kit’s [Gradient
 Instead of two colors that you pick in two color choosers to form a gradient in the skybox, the Quibli version has a single Gradient editor with a continuous color ramp. It means that you can have up to 8 independent color stops in the skybox with varying transition smoothness.
 
 | ![Quibli Skybox Shader Interface](/quibli-doc/assets/images/manual_images/quibli_skybox_shader_interface.jpg) |
-|:---:|
 | Quibli Skybox Shader Interface |
 
 ### Beginning to Work with the Skybox Shader
