@@ -19,28 +19,26 @@ docs:
     children:
       - title: "Stylized Lit Shader"
         url: /stylized-lit-shader
+      - title: "Stylized Foliage Shader"
+        url: /stylized-foliage-shader/
+      - title: "Stylized Grass Shader"
+        url: /stylized-grass-shader/
+      - title: "Skybox Shader"
+        url: /skybox-shader/
       - title: "Cloud2D Shader"
         url: /cloud2d-shader/
       - title: "Light Beam Shader"
         url: /light-beam-shader/
-      - title: "Skybox Shader"
-        url: /skybox-shader/
-      - title: "Stylized Grass Shader"
-        url: /stylized-grass-shader/
-      - title: "Stylized Foliage Shader"
-        url: /stylized-foliage-shader/
-      - title: "GPU Instancing"
-        url: /gpu-instancing/
   - title: Post Effects
     children:
       - title: "Stylized Detail Post Effect"
         url: /stylized-detail-post-effect/
   - title: Scripts
     children:
-      - title: "Wire Renderer"
-        url: /wire-renderer/
       - title: "Foliage Generator"
         url: /foliage-generator/
+      - title: "Wire Renderer"
+        url: /wire-renderer/
   - title: Demo Scenes
     children:
       - title: "Demo Scenes Included"
@@ -49,5 +47,7 @@ docs:
     children:
       - title: "FAQs"
         url: /faqs/
+      - title: "Quibli or Flat Kit"
+        url: /quibli-or-flat-kit/
       - title: "Contact"
         url: /contact-details/

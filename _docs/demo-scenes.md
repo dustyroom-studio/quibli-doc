@@ -7,16 +7,16 @@ toc: true
 
 In the scenes we tried to showcase a variety of use cases for the Quibli shaders (Stylized Lit, Cloud2D, Light Plane, Skybox, Stylized Foliage, Stylized Grass) as well as the post effects and additional tools.  
 
-#### Nature  
+#### Nature Scene  
 A detailed scene showing all the shaders in action. The foliage has been created using the _Foliage Generator_ plugin. On this scene the shading of the plants has been made using _Stylized Lit_ shader, unlike _Stylized Foliage_ shader, which is more specialized for nature objects like trees and bushes. This one in action can be seen on the included _Unity Default Sample Scene Quiblified_ scene.  
 
-#### City  
+#### City Scene  
 Another detailed scene showing all the shaders and additional tools in action.  
 
-#### Kitchenware
+#### Kitchenware Scene
 This is a family of mostly saturated brightly colored scenes designed to show more unusual use of the Quibli shader. Aside from the anime shading, it is possible to conveniently generate something unrelated, be it the basic coloring or something wild and unique. There is nothing unconventional going on, it is just the choice of the colors and the parameters that made up these scenes, particularly the Gradient editor settings on _Stylized Lit_ and _Gradient Skybox_ shaders.  
 
-#### Mugs  
+#### Mugs Scene  
 As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes), we added the same demo scene contents to be used with Quibli materials. This scene is made to show a fraction of styles that can be achieved — at a glance. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations.  
 
 #### Unity Default Sample Scene Quiblified  
