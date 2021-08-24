@@ -17,10 +17,10 @@ docs:
         url: /installation/
   - title: Shaders
     children:
+      - title: "Stylized Lit Shader"
+        url: /stylized-lit-shader/
       - title: "Stylized Foliage Shader"
         url: /stylized-foliage-shader/
-      - title: "Stylized Lit Shader"
-        url: /stylized-lit-shader
       - title: "Stylized Grass Shader"
         url: /stylized-grass-shader/
       - title: "Skybox Shader"
