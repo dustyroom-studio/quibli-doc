@@ -36,7 +36,7 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 
 **Rim Color** Sets the color of the Rim. This parameter is in HDR.  
 
-**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger rim values.
+**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim_ values.
 
 GIF HERE!!!!!
 

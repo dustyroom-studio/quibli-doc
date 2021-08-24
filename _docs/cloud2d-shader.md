@@ -8,6 +8,9 @@ toc: true
 ### Cloud2D Shader Brief Overview
 _Cloud2D_ shader is an easy and flexible way to add the clouds to your scene. It works with 2D planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads, meaning, there is no real topology in the clouds, which is very beneficial to the performance.  
 
+![Quibli Cloud2D Shader Interface](/quibli-doc/assets/images/manual_images/cloud2d_shader_interface.jpg)  
+*Quibli Cloud2D Shader Interface*
+
 _Cloud2D_ shader was made in a Shader Graph, so you can easily edit and modify it in the Shader Graph editor.  
 
 When you move a cloud horizontally or vertically it is being continuously morphed upon the internal noise map. The effect is that when you duplicate it and move it anywhere, this copy will never look the same as the original source. It is handy, since you can effortlessly populate the sky with differently looking clouds just by copying and moving without the need of duplicating and altering materials for each copy. Moreover, if you animate the motion of these planes, you’ll get moving and, at the same time, always-changing clouds instead of static-shaped sprites/models.

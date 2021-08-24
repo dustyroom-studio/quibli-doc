@@ -26,7 +26,7 @@ Now you can apply this material as your skybox: either drag it onto any empty sp
 
 **Exponent** A bias towards either of the ends of the _Gradient_.  
 
-TIP. You can animate the _Exponent_ parameter for adding transition effects, particularly seen in those dramatic 'freak-out' anime scenes.
+TIP. You can animate the _Exponent_ parameter for adding transition effects.
 {: .notice--info}
 
 **Direction X Angle** Rotation in world-space on the X axis.  
