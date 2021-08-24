@@ -6,7 +6,7 @@ toc: true
 ---
 
 ## Stylized Lit Shader Brief Overview
-_Stylized Lit_ shader is a main lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges between a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
+_Stylized Lit_ shader is a main go-to lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges from a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
 
 ## Beginning to work with the Stylized Lit Shader
 * Create a material
@@ -18,7 +18,7 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 **Gradient** Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
 
 **TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
-![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.jpg)  
+![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.png)  
 *Using presets in the Gradient Editor*
 {: .notice--info}
 
@@ -86,6 +86,8 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 {: .notice--info}
 
 **TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
+![Using Detail Color parameter as an overall material tint](/quibli-doc/assets/images/manual_images/quibli_shader_detail_color_tint.png)  
+*Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
 **Bump Map** The input for normal maps.  

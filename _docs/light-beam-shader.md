@@ -11,6 +11,9 @@ The _Light Beam_ shader can be used for the light rays as seen in the anime movi
 The _Light Beam_ shader has an ability to decay with distance — once the needed parameters are set up, the halo, for instance, will be visible from distance but will gradually become less visible (more transparent) as the camera approaches it.  
 The _Light Beam_ is in HDR colors, meaning that it can glow if the scene has some kind of a bloom in it.  
 
+![Quibli Light Beam Shader Interface](/quibli-doc/assets/images/manual_images/quibli_light_beam_shader_interface.png)  
+*Quibli Light Beam Shader Interface*
+
 ## Beginning to Work with Light Beam Shader
 
 * Create a material
