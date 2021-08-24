@@ -15,7 +15,7 @@ Creating anime-looking bushes and trees requires not only specific shading but a
 
 The _Foliage Generator_ can be loaded into a scene in two ways.
 
-#### Loading Method #1 — Prefab
+### Loading Method #1 — Prefab
 
 To start working with the _Foliage Generator_ as a Prefab, please do the following:  
 
@@ -23,7 +23,7 @@ To start working with the _Foliage Generator_ as a Prefab, please do the followi
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Prefabs** folder_;  
 * Drag it to the Hierarchy panel or directly into the scene;
 
-#### Loading Method #2 — Component
+### Loading Method #2 — Component
 
 Another way to add the _Foliage Generator_ to the scene is to use it as a Component.  
 
@@ -33,9 +33,9 @@ Another way to add the _Foliage Generator_ to the scene is to use it as a Compon
   * Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found.
   * It is ready to be tweaked.
 
-#### Operating the _Foliage Generator_ After Loading. 
+### Operating the _Foliage Generator_ After Loading 
 
-  * Adjust needed parameters or load a preset;
+  * Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   * Click _Export Mesh_ button;
   * Locate an exported model in the export target folder. By default, it is:  
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Common Models** folder_;
@@ -44,7 +44,7 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Co
 
 ## Parameters of the Foliage Generator
 
-#### Generation Parameters
+### Generation Parameters
 
 **Generation**  
 A group of parameters that control the creation of the plant mesh.
@@ -77,7 +77,7 @@ A group of parameters that control the creation of the plant mesh.
 
 **Bias Toward Rotation**
 
-#### Normal Noise Parameters
+### Normal Noise Parameters
 
 **Normal Noise**  
 A group of parameters that control the nonlinearities in the normals of the generated mesh.  
@@ -94,7 +94,7 @@ A group of parameters that control the nonlinearities in the normals of the gene
 
 **Seed**
 
-#### Export Parameters
+### Parameters of Export
 
 **Export**  
 A set of parameters for controlling the export process of the generated mesh.  
@@ -132,7 +132,9 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## The Next Steps After Using the Foliage Generator
 
-If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
+### Updating The Existing Exported Models Later
+
+If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
 
 ![Using the Preset menu for the Foliage Generator](/quibli-doc/assets/images/manual_images/foliage_generator_presets_menu.png)  
 *Using the Preset menu for the Foliage Generator*
