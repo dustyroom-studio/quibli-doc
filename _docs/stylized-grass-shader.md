@@ -21,9 +21,9 @@ Now you can apply this material to ... .
 
 ## Parameters of the Stylized Grass Shader
 
-**BaseMap** The 2D sprite to be used as a grass blade.  
-
 ### Texture and Color Parameters
+
+**BaseMap** The 2D sprite to be used as a grass blade.  
 
 **Top Color** The color of the upper part of the grass blade.  
 
