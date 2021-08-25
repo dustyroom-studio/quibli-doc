@@ -51,6 +51,9 @@ GIF HERE!!!!!
 **NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.  
 {: .notice--warning}
 
+![Stylized Lit Shader — Height Gradient parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_height_gradient.png)  
+*Stylized Lit Shader — Height Gradient parameters*
+
 **TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.  
 {: .notice--info}
 
@@ -76,11 +79,18 @@ Once you enable _Height Gradient_, the following parameters will appear.
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
 **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.  
+
+![Stylized Lit Shader — Albedo mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)  
+*Stylized Lit Shader — Albedo mapping parameters*
+
 _Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.  
 _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.  
 
 **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.  
-_Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.  
+_Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
+
+![Stylized Lit Shader — Detail mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)  
+*Stylized Lit Shader — Detail mapping parameters*  
 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
@@ -92,6 +102,9 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 
 **Bump Map** The input for normal maps.  
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description. 
+
+![Stylized Lit Shader — Bump mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_bump_map_parameters.png)  
+*Stylized Lit Shader — Bump mapping parameters*
 
 ### Lighting Parameters
 **Lighting**
