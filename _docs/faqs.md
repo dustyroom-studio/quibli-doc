@@ -14,4 +14,4 @@ toc: true
 > **A.** Please, look into the [Troubleshooting](../installation#troubleshooting) sub-chapter in the [Quick Start Guide](../installation) chapter.
 
 #### **Q.** What Rendering Pipelines does Quibli support?
-> **A.** Quibli supports Universal (URP, pka LWRP) only. It won't work in Built-In RP and HDRP.
+> **A.** Quibli supports Universal (URP, fka LWRP) only. It won't work in Built-In RP and HDRP.

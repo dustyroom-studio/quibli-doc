@@ -19,7 +19,7 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples.
 
-The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Stylized Foliage](../stylized-foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
+The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
 {: .notice--info}
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
@@ -47,6 +47,10 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 
 **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.  
 
+![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
+*Gradient Editor is real-time*  
+
+
 ### Main Shading Parameters (Other)
 
 **Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.  
@@ -60,13 +64,17 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 
 **Rim Color** Sets the color of the Rim. This parameter is in HDR.  
 
-**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim_ values.
+**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim Size_ values (see the animation below).  
 
-GIF HERE!!!!!
+![Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_light_align_2.gif)  
+*Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*  
 
 **Rim Size** How much of the model the Rim covers.  
 
-**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look.  
+**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look. See the animation below.  
+
+![Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_edge_smoothness.gif)  
+*Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*  
 
 **Enable Height Gradient** Ticking this box turns _Height Gradient_ on and opens the parameters for its adjustment. _Height Gradient_ is a world-space ‘color-to-transparency fade-out’ gradient overlay placed over the material. _Height Gradient_ is an HDR effect.  
 
@@ -128,11 +136,16 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 ![Stylized Lit Shader — Bump mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_bump_map_parameters.png)  
 *Stylized Lit Shader — Bump mapping parameters*
 
-### Lighting Parameters
+### Lighting and Shadows Parameters
+
+#### Lighting Parameters
+
 **Lighting**
 _Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.  
 
 **Light Color Impact** This parameter defines how much of an influence the main light’s color has onto the material. Having this parameter allows you to add a night/day/morning/sunset feel to the scene. By automating the light’s color it is possible to achieve the day cycle effect.
+
+#### Shadow Parameters
 
 **Override Shadows** Once enabled, a few shadow-related parameters appear.  
 

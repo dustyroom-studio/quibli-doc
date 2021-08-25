@@ -29,8 +29,8 @@ A --> C(Post Effects)
 A --> D(Scripts)
 A --> E(Demo Scenes)
 B --> G[Stylized Lit Shader]
-G --> H[Stylized Foliage Shader]
-H --> I[Stylized Grass Shader]
+G --> H[Foliage Shader]
+H --> I[Grass Shader]
 I --> J[Skybox Shader]
 J --> K[Cloud2D Shader]
 K --> L[Light Beam Shader]

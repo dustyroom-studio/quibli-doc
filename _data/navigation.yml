@@ -19,10 +19,10 @@ docs:
     children:
       - title: "Stylized Lit Shader"
         url: /stylized-lit-shader/
-      - title: "Stylized Foliage Shader"
-        url: /stylized-foliage-shader/
-      - title: "Stylized Grass Shader"
-        url: /stylized-grass-shader/
+      - title: "Foliage Shader"
+        url: /foliage-shader/
+      - title: "Grass Shader"
+        url: /grass-shader/
       - title: "Skybox Shader"
         url: /skybox-shader/
       - title: "Cloud2D Shader"

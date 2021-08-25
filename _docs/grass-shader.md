@@ -1,25 +1,25 @@
 ---
-title: "Stylized Grass Shader"
-permalink: /stylized-grass-shader/
-excerpt: "Quibli Stylized Grass Shader"
+title: "Grass Shader"
+permalink: /grass-shader/
+excerpt: "Quibli Grass Shader"
 toc: true
 ---
 
-## Stylized Grass Shader Brief Overview
+## Grass Shader Brief Overview
 
-The _Stylized Grass_ shader is a specialized shader to be used with the grass foliage. 
+The _Grass_ shader is a specialized shader to be used with the grass foliage. 
 
-![Quibli Stylized Grass Shader Interface](/quibli-doc/assets/images/manual_images/quibli_stylized_grass_shader_interface.png)  
-*Quibli Stylized Grass Shader Interface*
+![Quibli Grass Shader Interface](/quibli-doc/assets/images/manual_images/quibli_grass_shader_interface.png)  
+*Quibli Grass Shader Interface*
 
 
-## Beginning to Work with the Stylized Grass Shader
+## Beginning to Work with the Grass Shader
 
 * Create a material
-* In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Stylized Grass**.  
+* In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Grass**.  
 Now you can apply this material to ... .
 
-## Parameters of the Stylized Grass Shader
+## Parameters of the Grass Shader
 
 ### Texture and Color Parameters
 
