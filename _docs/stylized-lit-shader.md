@@ -17,12 +17,15 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 ### Gradient
 
-This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples, but still, it's truly hard to exhaust the possibilities of the _Gradient_.
+This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples.
 
-The same Gradient Editor is also available for other shaders: [Stylized Lit](../stylized-lit-shader), [Stylized Foliage](../stylized-foliage-shader), [Skybox](../skybox shader), [Cloud2D](cloud2d-shader).
+The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Stylized Foliage](../stylized-foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
 {: .notice--info}
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
+
+![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_editor_adjusting.webm)  
+*Gradient Editor is real-time*  
 
 **TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
 ![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.png)  
@@ -30,13 +33,17 @@ Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can 
 {: .notice--info}
 
 There are ‘smooth’ and ‘fixed’ color gradations in the Gradient editor. You can have a sharp transition from one color to another by selecting a _Fixed_ mode (using 1 color stop). If you select _Smooth_ mode, the transition from color band to the adjacent one will be gradual. See the pictures below.  
+
 ![Gradient Editor in Fixed mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_fixed.png)  
-*Gradient Editor in Fixed mode — the color bands have distinct boundaries*
+*Gradient Editor in Fixed mode — the color bands have distinct boundaries*  
+
 ![Gradient Editor in Blend mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_blend.png)  
-*Gradient Editor in Blend mode — the color bands have gradual boundaries*
+*Gradient Editor in Blend mode — the color bands have gradual boundaries*  
+
 In _Smooth_ mode you can set all or some of the color stops closely to the adjacent ones to make a stepped (reminiscent of _Fixed_ mode) or partially stepped / partially smooth gradient.  
+
 ![Gradient Editor in Blend mode with partially tight color stops](/quibli-doc/assets/images/manual_images/gradient_mode_blend_tight_bands_location.png)  
-*Gradient Editor in Blend mode with partially tight color stops*
+*Gradient Editor in Blend mode with partially tight color stops*  
 
 **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.  
 
