@@ -36,7 +36,7 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_;
 You can use your own custom settings file. The Quibli one is needed for viewing the Quibli Demo scenes.  
 ![Quibli URP Config file location](/quibli-doc/assets/images/manual_images/quibli_urp_config_file_location.png)  
 *Quibli URP Config file location*
-  * Navigate to `_Edit_ ▶︎ _Project Settings_`;
+  * Navigate to _Edit_ ▶︎ _Project Settings_;
   * Open the **Graphics** tab and select **Quibli URP Config** file in the **Scriptable Render Pipeline Settings** field;
 ![Graphics Settings Panel](/quibli-doc/assets/images/manual_images/quibli_project_setings_graphics_settings_panel.jpg)  
 *Graphics Settings Panel — select Quibli URP Config file in Scriptable Render Pipeline Settings field*
