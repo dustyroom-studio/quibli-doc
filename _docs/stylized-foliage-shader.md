@@ -24,7 +24,7 @@ Now you can apply this material to a mesh.
 
 ## Parameters of the Stylized Foliage Shader
 
-### Coloring Parameter
+### Coloring Parameter (Gradient)
 
 **Shading Gradient**
 
@@ -72,5 +72,5 @@ _Billboard Rotation_ parameter has three options:
   * Each Face
   * Whole Object
 
-![Stylized Foliage Shader Billboard Rotation parameter options](/quibli-doc/assets/images/manual_images/quibli_stylized_grass_shader_billboard_rotation_options.png)  
+![Stylized Foliage Shader Billboard Rotation parameter options](/quibli-doc/assets/images/manual_images/quibli_stylized_foliage_shader_billboard_rotation_options.png)  
 *Stylized Foliage Shader Billboard Rotation parameter options*
