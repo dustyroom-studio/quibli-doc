@@ -20,7 +20,7 @@ After the importing, to finalize the installation it is advised to configure Qui
 
 ### Automatic Finalizing
 
-Quibli comes with the [Readme] script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
+Quibli comes with the **[Readme]** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
 
 If you would like to use your own **Rendering Pipeline Asset File** instead of the one that comes with Quibli, you'll need to do it manually. The procedure is described in [Manual Finalizing](#manual-finalizing) 
 {: .notice--warning}
@@ -33,10 +33,8 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_;
 
   * Locate the **Quibli URP Config** file in  
 **Project** panel ▶︎ **Quibli** folder ▶︎ **[Render Pipeline] URP** folder ▶︎ **Example Settings** folder.  
-
-You can use your own custom settings file. This one is needed for viewing the Quibli Demo scenes.
+You can use your own custom settings file. The Quibli one is needed for viewing the Quibli Demo scenes.
 {: .notice--info}
-
 ![Quibli URP Config file location](/quibli-doc/assets/images/manual_images/quibli_urp_config_file_location.png)  
 *Quibli URP Config file location*
   * Navigate to _Edit_ ▶︎ _Project Settings_;
