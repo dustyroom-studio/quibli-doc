@@ -26,11 +26,15 @@ If you would like to use your own **Rendering Pipeline Asset File** instead of t
 {: .notice--warning}
 
   * Please, locate and select the **[Readme] tool** in  
-_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_  
+_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_;  
   * In the **Inspector** panel press the **Configure URP** button. This will set the example _Quibli Rendering Pipeline Asset_ into **Graphics** and **Quality** windows found in **Project Settings**.  
 
 ### Manual Finalizing
 
+  * Locate the **Quibli URP Config** in  
+_**Project** panel ▶︎ **Quibli** folder ▶︎ **Example Settings** folder:
+![Quibli URP Config file location](/quibli-doc/assets/images/manual_images/quibli_urp_config_file_location.png)  
+*Quibli URP Config file location*
   * Please, navigate to _Edit_ ▶︎ _Project Settings_;
   * Open the **Graphics** tab and select **Quibli URP Config** file in the **Scriptable Render Pipeline Settings** field;
 ![Graphics Settings Panel](/quibli-doc/assets/images/manual_images/quibli_project_setings_graphics_settings_panel.jpg)  
@@ -38,8 +42,7 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_
   * Open the **Quality** tab and select the same **Quibli URP Config** in the field **for all _Quality Levels_** available in your project;
 ![Quality Settings Panel](/quibli-doc/assets/images/manual_images/quibli_project_setings_quality_settings_panel.jpg)  
 *Quality Settings Panel — select Quibli URP Config file in Rendering field for all available quality levels*
-  * Important. If you would like to use your own **Rendering Pipeline Asset File** instead of the **[Quibli] Example Settings URP**, which comes with Quibli, please make sure this asset file has **Depth Texture** and **Opaque Texture** checkboxes enabled. It is required if you would like to build your project to a mobile, for example.
-
+  * Important. If you would like to use your own **Rendering Pipeline Asset File** instead of the **Quibli URP Config**, which comes with Quibli, please make sure this asset file has **Depth Texture** and **Opaque Texture** checkboxes enabled. It is required if you would like to build your project to a mobile, for example.
 ![URP Config file should have Depth Texture and Opaque Texture turned on](/quibli-doc/assets/images/manual_images/urp_config_file_depth_texture_opaque_texture.png)  
 *URP Config file should have Depth Texture and Opaque Texture turned on*
 
