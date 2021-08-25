@@ -9,18 +9,34 @@ toc: true
 First of all, you need to import Quibli into your project.  
 Please, make sure you have the Universal RP project running (not Built-In RP or HDRP).  
 
-* In Unity, go to **Window** ▶︎ **Package Manager**; 
-* On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import;  
-* Click **Download** (if it is not downloaded yet);  
-* Click **Import**.  
+  * In Unity, go to **Window** ▶︎ **Package Manager**; 
+  * On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import;  
+  * Click **Download** (if it is not downloaded yet);  
+  * Click **Import**.  
 
 ## Finalizing Quibli Installation
-After the importing, to finalize the installation it is advised to configure Quibli for Universal Rendering Pipeline. 
-* Please, locate and select the **[Readme] tool** in  
-_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_  
-* In the **Inspector** panel press the **Configure URP** button. This will set the example _Quibli Rendering Pipeline Asset_ into **Graphics** and **Quality** windows found in **Project Settings**.  
 
-**NOTE.** Should you have any difficulties with the installation of Quibli, please write to us to info@dustyroom.com. We should be able to help you quickly. Please, don't forget to include your set-up details like Unity and Quibli versions.
+After the importing, to finalize the installation it is advised to configure Quibli for Universal Rendering Pipeline. 
+
+### Automatic Finalizing
+
+Quibli comes with the [Readme] script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
+
+If you would like to use your own **Rendering Pipeline Asset File** instead of the one that comes with Quibli, you'll need to do it manually. The procedure is described in [Manual Finalizing](#manual-finalizing) 
+{: .notice--warning}
+
+  * Please, locate and select the **[Readme] tool** in  
+_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_  
+  * In the **Inspector** panel press the **Configure URP** button. This will set the example _Quibli Rendering Pipeline Asset_ into **Graphics** and **Quality** windows found in **Project Settings**.  
+
+### Manual Finalizing
+
+  * Please, navigate to _Edit_ ▶︎ _Project Settings_;
+  * Open the **Graphics** tab and select **[Quibli] Example Settings URP** file in the **Rendering Asset** field;
+  * Open the **Quality** tab and select the same **[Quibli] Example Settings URP** in the field **for all _Quality Levels_** available;
+  * Important. If you would like to use your own **Rendering Pipeline Asset File** instead of the **[Quibli] Example Settings URP**, which comes with Quibli, please make sure this asset file has **Depth Texture** and **Opaque Texture** checkboxes enabled. It is required if you would like to build your project to a mobile, for example.
+
+**NOTE.** Should you have any difficulties with the installation of Quibli, please read through the [Troubleshooting](#troubleshooting) chapter on this page as well as have a look at the [FAQs](../faqs) page. It your questions are not answered yet, please [Report an Issue]() or write to us to info@dustyroom.com. We should be able to help you quickly. Please, don't forget to include your set-up details like Unity and Quibli versions.
 {: .notice--info}
 
 ## Troubleshooting

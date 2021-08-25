@@ -37,8 +37,8 @@ docs:
     children:
       - title: "Foliage Generator"
         url: /foliage-generator/
-      - title: "Wire Renderer"
-        url: /wire-renderer/
+      - title: "Curve Renderer"
+        url: /curve-renderer/
   - title: Demo Scenes
     children:
       - title: "Demo Scenes Included"

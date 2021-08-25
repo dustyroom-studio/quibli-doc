@@ -11,7 +11,7 @@ We describe [Flat Kit](http://u3d.as/1uVy) as a one-stop choice for getting brea
 
 The main point of **Flat Kit** is the fact that it is **a set of general creative easy-to-use tools**: a Stylized Surface family of shaders, the Water shader, the Outline and Fog Renderer Features (real-time post effects), additional scripts.  
 
-The main point of **Quibli** is **flexibility in coloring of the shader** and **foliage creation** designed for _that_ animation film look. Although there is an overlap in shading look and Flat Kit’s _Stylized Surface_ shaders have some of the similar parameters as Quibli’s _Stylized Lit_ shader, namely Rim, Glare and Height Gradient, these shaders are very different in workflow, possibilities / limitations and URP properties. Some of the results from Flat Kit’s Stylized Surface shader can be reproduced with Quibli and vice versa. But there is no such an easy-to-use Quibli Gradient Editor in Flat Kit, which makes it effortless and fun to create stunning visuals. In Flat Kit there are a ‘Step’ and a ‘Curve’ coloring modes in Stylized Surface shaders, but they require saving an internal texture. More info about ‘Step’ and ‘Curve’ modes can be found [here](https://flatkit.dustyroom.com/#311-the-main-parameters-of-the-shader).  
+The main points of **Quibli** are **flexibility in coloring of the shaders [1](../stylized-lit-shader), [2](../skybox shader), [3](cloud2d-shader)** and **foliage creation** designed for _that_ animation film look. Although there is an overlap in shading look and Flat Kit’s _Stylized Surface_ shaders have some of the similar parameters as Quibli’s _Stylized Lit_ shader, namely Rim, Glare and Height Gradient, these shaders are very different in workflow, possibilities / limitations and URP properties. Some of the results from Flat Kit’s Stylized Surface shader can be reproduced with Quibli and vice versa. But there is no such an easy-to-use Quibli Gradient Editor in Flat Kit, which makes it effortless and fun to create stunning visuals. In Flat Kit there are a ‘Step’ and a ‘Curve’ coloring modes in Stylized Surface shaders, but they require saving an internal texture. More info about ‘Step’ and ‘Curve’ modes can be found [here](https://flatkit.dustyroom.com/#311-the-main-parameters-of-the-shader). Also, if you are going to shade the plants, the Quibli [Stylized Foliage shader](../stylized-foliage-shader) is the one to choose.  
 
 Both Quibli and Flat Kit are the type of tools where a small parameter change can have a drastic change of the look of the scene. This is a key sign of a good creation tool, when you perhaps are searching for the stylistic direction.  
 
@@ -22,23 +22,21 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 
 | Asset | **Quibli** | **Flat Kit**
 | --- | --- | --- |
-| In short | Everything you need to achieve a stylized look of traditional japanese animation | Everything you need to achieve any variation of minimal or toon shading |
-| Shaders included | Stylized Lit, Cloud2D, Light Beam, Gradient Skybox, Stylized Grass | Stylized Surface, Stylized Surface with Outline, Terrain, Water, Light Beam, Gradient Skybox |
-| Mobile friendliness | Yes | Yes |
-| Outlines (shader-based) | No | Yes |
-| Outlines (post effect) | No | Yes, [Outline Image Effect](https://flatkit.dustyroom.com/#42-outline-image-effect) |
-| Fog (post effect) | No | Yes, [Fog Image Effect](https://flatkit.dustyroom.com/#41-fog-image-effect) |
-| Stylized Detail (post effect) | Yes | No |
-| Independent per-step color gradient | Yes | No |
-| Number of possible independent shade colors per material | **8** (in any desirable degree of smoothness) | **3** (Using _Base color_ and 2 _additional cel layers_) |
-| Real-time Gradient editor | Yes | No (‘Steps’ and ‘Curve’ modes require saving color info into offline internal textures) |
-| Wind | Yes | No |
-| Skybox shader | Yes, with **up to 8 color multi-stop gradient** color editor | Yes, with **2 colors** interpolation |
-| Light Plane shader | Yes, called _Light Beam_, a more advanced version of a Light Plane shader | Yes |
-| SRP batching | Yes | No |
+| In short | Everything you need to achieve a stylized look of traditional Japanese animation | Everything you need to achieve any variation of minimal or toon shading |
+| Shaders included | Stylized Lit, Stylized Foliage, Stylized Grass, Gradient Skybox, Cloud2D, Light Beam | Stylized Surface, Stylized Surface with Outline, Terrain, Water, LightPlane, Gradient Skybox |
+| Post Effects included | [Stylized Detail Effect](../stylized-detail-post-effect) | [Outline Image Effect](https://flatkit.dustyroom.com/#42-outline-image-effect), [Fog Image Effect](https://flatkit.dustyroom.com/#41-fog-image-effect) |
+| Anime foliage model creation in Unity Editor | **Yes**, with [Foliage Generator](../foliage-generator) | No |
+| Scripts | [Foliage Generator](../foliage-generator), [Curve Renderer](../curve-renderer) | [UV Scroller](https://flatkit.dustyroom.com/#51-uv-scroller), Orbit Motion, [Linear Motion](https://flatkit.dustyroom.com/#52-linear-motion), [Buoyancy](https://flatkit.dustyroom.com/#53-buoyancy) |
+| Mobile friendliness | **Yes** | **Yes** |
+| Outlines (shader-based) | No | **Yes**, [Stylized Surface with Outline shader](https://flatkit.dustyroom.com/#33-stylized-surface-with-outline-shader) |
+| Real-time Gradient editor | **Yes**, in the following shaders: [Stylized Lit](../stylized-lit-shader), [Skybox](../skybox shader), [Cloud2D](cloud2d-shader)**| No (‘Steps’ and ‘Curve’ modes require saving color info into offline internal textures) |
+| Independent per-step color gradient | **Yes** | No |
+| Number of possible independent shade colors per material | **8** (using a single Gradient Editor) | **3** (_Base color_ and 2 _additional cel layers_) parameters |
+| Wind | **Yes** (in [Stylized Foliage shader](../stylized-foliage-shader) | No |
+| Skybox shader | **Yes**, with **up to 8 color multi-stop gradient** color editor | **Yes**, with **2 colors** interpolation |
+| SRP batching | **Yes** | No |
+| Textures support (maps) in main shaders | Albedo, Normal, Detail | Albedo, Normal, Emission |
 | Pipelines support | URP | URP, Built-In RP LTS |
-| Textures support (maps) | Albedo, Normal, Detail | Albedo, Normal, Emission |
-| Additional tools | Wire Renderer, Foliage Generator | [UV Scroller](https://flatkit.dustyroom.com/#51-uv-scroller), CameraMouse Orbit, [Linear Motion](https://flatkit.dustyroom.com/#52-linear-motion), [Buoyancy](https://flatkit.dustyroom.com/#53-buoyancy) |
 
 
 
