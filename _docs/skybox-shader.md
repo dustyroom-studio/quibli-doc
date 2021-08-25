@@ -22,6 +22,9 @@ Now you can apply this material as your skybox: either drag it onto any empty sp
 ## Parameters of the Skybox Shader
 **Gradient** Clicking on the colored rectangle opens a _Gradient Editor_, where you can make a gradient to be displayed on the skybox. For more info about _Gradient Editor_, please, refer to the _Gradient_ parameter description of the [Stylized Lit Shader](../stylized-lit-shader) chapter in this manual.  
 
+![Gradient Editor in Skybox shader](/quibli-doc/assets/images/manual_images/quibli_skybox_gradient_editor.png)  
+*Gradient Editor in Skybox shader*
+
 **Intensity** This parameter defines how strong (read: bright) the skybox is.  
 
 **Exponent** A bias towards either of the ends of the _Gradient_.  

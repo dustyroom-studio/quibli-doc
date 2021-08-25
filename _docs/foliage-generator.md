@@ -33,7 +33,7 @@ Another way to add the _Foliage Generator_ to the scene is to use it as a Compon
   * Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found.
   * It is ready to be tweaked.
 
-### Operating the _Foliage Generator_ After Loading 
+### Operating the Foliage Generator After Loading 
 
 When you have the _Foliage Generator_ loaded to the scene, you'll probably want to [adjust the parameters or load an existing preset](#parameters-of-the-foliage-generator) and will need to [apply a material to an exported mesh](#applying-materials-to-the-exported-meshes) — to finalize the plant model. Please, keep reading this chapter to get acquainted with the details of doing these steps.  
 

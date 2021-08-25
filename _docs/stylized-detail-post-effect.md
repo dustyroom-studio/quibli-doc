@@ -22,7 +22,7 @@ The _Stylized Detail_ is a post effect designed to add another layer of ‘that 
   * Click **Add Renderer Feature**;  
   * Locate the **Quibli post processing** item in the menu. Select it.  
 
-**STEP 2.** After **_STEP 1_** above is completed, as the _Stylized Detail_ effect is a _Volume Override_ created to be used in the _Volume_ component of the camera, it should be added as a part of the post-processing onto the camera. The steps are below 
+**STEP 2.** After **_STEP 1_** above is completed, as the _Stylized Detail_ effect is a _Volume Override_ created to be used in the _Volume_ component of the camera, it should be added as a part of the post-processing onto the camera. The steps are below. 
 {: .notice--info}
 
   * Select a camera;  

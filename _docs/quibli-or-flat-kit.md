@@ -29,7 +29,7 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 | Scripts | [Foliage Generator](../foliage-generator), [Curve Renderer](../curve-renderer) | [UV Scroller](https://flatkit.dustyroom.com/#51-uv-scroller), Orbit Motion, [Linear Motion](https://flatkit.dustyroom.com/#52-linear-motion), [Buoyancy](https://flatkit.dustyroom.com/#53-buoyancy) |
 | Mobile friendliness | **Yes** | **Yes** |
 | Outlines (shader-based) | No | **Yes**, [Stylized Surface with Outline shader](https://flatkit.dustyroom.com/#33-stylized-surface-with-outline-shader) |
-| Real-time Gradient editor | **Yes**, in the following shaders: [Stylized Lit](../stylized-lit-shader), [Skybox](../skybox shader), [Cloud2D](cloud2d-shader)**| No (‘Steps’ and ‘Curve’ modes require saving color info into offline internal textures) |
+| Real-time Gradient editor | **Yes**, in the following shaders: [Stylized Lit](../stylized-lit-shader), [Skybox](../skybox shader), [Cloud2D](cloud2d-shader)| No (‘Steps’ and ‘Curve’ modes require saving color info into offline internal textures) |
 | Independent per-step color gradient | **Yes** | No |
 | Number of possible independent shade colors per material | **8** (using a single Gradient Editor) | **3** (_Base color_ and 2 _additional cel layers_) parameters |
 | Wind | **Yes** (in [Stylized Foliage shader](../stylized-foliage-shader) | No |

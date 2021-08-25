@@ -16,6 +16,18 @@ Another detailed scene showing all the shaders and additional tools in action.
 #### Kitchenware Scene
 This is a family of mostly saturated brightly colored scenes designed to show more unusual use of the Quibli shader. Aside from the anime shading, it is possible to conveniently generate something unrelated, be it the basic coloring or something wild and unique. There is nothing unconventional going on, it is just the choice of the colors and the parameters that made up these scenes, particularly the Gradient editor settings on _Stylized Lit_ and _Gradient Skybox_ shaders.  
 
+![Kitchenware Demo Scene 1](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_1.jpg)  
+*Kitchenware Demo Scene 1 — smooth-mode Color Gradient ramp with vibrant colors*
+
+![Kitchenware Demo Scene 2](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_2.jpg)  
+*Kitchenware Demo Scene 2 — smooth-mode Color Gradient ramp with color stops set tightly and loosely, with vibrant colors. The Skybox is made with the _Skybox_ shader, using a single color ramp, also with tight and loose color stops*
+
+![Kitchenware Demo Scene 3](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_3.jpg)  
+*Kitchenware Demo Scene 3 — fixed-mode Color Gradient ramp with vibrant colors*
+
+![Kitchenware Demo Scene 4](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_4.jpg)  
+*Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
+
 #### Mugs Scene  
 As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes), we added the same demo scene contents to be used with Quibli materials. This scene is made to show a fraction of styles that can be achieved — at a glance. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations.  
 

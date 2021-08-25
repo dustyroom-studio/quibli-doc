@@ -32,9 +32,16 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_
 ### Manual Finalizing
 
   * Please, navigate to _Edit_ ▶︎ _Project Settings_;
-  * Open the **Graphics** tab and select **[Quibli] Example Settings URP** file in the **Rendering Asset** field;
-  * Open the **Quality** tab and select the same **[Quibli] Example Settings URP** in the field **for all _Quality Levels_** available;
+  * Open the **Graphics** tab and select **Quibli URP Config** file in the **Scriptable Render Pipeline Settings** field;
+![Graphics Settings Panel](/quibli-doc/assets/images/manual_images/quibli_project_setings_graphics_settings_panel.jpg)  
+*Graphics Settings Panel — select Quibli URP Config file in Scriptable Render Pipeline Settings field*
+  * Open the **Quality** tab and select the same **Quibli URP Config** in the field **for all _Quality Levels_** available in your project;
+![Quality Settings Panel](/quibli-doc/assets/images/manual_images/quibli_project_setings_quality_settings_panel.jpg)  
+*Quality Settings Panel — select Quibli URP Config file in Rendering field for all available quality levels*
   * Important. If you would like to use your own **Rendering Pipeline Asset File** instead of the **[Quibli] Example Settings URP**, which comes with Quibli, please make sure this asset file has **Depth Texture** and **Opaque Texture** checkboxes enabled. It is required if you would like to build your project to a mobile, for example.
+
+![URP Config file should have Depth Texture and Opaque Texture turned on](/quibli-doc/assets/images/manual_images/urp_config_file_depth_texture_opaque_texture.png)  
+*URP Config file should have Depth Texture and Opaque Texture turned on*
 
 **NOTE.** Should you have any difficulties with the installation of Quibli, please read through the [Troubleshooting](#troubleshooting) chapter on this page as well as have a look at the [FAQs](../faqs) page. It your questions are not answered yet, please [Report an Issue]() or write to us to info@dustyroom.com. We should be able to help you quickly. Please, don't forget to include your set-up details like Unity and Quibli versions.
 {: .notice--info}

@@ -16,7 +16,7 @@ While working on the materials for the included [Demo scenes](demo-scenes), ther
 
 Of course, it is very important to have the fitting and stylistically correct models. Particularly, the nature objects, like trees, bushes etc (more on this you’ll find further down this manual). That’s why another highlight feature of Quibli is its foliage generating capabilities. Here you can find everything for an effortless plant creation as well as shading that supports wind.
 
-In addition to the shaders, and post effects, we included the tools used in making the [Demo scenes](demo-scenes). All the foliage models were made with [Foliage Generator](foliage generator), a flexible tool for creating and modifying anime-looking plants. The stretched wires between the electric poles in the _City_ demo scene, for example, are generated and can be modified in the Unity Editor using the [Curve Renderer](curve-renderer) tool.
+In addition to the shaders, and post effects, we included the tools used in making the [Demo scenes](demo-scenes). All the foliage models were made with [Foliage Generator](foliage-generator), a flexible tool for creating and modifying anime-looking plants. The stretched wires between the electric poles in the [City](demo-scenes#city-scene) demo scene, for example, are generated and can be modified in the Unity Editor using the [Curve Renderer](curve-renderer) tool.
 
 
 ## What Is Included in Quibli? (Graph)
