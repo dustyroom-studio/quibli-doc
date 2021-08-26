@@ -5,7 +5,7 @@ excerpt: "Quibli Wire Renderer Script"
 toc: true
 ---
 
-### Cloud2D Shader Brief Overview
+## Cloud2D Shader Brief Overview
 
 Electric wires seem to be the Thing in Japan. We made a tool that makes wires in your scene. You’ll need to have two points distanced somewhere over the scene, and the renderer will generate a wire (or multiple wires at once) for you. Between these two points you can have either one or as many wires as you’d like, with or without curvature and width seeded-random variation.  
  
@@ -86,6 +86,6 @@ As the exported mesh is not cut in stone, you can always get back to any of the 
 
 You can duplicate the Game Object Containers, move the _End_ points, press Play and you'll quickly have another independent curve. This way it is easy to populate the scene with, for instance, wires.
 
-#### Using a Custom Mesh
+### Using a Custom Mesh
 
 You can use your own mesh to be rendered as a body of the curve. To do it, please, have a look at the _Mesh Filter_, which is automatically created upon the loading of the _Curve Renderer_.
