@@ -25,7 +25,7 @@ Now you can apply this material to a default Unity Quad model, for example.
 
 **Main gradient** The parameter where you set the main colors of a cloud. Clicking on the Gradient ramp opens the _Gradient Editor_ where you can set up to color 8 stops. You can find more information about the _Gradient Editor_ in the part about the _Stylized Lit Shader_.  
 
-The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
 {: .notice--info}
 
 **Geometry gradient**  Opens a similar _Gradient Editor_ as the one in _Main Gradient_. This gradient specifically uses black and white channel only, so it does not impact any color work but rather the shape of the cloud, more precisely, the fading out of the contour of a cloud into transparency. White color is fully visible (opaque), black is fully invisible (transparent). Thus, if you have a tightly placed black → white color stops, the edges of a cloud will be sharper than if the gradient would be more smooth. You can have up to 8 color stops.  
@@ -54,6 +54,9 @@ The same Gradient Editor is also available for the following shaders: [Stylized 
 
 **Random Offset** Changing the values on the axis moves the internal displacement map of a cloud against the mesh itself along that axis. Dragging the cloud itself and tweaking _Random Offset_ have the same effect, because translating the mesh does not preserve the noise stamp (seed) it is being mapped to. The cloud is always being projected onto a static world-space internal noise map to form the fluffiness of it.  
 _Random Offset_ can be used as a parameter to change the seed of random. Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud.  
+
+![Animating the Random Offset parameter to create a cloud movement](/quibli-doc/assets/images/manual_images/cloud2d_shader_animated_clouds_moving.gif)  
+*Animating the Random Offset parameter to create a cloud movement*
 
 **Geometry density** This is a group of parameters that control the small-, medium- and large-scale details of a cloud shape.  
 
