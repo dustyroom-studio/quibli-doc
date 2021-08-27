@@ -42,6 +42,6 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 **Enable GPU Instancing**  Enabling turns on the manipulation of the main parameters in the code.  
 
-**TIP.** Most of the parameters of the _Light Beam_ shader work similarly to the according parameters in the analogous _LightPlane_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [LightPlane chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#37-lightplane-shader).
+**TIP.** Most of the parameters of the _Light Beam_ shader work similarly to the according parameters in the analogous _LightPlane_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [LightPlane chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#37-lightplane-shader){:target="_blank"}.
 {: .notice--info}
 

@@ -19,7 +19,7 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples.
 
-The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
 {: .notice--info}
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
@@ -59,7 +59,7 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 In some cases it can be used as a contouring pseudo-outline effect, it can accentuate the edges of the models on the scene. _Rim_ depends on the main light’s rotation and the normals of the shaded model.
 _Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.    
 
-Please, note that _Rim_ is not a substitution for the proper outline effect, like the advanced [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect)
+Please, note that _Rim_ is not a substitution for the proper outline effect, like the advanced [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}.
 {: .notice--warning}
 
 **Rim Color** Sets the color of the Rim. This parameter is in HDR.  
@@ -147,7 +147,12 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 #### Shadow Parameters
 
-**Override Shadows** Once enabled, a few shadow-related parameters appear.  
+**Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Please, note that there is no option to set the material in the way that would allow an object to receive the shadows from other objects but not from itself. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.  
+
+**TIP.** It's important to remember that apart from this _Receive Shadows_ parameter, there is a sister parameter _Cast Shadows_ in any object's _Mesh Renderer_, which has _Off_, _On_ and _Shadows Only_ options. The last option (_Shadows Only_) lets you bypass the rendering of the object itself while leaving its shadow visible. Combining these parameters you can achieve pretty wide spectrum of results, for example, when you would like an object to cast a shadow elsewhere except itself.  
+{: .notice--info}
+
+**Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.  
 
 **Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.  
 
@@ -168,7 +173,7 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 
 **Enabled** Enables the _Wind_ section of the shader.  
 
-**Intensity** How strong the movement is.  
+**Intensity** The amount of deviation of the object from its initial position. In other words, it is how strong the movement is.   
 
 **Frequency** The scale of the sway intervals. Higher values result in denser, more fine-grained noise.
 
@@ -192,7 +197,7 @@ _Rendering options_ is a collapsible/expandable group of parameters that deal wi
 
 **Enable GPU Instancing** Enabling turns on the manipulation of the main parameters in the code.  
 
-**TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader).
+**TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader){:target="_blank"}.
 {: .notice--info}
 
 ## Troubleshooting
@@ -203,5 +208,3 @@ Below you can find answers to the typical possible questions when working with S
   * Please, make sure the model you are applying the material to is UV-unwrapped.
   * If you are using a custom texture, please, make sure the format is supported.
 
-#### Can't turn off the cast shadows
-  * In URP there is no option to turn the cast shadows off from a shader. You'll need to set _Cast Shadows_ to _off_ on the _Mesh Renderer_. Please, refer to this [chapter](#lighting-parameters), where the working with shadow is described.

@@ -17,7 +17,7 @@ The _Grass_ shader is a specialized shader to be used with the grass foliage.
 
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Grass**.  
-Now you can apply this material to ... .
+Now you can apply this material to an object on the scene or to a prefab (for example, a grass patch). 
 
 ## Parameters of the Grass Shader
 
@@ -33,15 +33,15 @@ Now you can apply this material to ... .
 
 ### Wind Motion Parameters
 
-**Wind Speed**
+**Wind Speed** How fast the material displaces the object.  
 
-**Wind Intensity**
+**Wind Intensity** The amount of deviation of the object from its initial position. In other words, it is how strong the movement is.  
 
-**Wind Frequency**
+**Wind Frequency** The scale of the sway intervals. Higher values result in denser, more fine-grained noise.  
 
-**Wind Direction**
+**Wind Direction** The direction of the motion.  
 
-**Wind Entropy**
+**Wind Entropy** Sets the amount of noise that introduces nonlinearities to the object’s motion.  
 
 ### Wind Gusts Parameters
 

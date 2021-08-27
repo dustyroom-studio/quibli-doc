@@ -29,7 +29,7 @@ This is a family of mostly saturated brightly colored scenes designed to show mo
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
 
 #### Mugs Scene  
-As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes), we added the same demo scene contents to be used with _Stylized Lit_ shader materials. This scene is made to show a fraction of styles that can be achieved — at a glance. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations.  
+As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with _Stylized Lit_ shader materials. This scene is made to show a fraction of styles that can be achieved — at a glance. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations.  
 
 #### Sample Scene with Quibli  
 This is a modified start-up Unity scene, which you can see when you open a new project in Unity. We kept the original colors and textures, but changed all materials from the standard Unity Lit shader to the _Stylized Lit_ shader, and _Skybox_, as well as added the clouds using the _Cloud2D_ shader and a few foliage and decoration models. The character is also a standard Unity textured model called _Ellen_.  

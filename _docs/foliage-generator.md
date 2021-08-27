@@ -126,12 +126,6 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 **TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).  
 {: .notice--info}
 
-**NOTE.** If you turn off the ‘cast shadows’ option in the foliage model’s Mesh Renderer, the self-shadowing would be also turned off. It is the way the Universal RP works — in URP you cannot make the object cast a shadow onto other objects but not on itself. But there is a workaround (read the tip below).  
-{: .notice--warning}
-
-**TIP.** _(A workaround to the problem above)_ Nest a Capsule or any other simple object into a plant model in the Hierarchy panel, and select the ‘Shadow Only’ option in its Mesh Renderer. This way you will have a fallen shadow from this model but not (probably not good-looking) self-shadow from the plant model itself. Nesting is not necessary but if you are going to duplicate the plant and distribute it over the scene, it would be easier to do it with contained Game Objects. We have examples of this shadow trick in the _Nature_ and _Unity Default Sample_ scenes.
-{: .notice--info}
-
 ## The Next Steps After Using the Foliage Generator
 
 ### Updating The Existing Exported Models Later

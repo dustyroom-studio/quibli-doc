@@ -44,7 +44,7 @@ deliberate thing to do).
 ![Increasing and decreasing the number of points increases and decreases the curve resolution](/quibli-doc/assets/images/manual_images/curve_renderer_points_fidelity.gif)  
 *Increasing and decreasing the number of points increases and decreases the curve resolution*
 
-**Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click > _Add Key_ or left double-click anywhere on the line adds a point, right-click > _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.  
+**Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click → _Add Key_ or left double-click anywhere on the line adds a point, right-click → _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.  
 
 ![Curve editor, which opens up once you click on the 'Curve' parameter](/quibli-doc/assets/images/manual_images/curve_renderer_curve.png)  
 *Curve editor, which opens up once you click on the 'Curve' parameter*
@@ -85,7 +85,3 @@ As it was mentioned earlier, once you load the _Curve Renderer_, a Unity _Mesh R
 As the exported mesh is not cut in stone, you can always get back to any of the Game Object containers carrying the _Curve Renderer_ and tweak the parameters.  
 
 You can duplicate the Game Object Containers, move the _End_ points, press Play and you'll quickly have another independent curve. This way it is easy to populate the scene with, for instance, wires.
-
-### Using a Custom Mesh
-
-You can use your own mesh to be rendered as a body of the curve. To do it, please, have a look at the _Mesh Filter_, which is automatically created upon the loading of the _Curve Renderer_.

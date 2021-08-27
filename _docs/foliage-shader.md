@@ -19,7 +19,7 @@ The _Foliage_ shader is a specialized shader to be used with the models to give 
 
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Foliage**.  
-Now you can apply this material to a mesh.
+Now you can apply this material to an object on the scene or to a prefab.
 
 
 ## Parameters of the Foliage Shader
@@ -28,7 +28,7 @@ Now you can apply this material to a mesh.
 
 **Shading Gradient**
 
-The same Gradient Editor is also available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
 {: .notice--info}
 
 ### Texturing Parameters
