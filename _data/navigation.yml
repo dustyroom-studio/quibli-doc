@@ -2,7 +2,7 @@ main:
   - title: "Quibli on AS"
     url: /
   - title: "Report an Issue"
-    url: /https://github.com/dustyroom-studio/quibli-doc/issues/new/choose
+    url: https://github.com/dustyroom-studio/quibli-doc/issues/new/choose
   - title: "FAQs"
     url: /faqs/
   - title: "Contact"
