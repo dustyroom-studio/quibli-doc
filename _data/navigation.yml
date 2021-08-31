@@ -31,8 +31,10 @@ docs:
         url: /light-beam-shader/
   - title: Post Effects
     children:
-      - title: "Stylized Detail Post Effect"
+      - title: "Stylized Detail"
         url: /stylized-detail-post-effect/
+      - title: "Stylized Color Grading"
+        url: /stylized-detail-color-grading-post-effect/
   - title: Scripts
     children:
       - title: "Foliage Generator"
