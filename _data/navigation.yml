@@ -34,7 +34,7 @@ docs:
       - title: "Stylized Detail"
         url: /stylized-detail-post-effect/
       - title: "Stylized Color Grading"
-        url: /stylized-detail-color-grading-post-effect/
+        url: /stylized-color-grading-post-effect/
   - title: Scripts
     children:
       - title: "Foliage Generator"
