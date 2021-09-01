@@ -34,4 +34,7 @@ As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}
 This is a modified start-up Unity scene, which you can see when you open a new project in Unity. We kept the original colors and textures, but changed all materials from the standard Unity Lit shader to the _Stylized Lit_ shader, and _Skybox_, as well as added the clouds using the _Cloud2D_ shader and a few foliage and decoration models. The character is also a standard Unity textured model called _Ellen_.  
 
 #### Clouds Scene  
-A showcase of a few examples of the _Cloud2D_ shader. The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud 2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights.  
+A showcase of a few examples of the _Cloud2D_ shader. The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud 2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights. Press Play to start the animation of the clouds.  
+
+![Clouds Demo Scene](/quibli-doc/assets/images/manual_images/demo_clouds_scene.png)  
+*Clouds Demo Scene*

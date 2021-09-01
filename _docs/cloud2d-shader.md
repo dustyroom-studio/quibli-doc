@@ -52,10 +52,14 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 **Height gradient strength** Controls vertical shading of the cloud using the _Main Gradient_.  
 
 **Random Offset** Changing the values on the axis moves the internal displacement map of a cloud against the mesh itself along that axis. Dragging the cloud itself and tweaking _Random Offset_ have the same effect, because translating the mesh does not preserve the noise stamp (seed) it is being mapped to. The cloud is always being projected onto a static world-space internal noise map to form the fluffiness of it.  
-_Random Offset_ can be used as a parameter to change the seed of random. Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud.  
+_Random Offset_ can be used as a parameter to change the seed of random. Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud. Please, look at the next parameter, _Offset Speed_, to apply a motion.   
 
 ![Animating the Random Offset parameter to create a cloud movement](/quibli-doc/assets/images/manual_images/cloud2d_shader_animated_clouds_moving.gif)  
 *Animating the Random Offset parameter to create a cloud movement*
+
+**Offset Speed** Sets the speed of the pseudo-motion of the clouds. It is a pseudo-motion, because the planes carrying the _Cloud2D_ shader remain in place but the mapping onto the internal noise map is being offset, thus you see an illusion of the clouds moving. Please, see _Random Offset_ parameter description for additional explanation.  
+_X_ value is for horizontal motion, _Y_ value is for vertical motion.  
+Initially, the parameter is set to _X_ : 0, _Y_ : 0, which means, the clouds are static. If you change _X_ or _Y_ to positive numbers, the motion will be seen as to the right or upwards respectively. Dialing negative values 'moves' the cloud to the left or downwards respectively. The further the value is from '0', the faster the speed is.  
 
 **Geometry density** This is a group of parameters that control the small-, medium- and large-scale details of a cloud shape.  
 
@@ -73,6 +77,6 @@ The _Cloud2D_ shader is made inside the Shader Graph. You can tweak and customiz
 **NOTE.** In order to use a custom plane model, please make sure it is UV-unwrapped.
 {: .notice--warning}
 
-**TIP.** To make one complex-looking cloud in the demo scenes, we use two materials: one is dark inside and light outside, the second one is vice versa, darker on the edges. This way it is easier to emphasize the inner parts of the cloud chunks. You can have a look into the _Unity Default Sample Scene Quiblified_ or into the _Nature_ demo scenes to see the effect.  
+**TIP.** To make one complex-looking cloud in the demo scenes, we use two materials: one is dark inside and light outside, the second one is vice versa, darker on the edges. This way it is easier to emphasize the inner parts of the cloud chunks. You can have a look into the [Sample Scene with Quibli](../demo-scenes/#sample-scene-with-quibli) or into the [Nature](../demo-scenes/#nature-scene) demo scenes to see the effect.  
 {: .notice--info}
 

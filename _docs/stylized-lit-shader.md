@@ -7,6 +7,9 @@ excerpt: "Quibli Stylized Lit Shader"
 ## Stylized Lit Shader Brief Overview
 _Stylized Lit_ shader is a main go-to lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges from a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
 
+![Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_interface_basic.png)  
+*Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded*  
+
 ## Beginning to work with the Stylized Lit Shader
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Stylized Lit**.  
@@ -54,6 +57,9 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 
 **Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.  
 
+![Stylized Lit Shader — Specular parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_specular_parameters.png)  
+*Stylized Lit Shader — Specular parameters*
+
 **Enable Rim** Clicking this tick box turns Rim on or off and opens a set of _Rim_ parameters.  
 In some cases it can be used as a contouring pseudo-outline effect, it can accentuate the edges of the models on the scene. _Rim_ depends on the main light’s rotation and the normals of the shaded model.
 _Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.    
@@ -80,7 +86,7 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 **NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.  
 {: .notice--warning}
 
-![Stylized Lit Shader — Height Gradient parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_height_gradient.png)  
+![Stylized Lit Shader — Height Gradient parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_height_gradient_parameters.png)  
 *Stylized Lit Shader — Height Gradient parameters*
 
 **TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.  
@@ -125,7 +131,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 {: .notice--info}
 
 **TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
-![Using Detail Color parameter as an overall material tint](/quibli-doc/assets/images/manual_images/quibli_shader_detail_color_tint.png)  
+![Using Detail Color parameter as an overall material tint](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
@@ -141,6 +147,9 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 
 **Lighting**
 _Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.  
+
+![Stylized Lit Shader — Lighting parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_lighting_parameters.png)  
+*Stylized Lit Shader — Lighting parameters*
 
 **Light Color Impact** This parameter defines how much of an influence the main light’s color has onto the material. Having this parameter allows you to add a night/day/morning/sunset feel to the scene. By automating the light’s color it is possible to achieve the day cycle effect.
 
@@ -171,9 +180,23 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 **Rendering Options**  
 _Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
 
-**Surface Type** The two options are _Opaque_ and _Transparent_. If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.  
+![Stylized Lit Shader — Rendering parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)  
+*Stylized Lit Shader — Rendering parameters*
+
+**Surface Type** The two options are _Opaque_ and _Transparent_.
+
+![Stylized Lit Shader — Surface Type menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
+*Stylized Lit Shader — Surface Type menu*
+
+If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.  
+
+![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)  
+*Stylized Lit Shader — Blend Mode menu under Transparent Surface Type*
 
 **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.  
+
+![Stylized Lit Shader — Render Faces menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)  
+*Stylized Lit Shader — Render Faces menu*
 
 **Alpha Clipping** If this checkbox is in the ‘Enabled’ state, the _Threshold_ parameter appears.  
 
