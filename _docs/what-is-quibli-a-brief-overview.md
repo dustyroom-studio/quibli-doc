@@ -5,7 +5,7 @@ excerpt: "What is Quibli? How it differs from Flat Kit?"
 layout: single
 ---
 
-<span style="font-size:larger;">[Full documentation online](https://quibli.dustyroom.com)</span>
+**[Full documentation online](https://quibli.dustyroom.com)**
 {: .notice--info}
 
 ## Quibli Brief Overview
