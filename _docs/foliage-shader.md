@@ -47,12 +47,12 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 
 **Smoothness**  
 
-**Fresnel Power** Sets the visibility of the fresnel shader property. The fresnel effect provides stronger reflection on the flatter view angles (think edges of mesh, contour of the sphere) and weaker reflection in the steeper view angles (center of a mesh).  
+**Fresnel Power** Sets the visibility of the fresnel property of the object. The fresnel effect provides stronger reflection on the flatter view angles (think edges of mesh, contour of the sphere) and weaker reflection in the steeper view angles (center of a mesh).  
 
 ![A chart about fresnel](/quibli-doc/assets/images/manual_images/fresnel_chart.png)  
 *A chart about fresnel*
 
-**Fresnel Color**  Defines the color of the fresnel effect  
+**Fresnel Color**  Defines the color of the fresnel effect.  
 
 ### Wind Parameters
 
@@ -71,11 +71,15 @@ Enables the _Wind_ section of the shader.
 
 ### Global Billboard Parameter
 
-**Billboard Rotation**  
+**Billboard Rotation** Defines how the particles / branches are being rotated with the move of the camera.
+
+‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will always create an impression of a more complex one.
+{: .notice--info}
+  
 _Billboard Rotation_ parameter has three options:  
-  * Nothing
-  * Each Face
-  * Whole Object
+  * **Nothing** — bypasses the billboard rotation;
+  * **Each Face** —
+  * **Whole Object** — 
 
 ![Foliage Shader Billboard Rotation parameter options](/quibli-doc/assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 *Foliage Shader Billboard Rotation parameter options*

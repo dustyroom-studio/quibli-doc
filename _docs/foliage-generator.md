@@ -7,7 +7,7 @@ excerpt: "Quibli Foliage Generator Script"
 ## Foliage Generator Brief Overview
 Creating anime-looking bushes and trees requires not only specific shading but also properly created models in regards to display of the shading. Simply put, the desired effect would have both large-scale and small-scale details. Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model. So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. This conventional method results in a blob of quads (or other plain low-poly meshes) tied together, which looks like a large scale model made of smaller parts. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere. A sphere’s normals point evenly in a way that would look nice with toon shading. But creating a bush and its variations still would take much time. The _Foliage Generator_ prefab allows you to create a plant in seconds. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals. After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the _Quibli_ shader containing a branch texture in its _Albedo_ map slot. We did all the foliage models in the demo scenes this way. Quibli includes already made models, textures and materials.
 
-![Quibli Foliage Generator Interface](/quibli-doc/assets/images/manual_images/foliage_generator_inspector_interface.jpg)  
+![Quibli Foliage Generator Interface](/quibli-doc/assets/images/manual_images/foliage_generator_inspector_interface.png)  
 *Quibli Foliage Generator Interface*
 
 ## Beginning to work with Foliage Generator
@@ -124,6 +124,17 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 **TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).  
 {: .notice--info}
+
+## A Short How-To Create a Basic Plant
+
+In the [section below](#applying-materials-to-the-exported-mesh) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
+
+  * Load the _Foliage Generator_. [Here's how](#beginning-to-work-with-foliage-generator);  
+  * Set the parameters according to screenshot in the [Brief Overview section](#foliage-generator-brief-overview):
+  * Export mesh. [Here's how](#parameters-of-export);  
+  * Create a material like on the screenshot in the _Foliage_ shader chapter — [Brief Overview](../foliage-shader/#foliage-shader-brief-overview) (or use one from the _Sample Scene with Quibli_ Demo scene folder.
+  
+**Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](..foliage-shader/#global-billboard-parameter). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because this way the _Foliage_ shader renders the faces only once. Should you set it to '90' instead, the shader will render front _and_ back faces. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
 
 ## The Next Steps After Using the Foliage Generator
 
