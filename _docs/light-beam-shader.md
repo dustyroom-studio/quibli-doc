@@ -13,6 +13,9 @@ The _Light Beam_ is in HDR colors, meaning that it can glow if the scene has som
 ![Quibli Light Beam Shader Interface](/quibli-doc/assets/images/manual_images/quibli_light_beam_shader_interface.png)  
 *Quibli Light Beam Shader Interface*
 
+**TIP.** One of the pro-looking use cases of _Light Beam can be highlighting some kind of a power-up item located in the scene in some distance from you, reminding you to pick it up. As you approach it, the effect has an option to decrease its intensity.
+{: .notice--info}
+
 ## Beginning to Work with Light Beam Shader
 
 * Create a material

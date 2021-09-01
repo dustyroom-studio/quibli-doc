@@ -4,7 +4,7 @@ permalink: /cloud2d-shader/
 excerpt: "Quibli Cloud2D Shader"
 ---
 
-### Cloud2D Shader Brief Overview
+## Cloud2D Shader Brief Overview
 _Cloud2D_ shader is an easy and flexible way to add the clouds to your scene. It works with 2D planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads, meaning, there is no real topology in the clouds, which is very beneficial to the performance.  
 
 ![Quibli Cloud2D Shader Interface](/quibli-doc/assets/images/manual_images/cloud2d_shader_interface.jpg)  
@@ -14,13 +14,13 @@ _Cloud2D_ shader was made in a Shader Graph, so you can easily edit and modify i
 
 When you move a cloud horizontally or vertically it is being continuously morphed upon the internal noise map. The effect is that when you duplicate it and move it anywhere, this copy will never look the same as the original source. It is handy, since you can effortlessly populate the sky with differently looking clouds just by copying and moving without the need of duplicating and altering materials for each copy. Moreover, if you animate the motion of these planes, you’ll get moving and, at the same time, always-changing clouds instead of static-shaped sprites/models.
 
-### Beginning to Work with Cloud2D Shader
+## Beginning to Work with Cloud2D Shader
 
 * Create a material
 * In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Cloud2D**.
 Now you can apply this material to a default Unity Quad model, for example.
 
-### Parameters of the Cloud2D Shader
+## Parameters of the Cloud2D Shader
 
 **Main gradient** The parameter where you set the main colors of a cloud. Clicking on the Gradient ramp opens the _Gradient Editor_ where you can set up to color 8 stops. You can find more information about the _Gradient Editor_ in the part about the _Stylized Lit Shader_.  
 
@@ -71,7 +71,7 @@ Initially, the parameter is set to _X_ : 0, _Y_ : 0, which means, the clouds are
 
 **Face Camera** It is a ‘billboard’ aka ‘always look into the camera’ effect, which is helpful in situations when the clouds may be approachable by the camera and not desired to be seen from an angle. So, as you are getting closer to the clouds, _Face Camera_ parameter makes sure the cloud will always rotate to look into the camera.  
 
-### Misc Info About the Cloud2D Shader
+## Misc Info About the Cloud2D Shader
 The _Cloud2D_ shader is made inside the Shader Graph. You can tweak and customize its core as you like. If you want to save your customization work, please do so through saving as a new shader file in order not to break the default one.
 
 **NOTE.** In order to use a custom plane model, please make sure it is UV-unwrapped.
