@@ -2,7 +2,6 @@
 title: "Grass Shader"
 permalink: /grass-shader/
 excerpt: "Quibli Grass Shader"
-toc: true
 ---
 
 ## Grass Shader Brief Overview

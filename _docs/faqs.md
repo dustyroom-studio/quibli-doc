@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions (FAQs)"
 permalink: /faqs/
 excerpt: "Frequently Asked Questions (FAQs)"
-toc: true
+toc: false
 ---
 
 #### **Q.** What is the difference between Quibli and Flat Kit?

@@ -2,7 +2,6 @@
 title: "Foliage Shader"
 permalink: /foliage-shader/
 excerpt: "Quibli Foliage Shader"
-toc: true
 ---
 
 

@@ -2,7 +2,6 @@
 title: "Curve Renderer"
 permalink: /curve-renderer/
 excerpt: "Quibli Wire Renderer Script"
-toc: true
 ---
 
 ## Cloud2D Shader Brief Overview

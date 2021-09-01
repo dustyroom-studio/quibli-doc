@@ -2,7 +2,6 @@
 title: "Demo Scenes Included in Quibli"
 permalink: /demo-scenes/
 excerpt: "Demo Scenes Included in Quibli"
-toc: true
 ---
 
 In the scenes we tried to showcase a variety of use cases for the Quibli shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader), [Light Beam]([../light-beam-shader) as well as the post effects and additional tools.  

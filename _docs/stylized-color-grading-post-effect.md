@@ -2,7 +2,6 @@
 title: "Stylized Color Grading Post Effect"
 permalink: /stylized-color-grading-post-effect/
 excerpt: "Stylized Detail Post Effect"
-toc: true
 ---
 
 ## Stylized Color Grading Post Effect Brief Overview
