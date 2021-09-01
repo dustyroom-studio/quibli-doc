@@ -18,7 +18,7 @@ And, what’s even more important, is that it is a real-time effect, you don’t
 
 While working on the materials for the included [Demo scenes](demo-scenes), there were so many interesting things appearing during the parameter tweaking — one move of a color ramp slider completely changed the look of the material. A move of a single _Shading Offset_ parameter of the [Stylized Lit shader](stylized-lit-shader) changed the material to a completely another one, instantly. It was even tough to decide which of these variants looked better. The folders of ‘saved for later’ presets were brimming with widely different materials: ranging from subtly shaded toon surfaces to vibrant unnatural popping-off-screen color palettes. The scenes were painting themselves, and despite the fact that we had to keep only the best results for the demo scenes, so many equally great looking materials were left off. No matter whether you are looking for conventional toon materials, want to add a tiny bit of spice to that look, or are in an experimental mood and are looking to explore uncharted fields — it is all done easily.  
 
-Of course, it is very important to have the fitting and stylistically correct models. Particularly, the nature objects, like trees, bushes etc (more on this you’ll find further down this manual). That’s why another highlight feature of Quibli is its foliage generating capabilities. Here you can find everything for an effortless plant creation as well as shading that supports wind.
+Of course, it is very important to have the stylistically fitting models. Particularly, the nature objects, like trees, bushes etc (more on this you’ll find further down this manual). That’s why another highlight feature of Quibli is its foliage generating capabilities. Here you can find everything for an effortless plant creation as well as shading that supports wind.
 
 In addition to the shaders, and post effects, we included the tools used in making the [Demo scenes](demo-scenes). All the foliage models were made with [Foliage Generator](foliage-generator), a flexible tool for creating and modifying anime-looking plants. The stretched wires between the electric poles in the [City](demo-scenes#city-scene) demo scene, for example, are generated and can be modified in the Unity Editor using the [Curve Renderer](curve-renderer) tool.
 
@@ -42,16 +42,18 @@ H --> I[Grass Shader]
 I --> J[Skybox Shader]
 J --> K[Cloud2D Shader]
 K --> L[Light Beam Shader]
-C --> M[Stylized Detail Post Effect]
-D --> N[Foliage Generator]
-N --> O[Curve Renderer]
-E -->|with all models + materials| P[Nature Scene]
-P --> Q[City Scene]
-Q --> R[Kitchenware Scene]
-R --> S[Mugs Scene]
-S --> T[Sample Scene with Quibli]
-T --> U[Clouds Scene]
+C --> N[Stylized Detail]
+N --> O[Stylized Color Grading]
+D --> Q[Foliage Generator]
+Q --> R[Curve Renderer]
+E -->|with all models + materials| T[Nature Scene]
+T --> U[City Scene]
+U --> V[Kitchenware Scene]
+V --> W[Mugs Scene]
+W --> X[Sample Scene with Quibli]
+X --> Y[Clouds Scene]
 </div>
+
 
 
 

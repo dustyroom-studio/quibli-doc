@@ -15,7 +15,7 @@ Of course, _Curve Renderer_ can be used not only for generating the wires. Its c
 
 ## Examples of Curve Renderer Usage
 
-A good place to look at _Curve Renderer_ in action is to load the included _City_ demo scene. This scene has many groups of A and B points, which are used to generate a web of wires. Once you locate the _Wires_ Game Object (folder) in the _Hierarchy panel_, inside _Scenery_ Game Object (folder), please, select it and look at the Inspector panel, you’ll find all the parameters for adjusting the look of the wires.
+A good place to look at _Curve Renderer_ in action is to load the included [City](../demo-scenes/#city-scene) demo scene. This scene has many groups of A and B points, which are used to generate a web of wires. Once you locate the _Wires_ Game Object (folder) in the _Hierarchy panel_, inside _Scenery_ Game Object (folder), please, select it and look at the Inspector panel, you’ll find all the parameters for adjusting the look of the wires.
 
 ## Beginning to Work with Curve Renderer
 
