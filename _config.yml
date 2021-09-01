@@ -85,6 +85,8 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      toc: true
+      toc_sticky: true
       # classes: wide
       sidebar:
         nav: "docs"
