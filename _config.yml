@@ -6,11 +6,8 @@
 title: Quibli
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Quibli is a collection of shaders, effects and scripts whose first task is to help easily create the look of the japanese animation films.
 twitter_username: _dstrm
-github_username: username
 minimal_mistakes_skin: air
 search: true
 
@@ -56,22 +53,16 @@ plugins:
   - jekyll-mermaid
 
 author:
-  name   : "First Lastname"
+  name   : "Dustyroom"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Tiny studio working on interactive experiences."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://dustyroom.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://twitter.com/_dstrm"
 
 footer:
   links:
@@ -94,6 +85,8 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      toc: true
+      toc_sticky: true
       # classes: wide
       sidebar:
         nav: "docs"
