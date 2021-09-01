@@ -5,7 +5,7 @@ excerpt: "Contact"
 toc: false
 ---
 
-Have questions? Do this:
+Have questions? Here's how to get support:
 1. Skim through this manual or use a search on this site in the top right corner. Some chapters have a 'Troubleshooting' paragraphs, where the typical issues and their solutions are described;  
 1. Read the [Frequently Asked Questions](../faqs), chances are you’ll find the answers here; 
 1. If the question is still not answered, please [Report an Issue](https://github.com/dustyroom-studio/quibli-doc/issues/new/choose){:target="_blank"}; 
