@@ -7,7 +7,7 @@ toc: true
 
 ## Stylized Color Grading Post Effect Brief Overview
  
-The **Stylized Color Grading** includes the essence of the color correction processing — it is narrowed down for the anime-looking picture creation. Each of the parameters like _Blue Shadows_, _Green Shadows_ and _Red Highlights_ seem to be complicated in a designer work field, but in _Stylized Color Grading_ each of them were made to be working by their own formula tailored for the animation film stylistic look. Using a simplistically looking parameter slider you operate with an array of fairly sophisticated processing under the hood, which makes it very easy to use.  
+The _Stylized Color Grading_ includes the essence of the color correction processing — it is narrowed down for the anime-looking picture creation. Each of the parameters like _Blue Shadows_, _Green Shadows_ and _Red Highlights_ seem to be complicated in a designer work field, but in _Stylized Color Grading_ each of them were made to be working by their own formula tailored for the animation film stylistic look. Using a simplistically looking parameter slider you operate with an array of fairly sophisticated processing under the hood, which makes it very easy to use.  
 
 ![Stylized Detail Post Effect interface](/quibli-doc/assets/images/manual_images/quibli_stylized_color_grading_post_effect_interface.png)  
 *Stylized Detail Post Effect interface*

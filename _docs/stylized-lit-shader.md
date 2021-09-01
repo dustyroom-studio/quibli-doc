@@ -168,21 +168,6 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 
 **Override Light Direction** This is a particularly useful parameter. By enabling it, the material skips the light rotation information from the main light (usually Directional Light) and lets you control the lighting/shading positions manually and independently per material. In other words, if you want to rotate the shadow, specular, rim etc separately and specifically for any given model, you can do it using this feature.  
 
-### Wind Parameters
-**Wind** The _Wind_ part of the shader allows you to apply a shader-based displacement to the mesh(-es) the material is applied to. The movement is reminiscent of grass bending in the wind.  
-
-**Enabled** Enables the _Wind_ section of the shader.  
-
-**Intensity** The amount of deviation of the object from its initial position. In other words, it is how strong the movement is.   
-
-**Frequency** The scale of the sway intervals. Higher values result in denser, more fine-grained noise.
-
-**Speed** How fast the material displaces the object.  
-
-**Direction** The direction of the motion.  
-
-**Noise Amount** Introduces nonlinearities to the object’s motion.  
-
 ### Rendering Parameters
 **Rendering Options**  
 _Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
