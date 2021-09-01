@@ -1,6 +1,6 @@
 ---
 title: "Quibli"
-permalink: /
+permalink: /example-ignore/
 excerpt: "How to quickly install and setup Quibli."
 ---
 
