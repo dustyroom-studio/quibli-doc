@@ -7,6 +7,6 @@ classes: wide
 toc: false
 ---
 
-#[Full documentation online](https://quibli.dustyroom.com).
+# [Full documentation online](https://quibli.dustyroom.com)
 
 {% include_relative what-is-quibli-a-brief-overview.md %}
