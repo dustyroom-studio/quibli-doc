@@ -5,6 +5,10 @@ excerpt: "What is Quibli? How it differs from Flat Kit?"
 layout: single
 ---
 
+{% if site.output == "pdf" %}
+# [Full documentation online](https://quibli.dustyroom.com)
+{% endif %}
+
 ## Quibli Brief Overview
 
 Quibli is a collection of shaders, effects and scripts whose main task is to help easily create the look of the Japanese animation films. Quibli’s capabilities extend way beyond this, however, and we have included the demo scenes with all the used resources showing that.  
