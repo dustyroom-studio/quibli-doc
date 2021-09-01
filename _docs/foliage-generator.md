@@ -125,7 +125,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 **TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).  
 {: .notice--info}
 
-## A Short How-To Create a Basic Plant
+## How to Create a Basic Plant
 
 In the [section below](#applying-materials-to-the-exported-mesh) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
 
@@ -134,7 +134,7 @@ In the [section below](#applying-materials-to-the-exported-mesh) we'll discuss t
   * Export mesh. [Here's how](#parameters-of-export);  
   * Create a material like on the screenshot in the _Foliage_ shader chapter — [Brief Overview](../foliage-shader/#foliage-shader-brief-overview) (or use one from the _Sample Scene with Quibli_ Demo scene folder.
   
-**Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](..foliage-shader/#global-billboard-parameter). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because this way the _Foliage_ shader renders the faces only once. Should you set it to '90' instead, the shader will render front _and_ back faces. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
+**Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](../foliage-shader/#global-billboard-parameter). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because this way the _Foliage_ shader renders the faces only once. Should you set it to '90' instead, the shader will render front _and_ back faces. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
 
 ## The Next Steps After Using the Foliage Generator
 

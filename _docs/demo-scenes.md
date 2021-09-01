@@ -6,6 +6,12 @@ excerpt: "Demo Scenes Included in Quibli"
 
 In the scenes we tried to showcase a variety of use cases for the Quibli shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader), [Light Beam]([../light-beam-shader) as well as the post effects and additional tools.  
 
+The scenes can be found in:  
+_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demo Scenes** folder
+
+![Path to the Demo Scenes included in Quibli](/quibli-doc/assets/images/manual_images/quibli_demo_scenes_path.png)  
+*Path to the Demo Scenes included in Quibli*
+
 #### Nature Scene  
 A detailed scene showing all the shaders in action. The foliage has been created using the _Foliage Generator_ plugin. On this scene the shading of the plants has been made using _Stylized Lit_ shader, unlike _Foliage_ shader, which is more specialized for nature objects like trees and bushes. This one in action can be seen on the included [Sample Scene with Quibli](#sample-scene-with-quibli) scene.  
 
