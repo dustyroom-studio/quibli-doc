@@ -3,9 +3,10 @@ title: "What Is Quibli? A Brief Overview"
 permalink: /
 excerpt: "What is Quibli? How it differs from Flat Kit?"
 layout: single
+render_pdf: true
 ---
 
-{% if site.output == "pdf" %}
+{% if page.render_pdf == "true" %}
 # [Full documentation online](https://quibli.dustyroom.com)
 {% endif %}
 
