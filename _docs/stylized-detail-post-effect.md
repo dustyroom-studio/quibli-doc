@@ -23,6 +23,7 @@ The _Stylized Detail_ is a post effect designed to add another layer of ‘that 
   * Locate the currently active _Forward Renderer_. It can be done in a few ways. One of them is to look at your camera’s _Inspector_ panel ▶ _Forward Renderer_ field. Search for this _Forward Renderer_, select it and look at the _Inspector_ panel;  
   * Click **Add Renderer Feature**;  
   * Locate the **Quibli post processing** item in the menu. Select it.  
+  * In the **After Post Process** part of the _Quibli Post Process_, please, click the '+' button and select **Stylized Detail** in the drop down menu.  
 
 **STEP 2.** After **_STEP 1_** above is completed, as the _Stylized Detail_ effect is a _Volume Override_ created to be used in the _Volume_ component of the camera, it should be added as a part of the post-processing onto the camera. The steps are below. 
 {: .notice--info}
@@ -48,5 +49,5 @@ In the _Demo Scenes_ everything has already been set up and are ready to be used
 
 **Range Start**  A depth value where the effect starts to kick in.  
 
-**Range End** A depth value where the effect ends its impact. The effect works between the _Ranfe Start_ and _Range End_ effect. If you enable only one of these parameters and leave the other in ‘off’ state, the disabled parameter would mean ‘infinity’.  
+**Range End** A depth value where the effect ends its impact. The effect works between the _Range Start_ and _Range End_ effect. If you enable only one of these parameters and leave the other in ‘off’ state, the disabled parameter would mean ‘infinity’.  
 
