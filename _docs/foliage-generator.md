@@ -64,7 +64,7 @@ A group of parameters that control the creation of the plant mesh.
 
 **Offset Along Normal** ‘Inflate’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.  
 
-**One Normal Per Particle** If enabled, the vertices within each _Particle_will have the same normal values.  
+**One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.  
 
 **TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
 {: .notice--info}
@@ -114,7 +114,7 @@ A set of parameters for controlling the export process of the generated mesh.
 
 **Export On Edit** If enabled, the mesh will be automatically updated and overwritten upon every change of any of the parameters of the _Foliage Generator_. It is useful for a rapid preview of the changes to the parameters.  
 
-**Debug / Export Debug Mesh** This is the tick box, which lets you export the initial _Carrier Mesh_ without the branches (_Particle Mesh_es) but with all the processing applied to it. It is useful if you need to see what’s going on if you are struggling with the shape and look of the filial generated foliage model.
+**Debug / Export Debug Mesh** This is the tick box, which lets you export the initial _Carrier Mesh_ without the branches / _Particle Meshes_ but with all the processing applied to it. It is useful if you need to see what’s going on if you are struggling with the shape and look of the filial generated foliage model.
 
 **Export Mesh** This is a button, which generates the final foliage model. Once generated, it is placed in the folder selected in the _Folder Path_ field found in _Export_ group of parameters. To use this mesh in your scene, drag and drop it from that folder to the scene. The model will look pink at first, because so far it has no material applied onto it. You can use the ready materials from the Demo scenes or create your own.  
 
@@ -127,7 +127,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## How to Create a Basic Plant
 
-In the [section below](#applying-materials-to-the-exported-mesh) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
+In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
 
   * Load the _Foliage Generator_. [Here's how](#beginning-to-work-with-foliage-generator);  
   * Set the parameters according to screenshot in the [Brief Overview section](#foliage-generator-brief-overview):
