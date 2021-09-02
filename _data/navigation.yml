@@ -49,6 +49,8 @@ docs:
     children:
       - title: "FAQs"
         url: /faqs/
+      - title: "Limitations"
+        url: /limitations/
       - title: "Quibli or Flat Kit"
         url: /quibli-or-flat-kit/
       - title: "Contact"
