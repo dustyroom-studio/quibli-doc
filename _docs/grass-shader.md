@@ -82,5 +82,5 @@ _Grass Patches_ is a group of parameters that control the color nonlinearities w
 
 ### Rendering Parameters
 
-**Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html).  
+- **Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html).  
 
