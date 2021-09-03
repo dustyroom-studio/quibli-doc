@@ -31,7 +31,7 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 
 **Shape Texture** Here you can choose the texture by which the alpha is cut out using the _Clip Threshold_ parameter. You can view this texture as the overall shape of the plant's branch (a particle — the particles are described in the ['Parameters' section of the Foliage Generator](../foliage-generator#parameters-of-the-foliage-generator) chapter in this manual).  
 
-**Clip Threshold**  Sets how much to cut out from the texture. Preferably, the texture should have an alpha channel, where the transparency is around the leaf / branch part. 
+**Clip Threshold**  Sets how much to cut out from the texture. The slider is a color darkness threshold at which the texture is being clipped. The texture should be black and white — where the black-colored part is being cut out by the shader. It is better if the black part is around the leaf / branch part and has some gradual spots inside. It is better to see the examples in the included _Common Textures_ folder. 
 
 **Fill Texture** This is a detail texture to be used over the branch / particle defined by _Shape Texture_.  
 
@@ -44,8 +44,6 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 **Offset Along Normal** Slides the particles along the normals. Visually it 'inflates' or 'deflates' the mesh.  
 
 ### Additional Coloring Parameters
-
-**Smoothness**  
 
 **Fresnel Power** Sets the visibility of the fresnel property of the object. The fresnel effect provides stronger reflection on the flatter view angles (think edges of mesh, contour of the sphere) and weaker reflection in the steeper view angles (center of a mesh).  
 
@@ -78,8 +76,8 @@ Enables the _Wind_ section of the shader.
   
 _Billboard Rotation_ parameter has three options:  
   * **Nothing** — bypasses the billboard rotation;
-  * **Each Face** —
-  * **Whole Object** — 
+  * **Each Face** — rotates each individual face;
+  * **Whole Object** — rotates the whole object; the individual faces don't change relative rotation.
 
 ![Foliage Shader Billboard Rotation parameter options](/quibli-doc/assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 *Foliage Shader Billboard Rotation parameter options*

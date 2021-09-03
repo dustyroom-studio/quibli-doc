@@ -26,7 +26,7 @@ A grass sprout is a single instance of the plane carrying the _Grass_ material. 
 ### Texture and Color Parameters
 
 - **BaseMap** Texture with alpha channel defining the shape of a grass blade. We included a collection of these textures in Quibli, but you can of course use your own textures.
-- 
+
 - **Alpha Clip** Threshold at which the 'Base Map' alpha channel is cut off.
 
 If you make the grass blade image to falloff into the alpha gradually, the _Alpha Clip_ can be useful in making the grass thicker or thinner.  
@@ -82,5 +82,5 @@ _Grass Patches_ is a group of parameters that control the color non-linearity wi
 
 ### Rendering Parameters
 
-- **Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html).  
+- **Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html){:target="_blank"}.  
 
