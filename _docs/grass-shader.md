@@ -25,34 +25,34 @@ A grass sprout is a single instance of the plane carrying the _Grass_ material. 
 
 ### Texture and Color Parameters
 
-- **BaseMap** The 2D sprite to be used as a grass blade. The parameter is operating a single-channel of the texture. We included a collection of these textures in Quibli. Alternatively, you can use your own textures.    
+- **BaseMap** Texture with alpha channel defining the shape of a grass blade. We included a collection of these textures in Quibli, but you can of course use your own textures.
+- 
+- **Alpha Clip** Threshold at which the 'Base Map' alpha channel is cut off.
 
-- **Alpha Clip Threshold** This parameter controls how much alpha to cut out from the texture. 
-
-If you make the grass blade image to falloff into the alpha gradually, the _Alpha Clip Threshold_ can be useful in making the grass thicker or thinner.  
+If you make the grass blade image to falloff into the alpha gradually, the _Alpha Clip_ can be useful in making the grass thicker or thinner.  
 {: .notice--info}
 
 - **Top Color** The color of the upper part of the grass blade. This color and the color from the _Bottom Color_ parameter are interpolated.  
 
 - **Bottom Color** The color of the lower part of the grass blade. This color and the color from the _Top Color_ parameter are interpolated.  
 
-- **Emission** The color of glowing.   
+- **Emission** Color added to the final grass shading value. Useful to adjust the look of the whole material, including wind, gusts, etc.   
 
-- **Shadow Strength** Increases the intensity of the received Unity's native shadow. At the minimum value _Shadow Strength_ bypasses the received shadow, at the maximum value the shadow is fully displayed.   
+- **Shadow Strength** Controls intensity of the shadow coming from the main light of the scene. The value of 0 results in ignoring shadows, the value of 1 results in completely black color in the shadowed regions.   
 
 ### Wind Motion Parameters
 
 The set of parameters for controlling the shader displacement reminiscent of wind swaying.  
 
-- **Wind Speed** How fast the material displaces the object.  
+- **Wind Speed** How fast the material displaces the mesh vertices.  
 
-- **Wind Intensity** The amount of the object's deviation from its initial position. In other words, it is how strong the movement is.  
+- **Wind Intensity** The amount of the object's deviation from its initial position, i.e. how strong the movement is.  
 
 - **Wind Frequency** The scale of the sway intervals. Higher values result in denser, more fine-grained noise.  
 
-- **Wind Direction** The direction of the motion.  
+- **Wind Direction** General direction of the wind motion around Y axis.  
 
-- **Wind Entropy** Sets the amount of noise that introduces nonlinearities to the object’s motion.  
+- **Wind Turbulence** Sets the amount of noise that introduces non-linearity to the object’s motion.  
 
 ### Wind Gusts Parameters
 
@@ -64,17 +64,17 @@ _Wind Gusts_ is a set of parameters that control the periodic wave-like extra mo
 
 - **Gust Speed**  How fast the gust-influenced parts of the grass are moving.  
 
-- **Gust Color**  When a gust occurs, the influenced grass can change its color to _Gust Color_.
+- **Gust Color**  When a gust occurs, the influenced grass can change its color to this value.
 
 ### Grass Patches Parameters
 
-_Grass Patches_ is a group of parameters that control the color nonlinearities within a single grass material. When you set the regular colors of the grass, the whole material can sometimes look a bit plain due to the fact that all the grass is equally colored. Introducing slight (or more obvious) random differences in color tint can liven up the look of the grass presentation.  
+_Grass Patches_ is a group of parameters that control the color non-linearity within a single grass material. When you set the regular colors of the grass, the whole material can sometimes look a bit plain due to the fact that all the grass is equally colored. Introducing slight (or more obvious) random differences in color tint can liven up the look of the grass presentation.  
 
 - **Patches Color** Defines the target color, to which the patches change their tint. Using the following parameters it is possible to make that change abrupt or more gradual.  
 
-- **Patches Threshold**
+- **Patches Threshold** Controls ratio between the area of patches and the rest of the grass. Increasing this value adds new patches.
 
-- **Patches Scale** Controls the density of the internal noise map where the randomness of the patches distribution comes from. Effectively, _Patches Scale_ sets how large or small the re-colored areas are.  
+- **Patches Scale** Controls the density of the internal noise map where the randomness of the patches distribution comes from. Effectively, this sets the size of all patches.  
 
 - **Patches Blurriness** Controls how abrupt or gradual the color change is from normal colors to the color set in the _Patches Color_ parameter.
 
