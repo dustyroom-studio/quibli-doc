@@ -22,21 +22,14 @@ Now you can apply this material to a default Unity Quad model, for example.
 
 ## Parameters of the Cloud2D Shader
 
-**Main gradient** The parameter where you set the main colors of a cloud. Clicking on the Gradient ramp opens the _Gradient Editor_ where you can set up to color 8 stops. You can find more information about the _Gradient Editor_ in the part about the _Stylized Lit Shader_.  
-
+**Main gradient** The parameter where you set the main colors of a cloud. Clicking on the Gradient ramp opens the _Gradient Editor_ where you can set up to color 8 stops. You can find more information about the _Gradient Editor_ in the part about the _Stylized Lit Shader_.
 The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
 {: .notice--info}
-
-**Geometry gradient**  Opens a similar _Gradient Editor_ as the one in _Main Gradient_. This gradient specifically uses black and white channel only, so it does not impact any color work but rather the shape of the cloud, more precisely, the fading out of the contour of a cloud into transparency. White color is fully visible (opaque), black is fully invisible (transparent). Thus, if you have a tightly placed black → white color stops, the edges of a cloud will be sharper than if the gradient would be more smooth. You can have up to 8 color stops.  
-
-- **Edge Distortion** Distorts the contour of a cloud using an internal noise map.  
-
-- **Base Vertical Offset** Moves a cloud upwards and downwards in an exponential way — it stretches the cloud near the extreme values of this parameter.  
-
-- **Shadow** This Is the section responsible for controlling the shadows of a cloud.  
-
-- **Color** Sets the color of the shadowed part of a cloud.  
-
+- **Geometry gradient**  Opens a similar _Gradient Editor_ as the one in _Main Gradient_. This gradient specifically uses black and white channel only, so it does not impact any color work but rather the shape of the cloud, more precisely, the fading out of the contour of a cloud into transparency. White color is fully visible (opaque), black is fully invisible (transparent). Thus, if you have a tightly placed black → white color stops, the edges of a cloud will be sharper than if the gradient would be more smooth. You can have up to 8 color stops.
+- **Edge Distortion** Distorts the contour of a cloud using an internal noise map.
+- **Base Vertical Offset** Moves a cloud upwards and downwards in an exponential way — it stretches the cloud near the extreme values of this parameter.
+- **Shadow** This Is the section responsible for controlling the shadows of a cloud.
+- **Color** Sets the color of the shadowed part of a cloud.
 - **Amount**  Sets how visible the shadow is.
 - **Distortion** Increases the intensity of the ‘grainy’ effect, where grains are made by being mapped onto the internal displacement map.
 - **Center** Sets the coordinates of the center of the shadow.
