@@ -8,12 +8,12 @@ excerpt: "Quibli Stylized Lit Shader"
 _Stylized Lit_ shader is a main go-to lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges from a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
 
 ![Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_interface_basic.png)  
-*Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded*  
+*Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded*
 
 ## Beginning to work with the Stylized Lit Shader
-* Create a material
-* In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Stylized Lit**.  
-Now you can apply this material to a 3D game object on your Scene or in the Hierarchy panel.  
+1. Create a material.
+1. In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Stylized Lit**.
+Now you can apply this material to a 3D game object on your Scene or in the Hierarchy panel.
 
 ## Parameters of the Stylized Lit Shader
 
@@ -24,88 +24,88 @@ This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ 
 The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
 {: .notice--info}
 
-Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.  
+Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.
 
 ![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_editor_adjusting.gif)  
-*Gradient Editor is real-time*  
+*Gradient Editor is real-time*
 
-**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
-![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.png)  
+**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.
+![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.png)
 *Using presets in the Gradient Editor*
 {: .notice--info}
 
-There are ‘smooth’ and ‘fixed’ color gradations in the Gradient editor. You can have a sharp transition from one color to another by selecting a _Fixed_ mode (using 1 color stop). If you select _Smooth_ mode, the transition from color band to the adjacent one will be gradual. See the pictures below.  
+There are ‘smooth’ and ‘fixed’ color gradations in the Gradient editor. You can have a sharp transition from one color to another by selecting a _Fixed_ mode (using 1 color stop). If you select _Smooth_ mode, the transition from color band to the adjacent one will be gradual. See the pictures below.
 
 ![Gradient Editor in Fixed mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_fixed.png)  
-*Gradient Editor in Fixed mode — the color bands have distinct boundaries*  
+*Gradient Editor in Fixed mode — the color bands have distinct boundaries*
 
 ![Gradient Editor in Blend mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_blend.png)  
-*Gradient Editor in Blend mode — the color bands have gradual boundaries*  
+*Gradient Editor in Blend mode — the color bands have gradual boundaries*
 
-In _Smooth_ mode you can set all or some of the color stops closely to the adjacent ones to make a stepped (reminiscent of _Fixed_ mode) or partially stepped / partially smooth gradient.  
+In _Smooth_ mode you can set all or some of the color stops closely to the adjacent ones to make a stepped (reminiscent of _Fixed_ mode) or partially stepped / partially smooth gradient.
 
 ![Gradient Editor in Blend mode with partially tight color stops](/quibli-doc/assets/images/manual_images/gradient_mode_blend_tight_bands_location.png)  
-*Gradient Editor in Blend mode with partially tight color stops*  
+*Gradient Editor in Blend mode with partially tight color stops*
 
-**Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.  
+**Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.
 
 ![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
-*Gradient Editor is real-time*  
+*Gradient Editor is real-time*
 
 
 ### Main Shading Parameters (Other)
 
-**Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.  
+**Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.
 
 ![Stylized Lit Shader — Specular parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_specular_parameters.png)  
 *Stylized Lit Shader — Specular parameters*
 
-**Enable Rim** Clicking this tick box turns Rim on or off and opens a set of _Rim_ parameters.  
+**Enable Rim** Clicking this tick box turns Rim on or off and opens a set of _Rim_ parameters.
 In some cases it can be used as a contouring pseudo-outline effect, it can accentuate the edges of the models on the scene. _Rim_ depends on the main light’s rotation and the normals of the shaded model.
-_Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.    
+_Rim_ is an HDR effect. If your scene has a bloom effect enabled, _Rim_ can glow, which you can see in many anime movies.
 
 Please, note that _Rim_ is not a substitution for the proper outline effect, like the advanced [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}.
 {: .notice--warning}
 
-**Rim Color** Sets the color of the Rim. This parameter is in HDR.  
+**Rim Color** Sets the color of the Rim. This parameter is in HDR.
 
-**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim Size_ values (see the animation below).  
+**Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim Size_ values (see the animation below).
 
 ![Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_light_align_2.gif)  
-*Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*  
+*Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*
 
-**Rim Size** How much of the model the Rim covers.  
+**Rim Size** How much of the model the Rim covers.
 
-**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look. See the animation below.  
+**Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look. See the animation below.
 
 ![Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_edge_smoothness.gif)  
-*Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*  
+*Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*
 
-**Enable Height Gradient** Ticking this box turns _Height Gradient_ on and opens the parameters for its adjustment. _Height Gradient_ is a world-space ‘color-to-transparency fade-out’ gradient overlay placed over the material. _Height Gradient_ is an HDR effect.  
+**Enable Height Gradient** Ticking this box turns _Height Gradient_ on and opens the parameters for its adjustment. _Height Gradient_ is a world-space ‘color-to-transparency fade-out’ gradient overlay placed over the material. _Height Gradient_ is an HDR effect.
 
-**NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.  
+**NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.
 {: .notice--warning}
 
 ![Stylized Lit Shader — Height Gradient parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_height_gradient_parameters.png)  
 *Stylized Lit Shader — Height Gradient parameters*
 
-**TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.  
+**TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.
 {: .notice--info}
 
-**TIP.** If your scene has some kind of a bloom effect, raising the intensity of the HDR of _Specular_, _Rim_, _Height Gradient_ parameters create a glowing effect. It can contribute to the anime look greatly.  
+**TIP.** If your scene has some kind of a bloom effect, raising the intensity of the HDR of _Specular_, _Rim_, _Height Gradient_ parameters create a glowing effect. It can contribute to the anime look greatly.
 {: .notice--info}
 
-Once you enable _Height Gradient_, the following parameters will appear.  
+Once you enable _Height Gradient_, the following parameters will appear.
 
-**Gradient Color** This color chooser picks the source color of the gradient. The destination color is going to be the same one but transparent.  
+**Gradient Color** This color chooser picks the source color of the gradient. The destination color is going to be the same one but transparent.
 
 **Center X**  The source point on the horizontal axis, from which the _Height Gradient_ is spread.
 
-**Center Y**  The source point on the vertical axis, from which the _Height Gradient_ is spread.  
+**Center Y**  The source point on the vertical axis, from which the _Height Gradient_ is spread.
 
-**Size** How spread the _Height Gradient_ is.  
+**Size** How spread the _Height Gradient_ is.
 
-**Gradient Angle** Rotates the _Height Gradient_ around the **Center X** and **Center Y** values in world-space.  
+**Gradient Angle** Rotates the _Height Gradient_ around the **Center X** and **Center Y** values in world-space.
 
 **Enable Vertex Colors** If enabled, the final shading of the object is multiplied by the mesh’s vertex color values. It is a debug parameter, usually this is not used for changing the look.
 
@@ -113,19 +113,19 @@ Once you enable _Height Gradient_, the following parameters will appear.
 **Texture Maps**
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
-**Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.  
+**Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.
 
 ![Stylized Lit Shader — Albedo mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)  
 *Stylized Lit Shader — Albedo mapping parameters*
 
-_Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.  
-_Offset_ moves the texture over the UV map along _X_ and _Y_ axis.  
+_Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.
+_Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 
-**Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.  
+**Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 
 ![Stylized Lit Shader — Detail mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)  
-*Stylized Lit Shader — Detail mapping parameters*  
+*Stylized Lit Shader — Detail mapping parameters*
 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
@@ -135,8 +135,8 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
-**Bump Map** The input for normal maps.  
-_Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description. 
+**Bump Map** The input for normal maps.
+_Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 
 ![Stylized Lit Shader — Bump mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_bump_map_parameters.png)  
 *Stylized Lit Shader — Bump mapping parameters*
@@ -146,7 +146,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 #### Lighting Parameters
 
 **Lighting**
-_Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.  
+_Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.
 
 ![Stylized Lit Shader — Lighting parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_lighting_parameters.png)  
 *Stylized Lit Shader — Lighting parameters*
@@ -155,30 +155,30 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 #### Shadow Parameters
 
-**Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Please, note that there is no option to set the material in the way that would allow an object to receive the shadows from other objects but not from itself. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.  
+**Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Please, note that there is no option to set the material in the way that would allow an object to receive the shadows from other objects but not from itself. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.
 
-**TIP.** It's important to remember that apart from this _Receive Shadows_ parameter, there is a sister parameter _Cast Shadows_ in any object's _Mesh Renderer_, which has _Off_, _On_ and _Shadows Only_ options. The last option (_Shadows Only_) lets you bypass the rendering of the object itself while leaving its shadow visible. Combining these parameters you can achieve pretty wide spectrum of results, for example, when you would like an object to cast a shadow elsewhere except itself.  
+**TIP.** It's important to remember that apart from this _Receive Shadows_ parameter, there is a sister parameter _Cast Shadows_ in any object's _Mesh Renderer_, which has _Off_, _On_ and _Shadows Only_ options. The last option (_Shadows Only_) lets you bypass the rendering of the object itself while leaving its shadow visible. Combining these parameters you can achieve pretty wide spectrum of results, for example, when you would like an object to cast a shadow elsewhere except itself.
 {: .notice--info}
 
-**Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.  
+**Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.
 
-**Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.  
+**Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.
 
-**Shadow Color** This control picks up the color of the cast shadow.  
-If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity’s native shadows. In other words, Alpha influences the Shadow Color’s impact.  
-
-
-**Override Lightmaps**  
+**Shadow Color** This control picks up the color of the cast shadow.
+If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity’s native shadows. In other words, Alpha influences the Shadow Color’s impact.
 
 
-**Baked Light Lookup**  
+**Override Lightmaps**
 
 
-**Override Light Direction** This is a particularly useful parameter. By enabling it, the material skips the light rotation information from the main light (usually Directional Light) and lets you control the lighting/shading positions manually and independently per material. In other words, if you want to rotate the shadow, specular, rim etc separately and specifically for any given model, you can do it using this feature.  
+**Baked Light Lookup**
+
+
+**Override Light Direction** This is a particularly useful parameter. By enabling it, the material skips the light rotation information from the main light (usually Directional Light) and lets you control the lighting/shading positions manually and independently per material. In other words, if you want to rotate the shadow, specular, rim etc separately and specifically for any given model, you can do it using this feature.
 
 ### Rendering Parameters
-**Rendering Options**  
-_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
+**Rendering Options**
+_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.
 
 ![Stylized Lit Shader — Rendering parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)  
 *Stylized Lit Shader — Rendering parameters*
@@ -188,21 +188,21 @@ _Rendering options_ is a collapsible/expandable group of parameters that deal wi
 ![Stylized Lit Shader — Surface Type menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
 *Stylized Lit Shader — Surface Type menu*
 
-If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.  
+If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.
 
 ![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)  
 *Stylized Lit Shader — Blend Mode menu under Transparent Surface Type*
 
-**Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.  
+**Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.
 
 ![Stylized Lit Shader — Render Faces menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)  
 *Stylized Lit Shader — Render Faces menu*
 
-**Alpha Clipping** If this checkbox is in the ‘Enabled’ state, the _Threshold_ parameter appears.  
+**Alpha Clipping** If this checkbox is in the ‘Enabled’ state, the _Threshold_ parameter appears.
 
-**Threshold** This parameter cuts out a transparent portion of the material. Moving it sideways determines how soon the transparent portion is ‘transparent enough’ to be cut out.  
+**Threshold** This parameter cuts out a transparent portion of the material. Moving it sideways determines how soon the transparent portion is ‘transparent enough’ to be cut out.
 
-**Enable GPU Instancing** Enabling turns on the manipulation of the main parameters in the code.  
+**Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html){:target="_blank"}.
 
 **TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader){:target="_blank"}.
 {: .notice--info}
@@ -214,4 +214,3 @@ Below you can find answers to the typical possible questions when working with S
 #### Can't apply the texture
   * Please, make sure the model you are applying the material to is UV-unwrapped.
   * If you are using a custom texture, please, make sure the format is supported.
-
