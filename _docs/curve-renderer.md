@@ -6,11 +6,11 @@ excerpt: "Quibli Wire Renderer Script"
 
 ## Cloud2D Shader Brief Overview
 
-Electric wires seem to be the Thing in Japan. We made a tool that makes wires in your scene. You’ll need to have two points distanced somewhere over the scene, and the renderer will generate a wire (or multiple wires at once) for you. Between these two points you can have either one or as many wires as you’d like, with or without curvature and width seeded-random variation.  
- 
+Electric wires seem to be the Thing in Japan. We made a tool that makes wires in your scene. You’ll need to have two points distanced somewhere over the scene, and the renderer will generate a wire (or multiple wires at once) for you. Between these two points you can have either one or as many wires as you’d like, with or without curvature and width seeded-random variation.
+
 Of course, _Curve Renderer_ can be used not only for generating the wires. Its core function is to make curves render them as meshes.
 
-![Curve Renderer interface](/quibli-doc/assets/images/manual_images/curve_renderer_interface.png)  
+![Curve Renderer interface](/quibli-doc/assets/images/manual_images/curve_renderer_interface.png)
 *Curve Renderer interface*
 
 ## Examples of Curve Renderer Usage
@@ -19,68 +19,62 @@ A good place to look at _Curve Renderer_ in action is to load the included [City
 
 ## Beginning to Work with Curve Renderer
 
-  * Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty** Name it, for example, _'Curve Renderer Container'_;  
-  * Create two more empty Game Objects, name them, for example, _'Point A'_ and _'Point B'_;  
-  * _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;  
-![Curve Renderer and two end points hierarchy](/quibli-doc/assets/images/manual_images/curve_renderer_hierarchy_container.png)  
+  * Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty** Name it, for example, _'Curve Renderer Container'_;
+  * Create two more empty Game Objects, name them, for example, _'Point A'_ and _'Point B'_;
+  * _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;
+![Curve Renderer and two end points hierarchy](/quibli-doc/assets/images/manual_images/curve_renderer_hierarchy_container.png)
 *Curve Renderer and two end points hierarchy*
-  * Select the _'Curve Renderer Container'_ Game Object;  
-  * In the **Inspector panel**, click **Add Component**;  
+  * Select the _'Curve Renderer Container'_ Game Object;
+  * In the **Inspector panel**, click **Add Component**;
   * Search for ‘Curve Renderer’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Curve Renderer**. Click on it once found.
-  * It is ready to be tweaked.  
+  * It is ready to be tweaked.
 
-Loading the _Curve Renderer_ script also automatically creates the _Mesh Renderer_.  
+Loading the _Curve Renderer_ script also automatically creates the _Mesh Renderer_.
 
 ## Parameters of the Curve Renderer
 
-**End 1** The first of the two points needed to stretch the curve between. A simple empty Game Object is suitable for this — you need these to be able to conveniently place and adjust their location in the scene. Once you drag your _End_ points to the _End 1_ and _End 2_ slots in the _Inspector_ panel of the _Curve Renderer_, the script will take care of the positioning of your curve.  
-
-**End 2** The second of the two points needed to stretch the curve between.  
-
-**Points** Defines the resolution of the curve. The more points you set, the smoother the curve will be. And vice versa, the lower the value, the more low-res the curve will be (which is sometimes a 
+- **End 1** The first of the two points needed to stretch the curve between. A simple empty Game Object is suitable for this — you need these to be able to conveniently place and adjust their location in the scene. Once you drag your _End_ points to the _End 1_ and _End 2_ slots in the _Inspector_ panel of the _Curve Renderer_, the script will take care of the positioning of your curve.
+- **End 2** The second of the two points needed to stretch the curve between.
+- **Points** Defines the resolution of the curve. The more points you set, the smoother the curve will be. And vice versa, the lower the value, the more low-res the curve will be (which is sometimes a
 deliberate thing to do).
 
-![Increasing and decreasing the number of points increases and decreases the curve resolution](/quibli-doc/assets/images/manual_images/curve_renderer_points_fidelity.gif)  
+![Increasing and decreasing the number of points increases and decreases the curve resolution](/quibli-doc/assets/images/manual_images/curve_renderer_points_fidelity.gif)
 *Increasing and decreasing the number of points increases and decreases the curve resolution*
 
-**Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click → _Add Key_ or left double-click anywhere on the line adds a point, right-click → _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.  
+- **Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click → _Add Key_ or left double-click anywhere on the line adds a point, right-click → _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.
 
-![Curve editor, which opens up once you click on the 'Curve' parameter](/quibli-doc/assets/images/manual_images/curve_renderer_curve.png)  
+![Curve editor, which opens up once you click on the 'Curve' parameter](/quibli-doc/assets/images/manual_images/curve_renderer_curve.png)
 *Curve editor, which opens up once you click on the 'Curve' parameter*
 
-**Curve Multiplier** The number which the _Curve_ values are multiplied by. This can be helpful to make the curve larger or smaller without the need for opening and changing the parameters in the _Curve_ editor.  
+- **Curve Multiplier** The number which the _Curve_ values are multiplied by. This can be helpful to make the curve larger or smaller without the need for opening and changing the parameters in the _Curve_ editor.
+- **Thickness** Defines the radius of the cross section of the curve in its rendered state.
+- **Quantity** How many curves to generate from a single pair of _End_ points (_End 1_ and _End 2_). If you set _Quantity_ to more than '1', you will have multiple curves generated by one instance of the _Curve Renderer_ script.
+- **Curve Variability** Using this parameter you can introduce some randomness into the positioning of the generated part of the curve — while the _End_ points remain their positions, the rendered curvature can have some deviation from the set-up earlier _Curve_ parameter. For example, if you take a bunch of wires of a similar length, attach their ends to the poles and let them hang, some of them will be closer to the ground, some will be less stretched.
+- **Thickness Variability** Sets the range for the deviation from the _Thickness_ parameter. Can be useful if you set _Quantity_ to more than '1' and would like to add variation to the width of each of the curves.
 
-**Thickness** Defines the radius of the cross section of the curve in its rendered state.  
-
-**Quantity** How many curves to generate from a single pair of _End_ points (_End 1_ and _End 2_). If you set _Quantity_ to more than '1', you will have multiple curves generated by one instance of the _Curve Renderer_ script.  
-
-**Curve Variability** Using this parameter you can introduce some randomness into the positioning of the generated part of the curve — while the _End_ points remain their positions, the rendered curvature can have some deviation from the set-up earlier _Curve_ parameter. For example, if you take a bunch of wires of a similar length, attach their ends to the poles and let them hang, some of them will be closer to the ground, some will be less stretched.  
-
-**Thickness Variability** Sets the range for the deviation from the _Thickness_ parameter. Can be useful if you set _Quantity_ to more than '1' and would like to add variation to the width of each of the curves.  
-
-![Curve Renderer variability parameters bypassed and engaged](/quibli-doc/assets/images/manual_images/curve_renderer_variability_parameters.png)  
+![Curve Renderer variability parameters bypassed and engaged](/quibli-doc/assets/images/manual_images/curve_renderer_variability_parameters.png)
 *Curve Renderer variability parameters bypassed and engaged. On the upper example there is no variability. On the lower example you can see that both _Curve Variability_ and _Thickness Variability are used, as well as the _Random Seed_. The _Quantity_ is set to '3'*
 
-**Random Seed** Changes and remembers the seed of the randomness for the deviation parameters, such as _Curve Variability_ and _Thickness Variability_.  
+- **Random Seed** Changes and remembers the seed of the randomness for the deviation parameters, such as _Curve Variability_ and _Thickness Variability_.
 
-When you change the seed of the randomness (variation), it is fixed so that once you have a good seed, it won’t change upon the scene restart.  
+When you change the seed of the randomness (variation), it is fixed so that once you have a good seed, it won’t change upon the scene restart.
 {: .notice--info}
 
-**Interval** If you set _Quantity_ to more than '1', each of the additionally generated curves can be linearly spread away from each other along _X_, _Y_ and _Z_ axis. The base points from where the translation occurs are the positions of the _End 1_ and _End 2_ Game Objects.  
+- **Interval** If you set _Quantity_ to more than '1', each of the additionally generated curves can be linearly spread away from each other along _X_, _Y_ and _Z_ axis. The base points from where the translation occurs are the positions of the _End 1_ and _End 2_ Game Objects.
 
 ## Working with the _Curve Renderer_ After Loading
 
-When you have at least one container with pair of the points set up, please, launch the scene (press Play) to generate the curves between these points. Once the curve is generated, there is no need for launching the scene again to update the parameters. The launching is needed when you move the _End_ points.  
+When you have at least one container with pair of the points set up, please, launch the scene (press Play) to generate the curves between these points. Once the curve is generated, there is no need for launching the scene again to update the parameters. The launching is needed when you move the _End_ points.
 
 ### Applying Materials
 
 As it was mentioned earlier, once you load the _Curve Renderer_, a Unity _Mesh Renderer_ is created, too. In this _Mesh Renderer_ you can find a _Materials_ part, which lets you choose the material for the generated mesh. A simple lit shader will do.
 
-![Material slot in the Mesh Renderer](/quibli-doc/assets/images/manual_images/curve_renderer_mesh_renderer_material.png)  
+![Material slot in the Mesh Renderer](/quibli-doc/assets/images/manual_images/curve_renderer_mesh_renderer_material.png)
 *Material slot in the Mesh Renderer*
 
 ### Editing the Curve Renderer Afterwards
 
-As the exported mesh is not cut in stone, you can always get back to any of the Game Object containers carrying the _Curve Renderer_ and tweak the parameters.  
+As the exported mesh is not cut in stone, you can always get back to any of the Game Object containers carrying the _Curve Renderer_ and tweak the parameters.
 
 You can duplicate the Game Object Containers, move the _End_ points, press Play and you'll quickly have another independent curve. This way it is easy to populate the scene with, for instance, wires.
