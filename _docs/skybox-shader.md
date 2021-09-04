@@ -12,28 +12,26 @@ Instead of two colors that you pick in two color choosers to form a gradient in 
 *Quibli Skybox Shader Interface*
 
 ## Beginning to Work with the Skybox Shader
-* Create a material
-* In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Skybox**.
+1. Create a material
+1. In the **Inspector** panel, in the **Shader** drop down menu choose **Quibli** ▶︎ **Skybox**.
 
 Now you can apply this material as your skybox: either drag it onto any empty spot of your scene in Game View, or go to **Lighting** panel ▶︎ **Environment** tab ▶︎ select this material in the **Skybox material** field.
 
 
 ## Parameters of the Skybox Shader
-**Gradient** Clicking on the colored rectangle opens a _Gradient Editor_, where you can make a gradient to be displayed on the skybox. For more info about _Gradient Editor_, please, refer to the _Gradient_ parameter description of the [Stylized Lit Shader](../stylized-lit-shader) chapter in this manual.  
+- **Gradient** Clicking on the colored rectangle opens a _Gradient Editor_, where you can make a gradient to be displayed on the skybox. For more info about _Gradient Editor_, please, refer to the _Gradient_ parameter description of the [Stylized Lit Shader](../stylized-lit-shader) chapter in this manual.
 
 ![Gradient Editor in Skybox shader](/quibli-doc/assets/images/manual_images/quibli_skybox_gradient_editor.png)  
 *Gradient Editor in Skybox shader*
 
-The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)
 {: .notice--info}
 
-**Intensity** This parameter defines how strong (read: bright) the skybox is.  
-
-**Exponent** A bias towards either of the ends of the _Gradient_.  
+- **Intensity** This parameter defines how strong (read: bright) the skybox is.
+- **Exponent** A bias towards either of the ends of the _Gradient_.
 
 TIP. You can animate the _Exponent_ parameter for adding transition effects.
 {: .notice--info}
 
-**Direction X Angle** Rotation in world-space on the X axis.  
-
-**Direction Y Angle** Rotation in world-space on the Y axis.
+- **Direction X Angle** Rotation in world-space on the X axis.
+- **Direction Y Angle** Rotation in world-space on the Y axis.
