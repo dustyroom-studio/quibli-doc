@@ -11,6 +11,7 @@ Electric wires seem to be the Thing in Japan. We made a tool that makes wires in
 Of course, _Curve Renderer_ can be used not only for generating the wires. Its core function is to make curves render them as meshes.
 
 ![Curve Renderer interface](/quibli-doc/assets/images/manual_images/curve_renderer_interface.png)
+
 *Curve Renderer interface*
 
 ## Examples of Curve Renderer Usage
@@ -19,15 +20,15 @@ A good place to look at _Curve Renderer_ in action is to load the included [City
 
 ## Beginning to Work with Curve Renderer
 
-  * Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty** Name it, for example, _'Curve Renderer Container'_;
-  * Create two more empty Game Objects, name them, for example, _'Point A'_ and _'Point B'_;
-  * _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;
+  1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty** Name it, for example, _'Curve Renderer Container'_;
+  1. Create two more empty Game Objects, name them, for example, _'Point A'_ and _'Point B'_;
+  1. _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;
 ![Curve Renderer and two end points hierarchy](/quibli-doc/assets/images/manual_images/curve_renderer_hierarchy_container.png)
 *Curve Renderer and two end points hierarchy*
-  * Select the _'Curve Renderer Container'_ Game Object;
-  * In the **Inspector panel**, click **Add Component**;
-  * Search for ‘Curve Renderer’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Curve Renderer**. Click on it once found.
-  * It is ready to be tweaked.
+  1. Select the _'Curve Renderer Container'_ Game Object;
+  1. In the **Inspector panel**, click **Add Component**;
+  1. Search for ‘Curve Renderer’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Curve Renderer**. Click on it once found.
+  1. It is ready to be tweaked.
 
 Loading the _Curve Renderer_ script also automatically creates the _Mesh Renderer_.
 
