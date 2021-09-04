@@ -6,15 +6,17 @@ excerpt: "Quibli or Flat Kit"
 
 ## Quibli or Flat Kit?
 
-We describe [Flat Kit](http://u3d.as/1uVy){:target="_blank"} as a one-stop choice for getting bread-and-butter toon look and a great tool for experimentation. With Flat Kit you can take a scarily boring plain scene and turn it into a pro-looking polished material in the matter of half an hour. Quibli takes this idea to the next level.  
+We describe [Flat Kit](http://u3d.as/1uVy){:target="_blank"} as a one-stop choice for getting bread-and-butter toon look and a great tool for experimentation. With Flat Kit you can take a scarily boring plain scene and turn it into a pro-looking polished material in the matter of half an hour. Quibli takes this idea to the next level.
 
-The main point of **Flat Kit** is the fact that it is **a set of general creative easy-to-use tools**: a Stylized Surface family of shaders, the Water shader, the Outline and Fog Renderer Features (real-time post effects), additional scripts.  
+The main point of **Flat Kit** is the fact that it is **a set of general creative easy-to-use tools**: a Stylized Surface family of shaders, the Water shader, the Outline and Fog Renderer Features (real-time post effects), additional scripts.
 
-The main points of **Quibli** are **flexibility in coloring of the shaders [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader)** and **foliage creation using [Foliage Generator](../foliage-generator)**  designed for _that_ animation film look. Although there is an overlap in shading look and Flat Kit’s _Stylized Surface_ shaders have some of the similar parameters as Quibli’s _Stylized Lit_ shader, namely Rim, Glare and Height Gradient, these shaders are very different in workflow, possibilities / limitations and URP properties. Some of the results from Flat Kit’s Stylized Surface shader can be reproduced with Quibli and vice versa. But there is no such an easy-to-use Quibli Gradient Editor in Flat Kit, which makes it effortless and fun to create stunning visuals. In Flat Kit there are a ‘Step’ and a ‘Curve’ coloring modes in Stylized Surface shaders, but they require saving an internal texture. More info about ‘Step’ and ‘Curve’ modes can be found [here](https://flatkit.dustyroom.com/#311-the-main-parameters-of-the-shader){:target="_blank"}. Also, if you are going to shade the plants, the Quibli [Foliage shader](../foliage-shader) is the one to choose.  
+The main points of **Quibli** are **flexibility in coloring of the shaders [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader)** and **foliage creation using [Foliage Generator](../foliage-generator)** designed for _that_ animation film look. Although there is an overlap in shading look and Flat Kit’s _Stylized Surface_ shaders have some of the similar parameters as Quibli’s _Stylized Lit_ shader, namely Rim, Glare and Height Gradient, these shaders are very different in workflow, possibilities / limitations and URP properties.
 
-Both Quibli and Flat Kit are the type of tools where a small parameter change can have a drastic change of the look of the scene. This is a key sign of a good creation tool, when you perhaps are searching for the stylistic direction.  
+Some of the results from Flat Kit’s Stylized Surface shader can be reproduced with Quibli and vice versa. But there is no such an easy-to-use Quibli Gradient Editor in Flat Kit, which makes it effortless and fun to create stunning visuals. In Flat Kit there are a ‘Step’ and a ‘Curve’ coloring modes in Stylized Surface shaders, but they require saving an internal texture. More info about ‘Step’ and ‘Curve’ modes can be found [in Flat Kit documentation](https://flatkit.dustyroom.com/#311-the-main-parameters-of-the-shader){:target="_blank"}. Also, if you are going to shade the plants, the Quibli [Foliage shader](../foliage-shader) is the one to choose.
 
-If you use both Quibli together with Flat Kit, you have the best of both worlds. Create perfect eye-candy materials with Quibli, apply Outlines and Fog from Flat Kit.  
+Both Quibli and Flat Kit are the type of tools where a small parameter change can have a drastic change of the look of the scene. This is a key sign of a good creation tool, when you perhaps are searching for the stylistic direction.
+
+If you use both Quibli together with Flat Kit, you have the best of both worlds. Create perfect eye-candy materials with Quibli, apply Outlines and Fog from Flat Kit.
 
 
 ## Quibli and Flat Kit Comparison Chart
@@ -36,6 +38,3 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 | SRP batching | **Yes** | No |
 | Textures support (maps) in main shaders | Albedo, Normal, Detail | Albedo, Normal, Emission |
 | Pipelines support | URP | URP, Built-In RP LTS |
-
-
-
