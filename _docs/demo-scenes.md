@@ -34,13 +34,16 @@ This is a family of mostly saturated brightly colored scenes designed to show mo
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
 
 #### Mugs Scene  
-As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with [Stylized Lit shader](../stylized-lit-shader) materials. This scene is made to show a fraction of styles that can be achieved — at a glance. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations.  
+As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with Quibli's main shader — [Stylized Lit shader](../stylized-lit-shader) materials. This scene is made to showcase a fraction of styles that can be achieved with the _Stylized Lit_ shader. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations. We limited the colors to only one palette, making it easier to see the capabilities of the _Stylized Lit_ shader.  
+
+![Mugs Demo Scene](/quibli-doc/assets/images/manual_images/demo_mugs_scene.jpg)  
+*Mugs demo scene*
 
 #### Sample Scene with Quibli  
 This is a modified start-up Unity scene, which you can see when you open a new project in Unity. We kept the original colors and textures, but changed some of the materials from the standard Unity Lit shader to the [Stylized Lit shader](../stylized-lit-shader), created the plants using the [Foliage Generator](../foliage-generator), shaded with the [Foliage shader](../foliage-shader), shaded the sky with the [Skybox](../skybox-shader), as well as added the clouds using the [Cloud2D shader](../cloud2d-shader). The character is also a standard Unity textured model prefab _Ellen_ from Unity 3D Game Kit learning resource, found [here](https://learn.unity.com/project/3d-game-kit){:target="_blank"}.  
 
 #### Clouds Scene  
-A showcase of a few examples of the [Cloud2D shader](../cloud2d-shader). The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights. Press Play to start the animation of the clouds.  
+A showcase of a few examples of the [Cloud2D shader](../cloud2d-shader). The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights.  
 
 ![Clouds Demo Scene](/quibli-doc/assets/images/manual_images/demo_clouds_scene.png)  
 *Clouds Demo Scene*
