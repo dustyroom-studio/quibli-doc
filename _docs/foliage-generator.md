@@ -57,6 +57,7 @@ A group of parameters that control the creation of the plant mesh.
 - **Particle Scale Variance** Randomness of scale applied to each individual _Particle_.
 - **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
 - **Offset Along Normal** ‘Inflate’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
+- **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
 
 **TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
