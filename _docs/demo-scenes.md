@@ -48,5 +48,5 @@ This is a modified start-up Unity scene, which you can see when you open a new p
 #### Clouds Scene  
 A showcase of a few examples of the [Cloud2D shader](../cloud2d-shader). The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights.  
 
-![Clouds Demo Scene](/quibli-doc/assets/images/manual_images/demo_clouds_scene.png)  
+![Clouds Demo Scene](../assets/images/manual_images/demo_clouds_scene.png)  
 *Clouds Demo Scene*
