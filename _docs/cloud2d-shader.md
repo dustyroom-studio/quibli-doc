@@ -5,7 +5,10 @@ excerpt: "Quibli Cloud2D Shader"
 ---
 
 ## Cloud2D Shader Brief Overview
-_Cloud2D_ shader is an easy and flexible way to add the clouds to your scene. It works with 2D planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads, meaning, there is no real topology in the clouds, which is very beneficial to the performance.  
+_Cloud2D_ shader is an easy and flexible way to add the clouds to your scene. It works with 2D planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads. 
+
+This shader is a bit more on the experimental side. Although this is a 2D effect, it still uses a lot of processing, specifically it works a lot with transparency, which can be hungry for the resources. Please, count that when creating the clouds: it is better for the performance to have one big cloud than a dozen of small ones.
+{: .notice--warning}
 
 ![Quibli Cloud2D Shader Interface](/quibli-doc/assets/images/manual_images/cloud2d_shader_interface.jpg)  
 *Quibli Cloud2D Shader Interface*

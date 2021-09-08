@@ -33,6 +33,9 @@ This is a family of mostly saturated brightly colored scenes designed to show mo
 ![Kitchenware Demo Scene 4](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_4.jpg)  
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
 
+#### Plants Scene
+A scene showing a variety of plants made using the [Foliage Generator](../foliage-generator) and [Foliage Shader](../foliage-shader). On this scene, you can find an instance of the _Foliage Generator_ ready to be loaded with the also included presets that were used in this scene for the plants generation. The info about how to work with presets  in the _Foliage Generator_, is on [this chapter](../foliage-generator/#updating-the-existing-exported-models-later) of the _Foliage Generator_ page.
+
 #### Mugs Scene  
 As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with Quibli's main shader — [Stylized Lit shader](../stylized-lit-shader) materials. This scene is made to showcase a fraction of styles that can be achieved with the _Stylized Lit_ shader. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations. We limited the colors to only one palette, making it easier to see the capabilities of the _Stylized Lit_ shader.  
 
