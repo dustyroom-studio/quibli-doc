@@ -9,8 +9,7 @@ Creating anime-looking bushes and trees requires not only specific shading but a
 Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model.  
 So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere.  
 But creating a bush and its variations still would take much time. The _Foliage Generator_ prefab/component allows you to create a plant in seconds. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals. After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) shader containing a branch texture. We did all the foliage models in the demo scenes this way. Quibli includes already made models, textures and materials.
-Another beautiful thing is that _Foliage Generator_ can take external models and prepare their normals and apply the particles for you.
-
+Another beautiful thing is that _Foliage Generator_ can take external models and prepare their normals and apply the particles for you.  
 ![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)  
 *Quibli Foliage Generator Interface*
 
@@ -33,10 +32,10 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Co
 
 Another way to add the _Foliage Generator_ to the scene is to use it as a Component.
 
-  1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**
-  1. Select the created empty Game Object
-  1. In the **Inspector panel**, please, click **Add Component**
-  1. Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found.
+  1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**;
+  1. Select the created empty Game Object;
+  1. In the **Inspector panel**, please, click **Add Component**;
+  1. Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found;
   1. It is ready to be tweaked.
 
 ### Operating the Foliage Generator After Loading
@@ -63,10 +62,11 @@ A group of parameters that control the creation of the plant mesh.
 - **Particle Scale** Scaling applied to each individual _Particle_. This parameter controls how large the ‘branch’ of the plant model would be. The smaller the values the more detailed the resulting mesh is going to be. More so, if the _Carrier Scale_ values are high, smaller branches will contribute to the overall shape of the _Carrier Mesh_. If the _Particle Scale_ values are high, however, the resulting plant’s look would have less of the initial _Carrier Mesh_’s shape.
 - **Particle Scale Variance** Randomness of scale applied to each individual _Particle_.
 - **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
-- **Placement Type**
+- **Placement Type** Determines how to distribute the particles over the _Carrier Mesh_. Parameter has two options: **Random** and **Uniform**. _Random_ populates the particles chaotically, _Uniform_ distributes the particles evenly over the _Carrier Mesh_ surface.  
 
+The Particles **Placement Type** parameter in **Uniform** mode is useful when engaging **Billboard Rotation** → **Each Face** mode in the _Foliage_ shader [described here](../foliage-shader/#global-billboard-parameter).
+{: .notice--info}
 ![Foliage Generator Particles Placement Type menu](../assets/images/manual_images/foliage_generator_particles_placement_type_menu.png)
-
 - **Offset Along Normal** ‘Inflate’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
 - **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
