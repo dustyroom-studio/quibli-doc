@@ -7,12 +7,21 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.page__lead {
-  font-family: $global-font-family;
-  font-size: $type-size-1;
-}
+html {
+  .page__content {
+    font-family: $global-font-family;
+    font-size: $type-size-1;
 
-.nav__list {
-  font-family: $global-font-family;
-  font-size: $type-size-1;
+    @include breakpoint($medium) {
+      font-size: 10px;
+    }
+
+    @include breakpoint($large) {
+      font-size: 10px;
+    }
+
+    @include breakpoint($x-large) {
+      font-size: 10px;
+    }
+  }
 }
