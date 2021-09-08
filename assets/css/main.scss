@@ -23,36 +23,4 @@ html {
       font-size: $type-size-6;
     }
   }
-  
-  .toc__list {
-    font-size: $type-size-2;
-
-    @include breakpoint($medium) {
-      font-size: $type-size-2;
-    }
-
-    @include breakpoint($large) {
-      font-size: $type-size-2;
-    }
-
-    @include breakpoint($x-large) {
-      font-size: $type-size-2;
-    }
-  }
-  
-  .nav__list {
-    font-size: $type-size-8;
-
-    @include breakpoint($medium) {
-      font-size: $type-size-8;
-    }
-
-    @include breakpoint($large) {
-      font-size: $type-size-8;
-    }
-
-    @include breakpoint($x-large) {
-      font-size: $type-size-8;
-    }
-  }
 }
