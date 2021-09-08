@@ -10,18 +10,18 @@
 html {
   .page__content {
     font-family: $global-font-family;
-    font-size: $type-size-4;
+    font-size: $type-size-1;
 
     @include breakpoint($medium) {
-      font-size: $type-size-3;
-    }
-
-    @include breakpoint($large) {
       font-size: $type-size-2;
     }
 
+    @include breakpoint($large) {
+      font-size: $type-size-3;
+    }
+
     @include breakpoint($x-large) {
-      font-size: $type-size-1;
+      font-size: $type-size-4;
     }
   }
 }
