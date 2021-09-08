@@ -13,7 +13,7 @@ The _Stylized Color Grading_ includes the essence of the color correction proces
 
 ## Beginning to Work with Stylized Color Grading Post Effect
 
-**STEP 1.** The _Stylized Detail_ effect has to be added to the currently used _Forward Renderer_ as a _Renderer Feature_. The _Renderer Feature_ is called **Quibli Post Process** and includes **Stylized Color Grading** and **Stylized Detail** [described here](../stylized-detail-post-effect) in the **Before Post Processing** and **After Post Processing** sections. The steps are below.
+**STEP 1.** The _Stylized Detail_ effect has to be added to the currently used _Forward Renderer_ as a _Renderer Feature_. The _Renderer Feature_ is called **Quibli Post Process** and includes **Stylized Color Grading** and **Stylized Detail** [described here](../stylized-detail-post-effect) in the **Before Post Processing** and **After Post Processing** sections. The steps are below.  
 ![Stylized Post Effects Renderer Features loaded in Forward Renderer](/quibli-doc/assets/images/manual_images/quibli_post_processing_renderer_features.png)  
 *Stylized Post Effects Renderer Features loaded in Forward Renderer*
 {: .notice--info}

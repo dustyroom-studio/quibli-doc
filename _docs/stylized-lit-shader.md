@@ -130,7 +130,6 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 
 #### Lighting Parameters
 
-- **Lighting**
 _Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.
 ![Stylized Lit Shader — Lighting parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_lighting_parameters.png)  
 *Stylized Lit Shader — Lighting parameters*
@@ -154,12 +153,12 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 
 
 ### Outline Parameters
-_Outline_ is an collapsible/expandable group of parameters for working with the shader-based implementation of the outlines.
+_Outline_ is a collapsible/expandable group of parameters for working with the shader-based implementation of the outlines.
 
 ![Stylized Lit Shader — Outline parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_outline_parameters.png)  
 *Stylized Lit Shader — Outline parameters*
 
-Please, notice that this outline feature is simplified as compared to [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}. Here in _Stylized Kit_ you have an option to quickly add a contour based on normals of the mesh, though it has a few handy parameters for making it look nice in most of the basic cases.
+Please, notice that this outline feature is simplified as compared to [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a few handy parameters for making it look nice in most of the basic cases.
 {: .notice--warning}
 
 - **Width** As soon as the slider is at 0, the effect is bypassed and doesn't affect the performance. Once you start dragging the control to the right, the outline appears on the screen and is becoming thicker as long as you are moving the slider.
