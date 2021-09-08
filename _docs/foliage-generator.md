@@ -63,6 +63,10 @@ A group of parameters that control the creation of the plant mesh.
 - **Particle Scale** Scaling applied to each individual _Particle_. This parameter controls how large the ‘branch’ of the plant model would be. The smaller the values the more detailed the resulting mesh is going to be. More so, if the _Carrier Scale_ values are high, smaller branches will contribute to the overall shape of the _Carrier Mesh_. If the _Particle Scale_ values are high, however, the resulting plant’s look would have less of the initial _Carrier Mesh_’s shape.
 - **Particle Scale Variance** Randomness of scale applied to each individual _Particle_.
 - **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
+- **Placement Type**
+
+![Foliage Generator Particles Placement Type menu](../assets/images/manual_images/foliage_generator_particles_placement_type_menu.png)
+
 - **Offset Along Normal** ‘Inflate’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
 - **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.

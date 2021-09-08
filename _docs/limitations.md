@@ -1,7 +1,7 @@
 ---
-title: "Known Limitations when Working with Quibli"
+title: "Known Limitations of Quibli"
 permalink: /limitations/
-excerpt: "Known Limitations when Working with Quibli"
+excerpt: "Known Limitations of Quibli"
 toc: false
 ---
 
