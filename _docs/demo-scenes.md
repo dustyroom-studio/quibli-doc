@@ -24,7 +24,7 @@ This is a family of mostly saturated brightly colored scenes designed to show mo
 ![Kitchenware Demo Scene 1](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_1.jpg)  
 *Kitchenware Demo Scene 1 — smooth-mode Color Gradient ramp with vibrant colors*
 
-![Kitchenware Demo Scene 2](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_2.jpg)  
+![Kitchenware Demo Scene 2](../assets/images/manual_images/demo_kitchenware_scene_2.jpg)  
 *Kitchenware Demo Scene 2 — smooth-mode Color Gradient ramp with color stops set tightly and loosely, with vibrant colors. The Skybox is made with the [Skybox shader](../skybox-shader), using a single color ramp, also with tight and loose color stops*
 
 ![Kitchenware Demo Scene 3](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_3.jpg)  
