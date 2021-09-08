@@ -48,6 +48,7 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 *Gradient Editor in Blend mode with partially tight color stops*
 
 - **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.
+
 ![Gradient Editor is real-time](../assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
 *Gradient Editor is real-time*
 
