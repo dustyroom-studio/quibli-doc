@@ -9,15 +9,13 @@
 
 
 html {
-  @include breakpoint($medium) {
+  .page__lead {
+    font-family: $global-font-family;
     font-size: $type-size-1;
   }
-
-  @include breakpoint($large) {
-    font-size: $type-size-6;
-  }
-
-  @include breakpoint($x-large) {
-    font-size: $type-size-5;
+  
+  .nav__list {
+    font-family: $global-font-family;
+    font-size: $type-size-1;
   }
 }
