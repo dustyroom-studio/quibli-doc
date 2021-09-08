@@ -64,15 +64,18 @@ A group of parameters that control the creation of the plant mesh.
 - **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
 - **Placement Type** Determines how to distribute the particles over the _Carrier Mesh_. Parameter has two options: **Random** and **Uniform**. _Random_ populates the particles chaotically, _Uniform_ distributes the particles evenly over the _Carrier Mesh_'s surface.  
 ![Foliage Generator Particles Placement Type menu](../assets/images/manual_images/foliage_generator_particles_placement_type_menu.png)
-The Particles **Placement Type** parameter in **Uniform** mode is useful when engaging **Billboard Rotation** → **Each Face** mode in the _Foliage_ shader [described here](../foliage-shader/#global-billboard-parameter).
+
+The **Placement Type** parameter in **Uniform** mode is useful when engaging **Billboard Rotation** → **Each Face** mode in the _Foliage_ shader, [described here](../foliage-shader/#global-billboard-parameter).
 {: .notice--info}
 - **Offset Along Normal** ‘Inflates’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
 - **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.  
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
+
 **TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
 {: .notice--info}
 - **Particle Rotation Range** How much _Particle_ rotation can deviate from _Carrier Mesh_ normals.
 - **Particle Rotation Bias** Nudge _Particles_ to face the positive X axis.  
+
 **TIP.** _Particle Rotation Bias_ is useful for billboard foliage. ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will always create an impression of a more complex one.
 {: .notice--info}
 - **Bias Toward Rotation**
