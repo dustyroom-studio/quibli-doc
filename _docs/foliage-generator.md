@@ -14,6 +14,9 @@ Another beautiful thing is that _Foliage Generator_ can take external models and
 ![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)  
 *Quibli Foliage Generator Interface*
 
+Please, note that _Foliage Generator_ doesn't produce the trunks of the trees, neither does it create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
+{: .notice--warning}
+
 ## Beginning to work with Foliage Generator
 
 The _Foliage Generator_ can be loaded into a scene in two ways.

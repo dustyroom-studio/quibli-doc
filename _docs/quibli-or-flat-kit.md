@@ -27,6 +27,7 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 | Shaders included | [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader), [Light Beam](../light-beam-shader) | [Stylized Surface](https://flatkit.dustyroom.com/#31-stylized-surface-shader){:target="_blank"}, [Stylized Surface with Outline](https://flatkit.dustyroom.com/#33-stylized-surface-with-outline-shader){:target="_blank"}, [Terrain](https://flatkit.dustyroom.com/#36-terrain-shader){:target="_blank"}, [Water](https://flatkit.dustyroom.com/#35-water-shader){:target="_blank"}, [LightPlane](https://flatkit.dustyroom.com/#37-lightplane-shader){:target="_blank"}, [Gradient Skybox](https://flatkit.dustyroom.com/#34-gradient-skybox-shader){:target="_blank"} |
 | Post Effects included | [Stylized Detail](../stylized-detail-post-effect), [Stylized Color Grading](../stylized-color-grading-post-effect) | [Outline Image Effect](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}, [Fog Image Effect](https://flatkit.dustyroom.com/#41-fog-image-effect){:target="_blank"} |
 | Anime foliage model creation in Unity Editor | **Yes**, with [Foliage Generator](../foliage-generator) | No |
+| Anime cloud creation in Unity Editor | **Yes**, **3D clouds**: with [Foliage Generator](../foliage-generator) + [Cloud3D shader](../cloud3d-shader); **2D clouds**: with [Cloud2D shader](../cloud2d-shader) | No |
 | Scripts | [Foliage Generator](../foliage-generator), [Curve Renderer](../curve-renderer) | [UV Scroller](https://flatkit.dustyroom.com/#51-uv-scroller){:target="_blank"}, Orbit Motion, [Linear Motion](https://flatkit.dustyroom.com/#52-linear-motion){:target="_blank"}, [Buoyancy](https://flatkit.dustyroom.com/#53-buoyancy){:target="_blank"} |
 | Mobile friendliness | **Yes** | **Yes** |
 | Basic outlines (shader-based) | **Yes**, [Stylized Lit shader](../stylized-lit-shader) | **Yes**, [Stylized Surface with Outline shader](https://flatkit.dustyroom.com/#33-stylized-surface-with-outline-shader){:target="_blank"} |
@@ -34,7 +35,7 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 | Real-time Gradient editor | **Yes**, in the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader)| No (‘Steps’ and ‘Curve’ modes require saving color info into offline internal textures) |
 | Independent per-step color gradient | **Yes** | No |
 | Number of possible independent shade colors per material | **8** (using a single Gradient Editor) | **3** (_Base color_ and 2 _additional cel layers_) parameters |
-| Wind | **Yes** (in [Foliage shader](../foliage-shader) | No |
+| Wind | **Yes**, in [Grass shader](../grass-shader) and [Foliage shader](../foliage-shader) | No |
 | Skybox shader | **Yes**, with **up to 8 color multi-stop gradient** color editor | **Yes**, with **2 colors** interpolation |
 | SRP batching | **Yes** | No |
 | Textures support (maps) in main shaders | Albedo, Normal, Detail | Albedo, Normal, Emission |

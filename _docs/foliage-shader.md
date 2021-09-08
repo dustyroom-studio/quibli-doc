@@ -29,7 +29,7 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 
 ### Texturing Parameters
 
-- **Shape Texture** Here you can choose the texture by which the alpha is cut out using the _Clip Threshold_ parameter. You can view this texture as the overall shape of the plant's branch (a particle — the particles are described in the ['Parameters' section of the Foliage Generator](../foliage-generator#parameters-of-the-foliage-generator) chapter in this manual). Only red channel of the texture is used, which can be set in the texture's import settings (select the texture and set it in the Inspector panel).
+- **Shape Texture** Here you can choose the texture by which the alpha is cut out using the _Alpha Clip_ parameter. You can view this texture as the overall shape of the plant's branch (a particle — the particles are described in the ['Parameters' section of the Foliage Generator](../foliage-generator#parameters-of-the-foliage-generator) chapter in this manual). Only red channel of the texture is used, which can be set in the texture's import settings (select the texture and set it in the Inspector panel).
 - **Alpha Clip**  Sets how much to cut out from the texture. The slider is a color darkness threshold at which the texture is being clipped. The texture should be black and white — where the black-colored part is being cut out by the shader. It is better if the black part is around the leaf / branch part and has some gradual spots inside. It is better to see the examples in the included _Common Textures_ folder.
 - **Fill Texture** This is a detail texture to be used over the branch / particle defined by _Shape Texture_.
 - **Fill Impact** Sets how visible the _Fill Texture_ is. Higher values make the texture more visible.
@@ -45,7 +45,7 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 *A chart about fresnel*
 
 - **Fresnel Color** Defines the color of the fresnel effect.
-- **Fresnel Sharpness** Controls width of the fresnel effect.
+- **Shadow Strength** Controls the intensity of the self-shadowing effect. In the Shader Graph, there is no easy possibility to reduce the self-shadowing phenomenon. This parameter is our attempt at overcoming this limitation. 
 
 ### Wind Parameters
 
