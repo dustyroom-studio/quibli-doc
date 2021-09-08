@@ -8,7 +8,7 @@ excerpt: "Quibli Grass Shader"
 
 The _Grass_ shader is a specialized shader to be used with the grass foliage.
 
-![Quibli Grass Shader Interface](/quibli-doc/assets/images/manual_images/quibli_grass_shader_interface.png)  
+![Quibli Grass Shader Interface](../assets/images/manual_images/quibli_grass_shader_interface.png)  
 *Quibli Grass Shader Interface*
 
 

@@ -44,7 +44,7 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 - **Height gradient strength** Controls vertical shading of the cloud using the _Main Gradient_.
 - **Random Offset** Changing the values on the axis scrolls the internal displacement map of a cloud against the mesh itself along that axis. Dragging the cloud itself and tweaking _Random Offset_ have the same effect, because translating the mesh does not preserve the noise stamp (seed) it is being mapped to. The cloud is always being projected onto a static world-space internal noise map to form the fluffiness of it.  
 _Random Offset_ can be used as a parameter to change the seed of random. Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud. Please, look at the next parameter, _Offset Speed_, to apply a motion.  
-![Animating the Random Offset parameter to create a cloud movement](/quibli-doc/assets/images/manual_images/cloud2d_shader_animated_clouds_moving.gif)  
+![Animating the Random Offset parameter to create a cloud movement](../assets/images/manual_images/cloud2d_shader_animated_clouds_moving.gif)  
 *Animating the Random Offset parameter to create a cloud movement*
 - **Offset Speed** Sets the speed of the pseudo-motion of the clouds. It is a pseudo-motion, because the planes carrying the _Cloud2D_ shader remain in place but the mapping onto the internal noise map is being offset, thus you see an illusion of the clouds moving. Please, see _Random Offset_ parameter description for additional explanation.  
 _X_ value is for horizontal motion, _Y_ value is for vertical motion.  

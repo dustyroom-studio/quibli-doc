@@ -9,13 +9,13 @@ After a profound research about the stylistic directions and unique characterist
 
 The _Stylized Detail_ is a post effect designed to add another layer of ‘that look’ you can see in traditional Japanese animation films (of course, it can and should be used in any creative project). Under the hood it does some complex processing to make the scene appear sharper, nuanced at the large scale and at the same time with simplified smaller details.
 
-![Stylized Detail Post Effect interface](/quibli-doc/assets/images/manual_images/quibli_stylized_detail_post_effect_interface.png)  
+![Stylized Detail Post Effect interface](../assets/images/manual_images/quibli_stylized_detail_post_effect_interface.png)  
 *Stylized Detail Post Effect interface*
 
 ## Beginning to Work with Stylized Detail Post Effect
 
 **STEP 1.** The _Stylized Detail_ effect has to be added to the currently used _Forward Renderer_ as a _Renderer Feature_. The _Renderer Feature_ is called **Quibli Post Process** and includes **Stylized Color Grading** [described here](../stylized-color-grading-post-effect) and **Stylized Detail** in the **Before Post Processing** and **After Post Processing** sections. The steps are below.
-![Stylized Post Effects Renderer Features loaded in Forward Renderer](/quibli-doc/assets/images/manual_images/quibli_post_processing_renderer_features.png)  
+![Stylized Post Effects Renderer Features loaded in Forward Renderer](../assets/images/manual_images/quibli_post_processing_renderer_features.png)  
 *Stylized Post Effects Renderer Features loaded in Forward Renderer*
 {: .notice--info}
 

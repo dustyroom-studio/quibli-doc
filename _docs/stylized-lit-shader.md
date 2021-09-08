@@ -7,7 +7,7 @@ excerpt: "Quibli Stylized Lit Shader"
 ## Stylized Lit Shader Brief Overview
 _Stylized Lit_ shader is a main go-to lit shader to be used in the majority of situations. It is a stylized shader, whose output ranges from a strict one-color flat surface to a cartoon style look, to a vivid acid-color experimental mess, with lots of the sweet spots in between.
 
-![Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_interface_basic.png)  
+![Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded](../assets/images/manual_images/quibli_stylized_lit_shader_interface_basic.png)  
 *Quibli Stylized Lit Shader. Basic view. Once the parameters are enabled, the interface is being expanded*
 
 ## Beginning to work with the Stylized Lit Shader
@@ -26,36 +26,36 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.
 
-![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_editor_adjusting.gif)  
+![Gradient Editor is real-time](../assets/images/manual_images/gradient_editor_adjusting.gif)  
 *Gradient Editor is real-time*
 
 **TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.
-![Using presets in the Gradient Editor](/quibli-doc/assets/images/manual_images/gradient_editor_ramps_presets.png)
+![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)
 *Using presets in the Gradient Editor*
 {: .notice--info}
 
 There are ‘smooth’ and ‘fixed’ color gradations in the Gradient editor. You can have a sharp transition from one color to another by selecting a _Fixed_ mode (using 1 color stop). If you select _Smooth_ mode, the transition from color band to the adjacent one will be gradual. See the pictures below.
 
-![Gradient Editor in Fixed mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_fixed.png)  
+![Gradient Editor in Fixed mode — the color bands have distinct boundaries](../assets/images/manual_images/gradient_mode_fixed.png)  
 *Gradient Editor in Fixed mode — the color bands have distinct boundaries*
 
-![Gradient Editor in Blend mode — the color bands have distinct boundaries](/quibli-doc/assets/images/manual_images/gradient_mode_blend.png)  
+![Gradient Editor in Blend mode — the color bands have distinct boundaries](../assets/images/manual_images/gradient_mode_blend.png)  
 *Gradient Editor in Blend mode — the color bands have gradual boundaries*
 
 In _Smooth_ mode you can set all or some of the color stops closely to the adjacent ones to make a stepped (reminiscent of _Fixed_ mode) or partially stepped / partially smooth gradient.
 
-![Gradient Editor in Blend mode with partially tight color stops](/quibli-doc/assets/images/manual_images/gradient_mode_blend_tight_bands_location.png)  
+![Gradient Editor in Blend mode with partially tight color stops](../assets/images/manual_images/gradient_mode_blend_tight_bands_location.png)  
 *Gradient Editor in Blend mode with partially tight color stops*
 
 - **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.
-![Gradient Editor is real-time](/quibli-doc/assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
+![Gradient Editor is real-time](../assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
 *Gradient Editor is real-time*
 
 
 ### Main Shading Parameters (Other)
 
 - **Enable Specular** _Specular_ adds a glare to the object. It can be used for adding a small sharp ‘metallic’ specular, a matte diffused one or anything in between. Smaller values make the glare sharper, larger values smoothen the glare. Pressing _Enable Specular_ ‘on’ enables the set of parameters to control the _Specular_. _Specular_ is an HDR effect.
-![Stylized Lit Shader — Specular parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_specular_parameters.png)  
+![Stylized Lit Shader — Specular parameters](../assets/images/manual_images/quibli_stylized_lit_shader_specular_parameters.png)  
 *Stylized Lit Shader — Specular parameters*
 
 - **Enable Rim** Clicking this tick box turns Rim on or off and opens a set of _Rim_ parameters.
@@ -67,12 +67,12 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 
 - **Rim Color** Sets the color of the Rim. This parameter is in HDR.
 - **Light Align** Moves the Rim on the model toward the main light (usually it is a Directional Light). This can be helpful to add stylization on larger _Rim Size_ values (see the animation below).
-![Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_light_align_2.gif)  
+![Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](../assets/images/manual_images/rim_light_align_2.gif)  
 *Adjusting 'Rim Align' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*
 
 - **Rim Size** How much of the model the Rim covers.
 - **Rim Edge Smoothness** How smoothly the Rim fades out into the base shading. Smaller values can be used as a sharp contouring effect. Larger values combined with large **Rim Size** values can result in a soft inner glow, which can add some nonlinearities to the material look. See the animation below.
-![Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](/quibli-doc/assets/images/manual_images/rim_edge_smoothness.gif)  
+![Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters](../assets/images/manual_images/rim_edge_smoothness.gif)  
 *Adjusting 'Rim Edge Smoothness' parameter. Two spheres have different 'Rim Size' values and otherwise identical shading parameters*
 
 - **Enable Height Gradient** Ticking this box turns _Height Gradient_ on and opens the parameters for its adjustment. _Height Gradient_ is a world-space ‘color-to-transparency fade-out’ gradient overlay placed over the material. _Height Gradient_ is an HDR effect.
@@ -80,7 +80,7 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 **NOTE.** _Height Gradient is a world-space parameter, which means that if two objects share the same material with the _Height Gradient_ ‘on’, they share common coordinates of the _Height Gradient_, unlike, for example, the main albedo _Gradient_, whose coordinates are local per object. That’s why if you put these two objects some distance apart, they can look different. To make these objects look similar you need to create a separate material for each one.
 {: .notice--warning}
 
-![Stylized Lit Shader — Height Gradient parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_height_gradient_parameters.png)  
+![Stylized Lit Shader — Height Gradient parameters](../assets/images/manual_images/quibli_stylized_lit_shader_height_gradient_parameters.png)  
 *Stylized Lit Shader — Height Gradient parameters*
 
 **TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.
@@ -102,7 +102,7 @@ Once you enable _Height Gradient_, the following parameters will appear.
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
 - **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.
-![Stylized Lit Shader — Albedo mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)  
+![Stylized Lit Shader — Albedo mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)  
 *Stylized Lit Shader — Albedo mapping parameters*
 
 _Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.
@@ -110,20 +110,20 @@ _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 
 - **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
-![Stylized Lit Shader — Detail mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)  
+![Stylized Lit Shader — Detail mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)  
 *Stylized Lit Shader — Detail mapping parameters*
 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
 
 **TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
-![Using Detail Color parameter as an overall material tint](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
+![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
 - **Bump Map** The input for normal maps.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
-![Stylized Lit Shader — Bump mapping parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_bump_map_parameters.png)  
+![Stylized Lit Shader — Bump mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_bump_map_parameters.png)  
 *Stylized Lit Shader — Bump mapping parameters*
 
 ### Lighting and Shadows Parameters
@@ -131,7 +131,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 #### Lighting Parameters
 
 _Lighting_ is a collapsible/expandable group of parameters that manages the behavior of some of the important light and shadow controls.
-![Stylized Lit Shader — Lighting parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_lighting_parameters.png)  
+![Stylized Lit Shader — Lighting parameters](../assets/images/manual_images/quibli_stylized_lit_shader_lighting_parameters.png)  
 *Stylized Lit Shader — Lighting parameters*
 
 - **Light Color Impact** This parameter defines how much of an influence the main light’s color has onto the material. Having this parameter allows you to add a night/day/morning/sunset feel to the scene. By automating the light’s color it is possible to achieve the day cycle effect.
@@ -155,7 +155,7 @@ If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity
 ### Outline Parameters
 _Outline_ is a collapsible/expandable group of parameters for working with the shader-based implementation of the outlines.
 
-![Stylized Lit Shader — Outline parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_outline_parameters.png)  
+![Stylized Lit Shader — Outline parameters](../assets/images/manual_images/quibli_stylized_lit_shader_outline_parameters.png)  
 *Stylized Lit Shader — Outline parameters*
 
 Please, notice that this outline feature is simplified as compared to [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a few handy parameters for making it look nice in most of the basic cases.
@@ -168,21 +168,17 @@ Please, notice that this outline feature is simplified as compared to [Outline I
 
 ### Rendering Parameters
 - **Rendering Options**
-_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.
-![Stylized Lit Shader — Rendering parameters](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)  
+_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
+![Stylized Lit Shader — Rendering parameters](../assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)  
 *Stylized Lit Shader — Rendering parameters*
 
 - **Surface Type** The two options are _Opaque_ and _Transparent_.
-![Stylized Lit Shader — Surface Type menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
-*Stylized Lit Shader — Surface Type menu*
-
+![Stylized Lit Shader — Surface Type menu](../assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
 If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.
-![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)  
-*Stylized Lit Shader — Blend Mode menu under Transparent Surface Type*
+![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](../assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)  
 
-- **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.
-![Stylized Lit Shader — Render Faces menu](/quibli-doc/assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)  
-*Stylized Lit Shader — Render Faces menu*
+- **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.  
+![Stylized Lit Shader — Render Faces menu](../assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)  
 
 - **Alpha Clipping** If this checkbox is in the ‘Enabled’ state, the _Threshold_ parameter appears.
 - **Threshold** This parameter cuts out a transparent portion of the material. Moving it sideways determines how soon the transparent portion is ‘transparent enough’ to be cut out.
