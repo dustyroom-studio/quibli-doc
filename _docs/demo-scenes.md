@@ -21,16 +21,16 @@ Another detailed scene showing all the shaders and additional tools in action.
 #### Kitchenware Scene
 This is a family of mostly saturated brightly colored scenes designed to show more unusual use of the [Stylized Lit shader](../stylized-lit-shader). Aside from the anime shading, it is possible to conveniently generate something unrelated, be it the basic coloring or something wild and unique. There is nothing unconventional going on, it is just the choice of the colors and the parameters that made up these scenes, particularly the Gradient editor settings on _Stylized Lit_ and [Skybox](../skybox-shader) shaders.  
 
-![Kitchenware Demo Scene 1](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_1.jpg)  
+![Kitchenware Demo Scene 1](../assets/images/manual_images/demo_kitchenware_scene_1.jpg)  
 *Kitchenware Demo Scene 1 — smooth-mode Color Gradient ramp with vibrant colors*
 
 ![Kitchenware Demo Scene 2](../assets/images/manual_images/demo_kitchenware_scene_2.jpg)  
 *Kitchenware Demo Scene 2 — smooth-mode Color Gradient ramp with color stops set tightly and loosely, with vibrant colors. The Skybox is made with the [Skybox shader](../skybox-shader), using a single color ramp, also with tight and loose color stops*
 
-![Kitchenware Demo Scene 3](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_3.jpg)  
+![Kitchenware Demo Scene 3](../assets/images/manual_images/demo_kitchenware_scene_3.jpg)  
 *Kitchenware Demo Scene 3 — fixed-mode Color Gradient ramp with vibrant colors*
 
-![Kitchenware Demo Scene 4](/quibli-doc/assets/images/manual_images/demo_kitchenware_scene_4.jpg)  
+![Kitchenware Demo Scene 4](../assets/images/manual_images/demo_kitchenware_scene_4.jpg)  
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
 
 #### Plants Scene
@@ -39,7 +39,7 @@ A scene showing a variety of plants made using the [Foliage Generator](../foliag
 #### Mugs Scene  
 As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with Quibli's main shader — [Stylized Lit shader](../stylized-lit-shader) materials. This scene is made to showcase a fraction of styles that can be achieved with the _Stylized Lit_ shader. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations. We limited the colors to only one palette, making it easier to see the capabilities of the _Stylized Lit_ shader.  
 
-![Mugs Demo Scene](/quibli-doc/assets/images/manual_images/demo_mugs_scene.jpg)  
+![Mugs Demo Scene](../assets/images/manual_images/demo_mugs_scene.jpg)  
 *Mugs demo scene*
 
 #### Sample Scene with Quibli  
