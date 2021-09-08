@@ -9,7 +9,6 @@
 
 html {
   .page__content {
-    font-family: $global-font-family;
     font-size: $type-size-3;
 
     @include breakpoint($medium) {
@@ -22,6 +21,22 @@ html {
 
     @include breakpoint($x-large) {
       font-size: $type-size-6;
+    }
+  }
+  
+  .nav__list {
+    font-size: $type-size-4;
+
+    @include breakpoint($medium) {
+      font-size: $type-size-5;
+    }
+
+    @include breakpoint($large) {
+      font-size: $type-size-6;
+    }
+
+    @include breakpoint($x-large) {
+      font-size: $type-size-7;
     }
   }
 }
