@@ -9,7 +9,7 @@ In the scenes we tried to showcase a variety of use cases for the Quibli shaders
 The scenes can be found in:  
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demo Scenes** folder_
 
-![Path to the Demo Scenes included in Quibli](/quibli-doc/assets/images/manual_images/quibli_demo_scenes_path.png)  
+![Path to the Demo Scenes included in Quibli](../assets/images/manual_images/quibli_demo_scenes_path.png)  
 *Path to the Demo Scenes included in Quibli*
 
 #### Nature Scene  
