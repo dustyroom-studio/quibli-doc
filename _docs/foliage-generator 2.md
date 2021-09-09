@@ -5,13 +5,11 @@ excerpt: "Quibli Foliage Generator Script"
 ---
 
 ## Foliage Generator Brief Overview
-Creating anime-looking bushes and trees requires not only specific shading but also properly created models in regards to display of the shading. This also applies to creating 3D clouds.
+Creating anime-looking bushes and trees requires not only specific shading but also properly created models in regards to display of the shading. Simply put, the desired effect would have both large-scale and small-scale details.  
 Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model.  
 So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere.  
-But creating a bush and its variations still would take much time. Also, changing the number of faces sound like a hassle.  
-_Foliage Generator_ prefab/component allows you to create a plant or a cloud in a few minutes, and then make changes instantly. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals.  
-After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) or [Cloud3D](../cloud3d-shader) shader containing a particle texture. We did all the foliage and 3D clouds models in the demo scenes this way. Quibli includes already made models, textures and materials.  
-Another beautiful thing is that _Foliage Generator_ can take external models (there are nuances — described [here](#using-your-own-models)) and prepare their normals and apply the particles for you.  
+But creating a bush and its variations still would take much time. The _Foliage Generator_ prefab/component allows you to create a plant in seconds. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals. After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) shader containing a branch texture. We did all the foliage models in the demo scenes this way. Quibli includes already made models, textures and materials.
+Another beautiful thing is that _Foliage Generator_ can take external models and prepare their normals and apply the particles for you.  
 ![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)  
 *Quibli Foliage Generator Interface*
 
@@ -125,10 +123,6 @@ In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss
   * Create a material like on the screenshot in the _Foliage_ shader chapter — [Brief Overview](../foliage-shader/#foliage-shader-brief-overview) (or use one from the _Sample Scene with Quibli_ Demo scene folder.
 
 **Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](../foliage-shader/#global-billboard-parameter). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because this way the _Foliage_ shader renders the faces only once. Should you set it to '90' instead, the shader will render front _and_ back faces. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
-
-## Using Your Own Models
-
-_Foliage Generator_ can process external models that are used as _Carrier Meshes_ (more about what is a _Carrier Mesh_ is [here](#generation-parameters)). Foliage Generator processes the normals and UVs of those meshes according to the parameters you set in its interface, so that the applied _particles_ would look suitable.
 
 ## Next Steps After Using Foliage Generator
 

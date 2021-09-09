@@ -19,9 +19,9 @@ After the importing, to finalize the installation it is advised to configure Qui
 
 ### Automatic Finalizing
 
-Quibli comes with the **Readme** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
+Quibli comes with the **Readme** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can also be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
 
-![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png) 
+![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png)  
 *Readme tool interface*
 
 If you would like to use your own **Rendering Pipeline Asset File** instead of the one that comes with Quibli, you'll need to do it manually. The procedure is described in [Manual Finalizing](#manual-finalizing) 
@@ -29,7 +29,7 @@ If you would like to use your own **Rendering Pipeline Asset File** instead of t
 
   * Please, locate and select the **[Readme] tool** in  
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder_;  
-  * In the **Inspector** panel press the **Use Quibli's Example URP Asset** button. This will set the example _Quibli Rendering Pipeline Asset_ into **Graphics** and **Quality** windows found in **Project Settings**.  
+  * In the **Inspector** panel press the **Use Quibli's Example URP Asset** button. This will set the example _Quibli Rendering Pipeline Asset_ into **Graphics** and **Quality** windows found in **Project Settings**. That's it, everything is ready now. 
 
 ### Manual Finalizing
 

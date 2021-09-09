@@ -13,7 +13,7 @@ layout: single
 
 Quibli is a collection of shaders, effects and scripts whose main task is to help easily create the look of the Japanese animation films. Quibli’s capabilities extend way beyond this, however, and we have included the demo scenes with all the used resources showing that.
 
-One of the highlight features of Quibli is the [Gradient Editor](stylized-lit-shader/#main-shading-parameters) found in the shaders. In a nutshell, you can have up to 8 independent color stops. The combinations of these color stops define the diversity of the material results. Within a single Gradient Editor you can have a smooth gradual blend from a color to another one, then a steep change to another color and so on. The [Kitchenware demo scenes](demo-scenes/#kitchenware-scene) display the variety of this. You can have a full rainbow (or any other entire palette). And you can vary the blending of the colors within a single gradient (red to orange is stepped and yellow to green is smooth — whatever you can imagine).
+One of the highlight features of Quibli is the [Gradient Editor](stylized-lit-shader/#gradient) found in the shaders. In a nutshell, you can have up to 8 independent colors in a single gradient. The combinations of these color stops define the diversity of the material results. You can have a full rainbow (or any other entire palette). And it is possible to vary the blending steepness of the colors within a single gradient (red to orange is stepped and yellow to green is smooth — whatever you can imagine).
 
 And, what’s even more important, is that it is a real-time effect, you don’t have to save any textures: you change the color on the ramp and you immediately see it change.
 
