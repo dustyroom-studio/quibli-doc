@@ -146,7 +146,7 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 - **Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.
 - **Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.
-- **Shadow Color** This control picks up the color of the cast shadow.
+- **Shadow Color** This control picks up the color of the received shadow.
 If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity’s native shadows. In other words, Alpha influences the Shadow Color’s impact.
 - **Override Baked GI** If the scene has baked global illumination using either [lightmaps](https://docs.unity3d.com/Manual/Lightmappers.html){:target="_blank"} or [light probes](https://docs.unity3d.com/Manual/LightProbes.html){:target="_blank"}, this toggles the _Baked Light Lookup_ gradient below.
 - **Baked Light Lookup** This parameter remaps the values of Unity’s global illumination to a custom gradient. The mapping is defined by the luminance of the original GI value — darker values map to the left of the gradient and brighter values map to the right. This allows to creatively change the atmosphere of lightmapped scenes by changing only this gradient, e.g. setting the gradient to red/purple can give the scene a neon sunset look.
@@ -181,8 +181,8 @@ If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available
 - **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.  
 ![Stylized Lit Shader — Render Faces menu](../assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)  
 
-- **Alpha Clipping** If this checkbox is in the ‘Enabled’ state, the _Threshold_ parameter appears.
-- **Threshold** This parameter cuts out a transparent portion of the material. Moving it sideways determines how soon the transparent portion is ‘transparent enough’ to be cut out.
+- **Alpha Clipping** Discards pixels based on the Albedo texture's alpha channel.
+- **Threshold** The minimum alpha in the Albedo texture to render a pixel, i.e. determines how soon the transparent portion is ‘transparent enough’ to be cut out.
 - **Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html){:target="_blank"}.
 
 **TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader){:target="_blank"}.
