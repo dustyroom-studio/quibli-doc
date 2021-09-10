@@ -43,6 +43,8 @@ docs:
     children:
       - title: "Foliage Generator"
         url: /foliage-generator/
+      - title: "Grass Generator"
+        url: /grass-generator/
       - title: "Curve Renderer"
         url: /curve-renderer/
   - title: Help
