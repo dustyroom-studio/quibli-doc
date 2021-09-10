@@ -24,19 +24,19 @@ html {
     }
   }
   
-  .nav__list {
-    font-size: $type-size-3;
+  .nav__item {
+    font-size: 0.2em;
 
     @include breakpoint($medium) {
-      font-size: $type-size-4;
+      font-size: 0.2em;
     }
 
     @include breakpoint($large) {
-      font-size: $type-size-5;
+      font-size: 0.2em;
     }
 
     @include breakpoint($x-large) {
-      font-size: $type-size-6;
+      font-size: 0.2em;
     }
   }
 }
