@@ -4,6 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Quibli
+masthead_title: "" # Disable title on masthead because the graphic logo has the title.
 email: info@dustyroom.com
 description: >- # this means to ignore newlines until "baseurl:"
   Quibli is a collection of shaders, effects and scripts whose first task is to help easily create the look of the japanese animation films.
