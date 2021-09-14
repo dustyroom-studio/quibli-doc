@@ -10,125 +10,46 @@ _Grass Generator_ is a simple tool that creates a mesh for one patch of grass. T
 The mesh is generated from scratch and consists of a few intersecting quads. This makes sure the grass looks good from any horizontal angle while keeping the performance cost to a minimum.
 
 ![Quibli Grass Generator Interface](../assets/images/manual_images/grass_generator_inspector_interface.png)  
-*Quibli Foliage Generator Interface*
+*Quibli Grass Generator Interface*
 
-Please, note that _Grass Generator_ doesn't populate the trass patches on the scene, for that you can use any prefab painting asset, for example, Polybrush.
-{: .notice--warning}
+Please note that _Grass Generator_ doesn't populate the trass patches on the scene, for that you can use any prefab painting asset, for example, Polybrush.
+{: .notice--info}
 
 ## Beginning to work with Grass Generator
 
-The _Grass Generator_ can be loaded into a scene in two ways.
-
-### Loading Method #1 — Prefab
-
-To start working with the _Grass Generator_ as a Prefab, please do the following:
+To start working with the _Grass Generator_, please do the following:
 
 1. Locate the **Grass Generator prefab** in
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Prefabs** folder_;
 1. Drag it to the Hierarchy panel or directly into the scene;
 
-### Loading Method #2 — Component
-
-Another way to add the _Grass Generator_ to the scene is to use it as a Component.
-
-  1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**;
-  1. Select the created empty Game Object;
-  1. In the **Inspector panel**, please, click **Add Component**;
-  1. Search for ‘Grass Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Grass Generator**. Click on it once found;
-  1. It is ready to be tweaked.
-
 ## Parameters of the Grass Generator
 
-### Generation Parameters
+- **Material** The material applied to the generated grass patch. Please use _Quibli/Grass_ shader on the material.
+- **Patch Size** The width (X) and height (Y) of the grass patch in meters.
 
-**Generation**
-A group of parameters that control the creation of the plant mesh.
+### Parameters of each LOD level
 
-- **Carrier Mesh** The triangles of this mesh are used for placement of the spawned _Particles_. Quibli comes with a handful of these. Also, of course, you can create your own ones.
-- **Particle Mesh** The building block of the foliage. Multiple copies of this mesh are combined in the exported mesh. In other words, this is what would be a ‘branch’ of the plant. These particles aka branches are applied to the _Carrier Mesh_ to form the resulting plant model. You can use the simplest Quad model from Unity or select one from Quibli’s package.
-- **Carrier Scale** Scaling applied to the _Carrier Mesh_ when spawning _Particles_. The bigger the _Carrier Mesh_ the more pronounced the shape of the resulting plant model would be.
-- **Particle Scale** Scaling applied to each individual _Particle_. This parameter controls how large the ‘branch’ of the plant model would be. The smaller the values the more detailed the resulting mesh is going to be. More so, if the _Carrier Scale_ values are high, smaller branches will contribute to the overall shape of the _Carrier Mesh_. If the _Particle Scale_ values are high, however, the resulting plant’s look would have less of the initial _Carrier Mesh_’s shape.
-- **Particle Scale Variance** Randomness of scale applied to each individual _Particle_.
-- **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
-- **Placement Type** Determines how to distribute the particles over the _Carrier Mesh_. Parameter has two options: **Random** and **Uniform**. _Random_ populates the particles chaotically, _Uniform_ distributes the particles evenly over the _Carrier Mesh_'s surface.  
-![Foliage Generator Particles Placement Type menu](../assets/images/manual_images/foliage_generator_particles_placement_type_menu.png)
+The _Grass Generator_ can create up to three LOD levels, each with own parameters. The general idea is that each next LOD level should be simpler than the prevous one.
 
-The **Placement Type** parameter in **Uniform** mode is useful when engaging **Billboard Rotation** → **Each Face** mode in the _Foliage_ shader, [described here](../foliage-shader/#global-billboard-parameter).
-{: .notice--info}
-- **Offset Along Normal** ‘Inflates’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
-- **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.  
-- **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
+- **Plane Count** The number of intersecting planes in the grass patch. The higher numbers lead to better looking grass, but increase the performance cost.
+- **Vertices X** The number of horizontal points in each generated plane. This value is related to the wind motion in the Grass shader. Higher subdivision values lead to better wind motion, but increase the performance cost of the grass. The image below is a wireframe of one grass plane with _Vertices X_ set to 2 and _Vertices Y_ set to 4.
+- **Vertices Y** Same as _Vertices X_, but the subdivision is vertical. Because of how the wind moves the grass, this parameter is generally more important than _Vertices X_.
 
-**TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
-{: .notice--info}
-- **Particle Rotation Range** How much _Particle_ rotation can deviate from _Carrier Mesh_ normals.
-- **Particle Rotation Bias** Nudge _Particles_ to face the positive X axis.  
+![Quibli Grass Generator Interface](../assets/images/manual_images/grass_generator_plane_wireframe.png)  
+*Grass Plane Vertices (X: 2, Y: 4)*
 
-**TIP.** _Particle Rotation Bias_ is useful for billboard foliage. ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will always create an impression of a more complex one.
-{: .notice--info}
-- **Bias Toward Rotation**
+## Export options
 
-### Normal Noise Parameters
+- **Add to scene** This button generates a grass patch and adds a 'Grass Patch' object to the root of the current scene hierarchy.
+- **Save prefab** Same as above, but this will also export the grass patch as a prefab to the root of the 'Assets' folder, or to a location where you saved the prefab previously. This button is useful while tweaking the _Grass Generator_ parameters because it will update all the grass patches on the scene.
+- **Save prefab as...** Same as above, but instead of quietly overwriting the prefab, you can specify a new filename and location.
 
-- **Normal Noise**
-A group of parameters that control the nonlinearities in the normals of the generated mesh.
-- **Enable** Turns the _Normal Noise_ group on.
-- **Frequency**
-- **Amplitude**
-- **Octaves**
-- **Scale** The scale of the internal noise map that controls the nonlinearities.
-- **Seed**
+## Placing the grass
 
-### Parameters of Export
+Once you have the prefab exported to your assets, you can use any prefab placement tool to spread it across the scene.
 
-**Export**
-A set of parameters for controlling the export process of the generated mesh.
+For example, Unity's [Polybrush package](https://unity.com/features/polybrush) has a 'Scatter Objects' feature that is suitable for placing grass on terrain or other objects.
 
-- **Folder Path** This is where the generated plant model would go. Currently it is set to the common folder which contains all the foliage meshes used in the Demo scenes.
-- **File Name Prefix** is a part of the title of the model that is going to be generated.
-- **Append Mesh Name** Adds the _Carrier Mesh_ name to the name of the exported mesh.
-- **Append Take Number** Adds the value from the _Take Number_ field to the exported filename.
-- **Take Number** This is the current iteration number of the model. Only used if “Append Take Number” is enabled.
-- **Append Timestamp** Enables the option to add time to the name of a generated mesh.
-- **Export On Edit** If enabled, the mesh will be automatically updated and overwritten upon every change of any of the parameters of the _Foliage Generator_. It is useful for a rapid preview of the changes to the parameters.
-- **Debug / Export Debug Mesh** This is the tick box, which lets you export the initial _Carrier Mesh_ without the branches / _Particle Meshes_ but with all the processing applied to it. It is useful if you need to see what’s going on if you are struggling with the shape and look of the filial generated foliage model.
-- **Export Mesh** This is a button, which generates the final foliage model. Once generated, it is placed in the folder selected in the _Folder Path_ field found in _Export_ group of parameters. To use this mesh in your scene, drag and drop it from that folder to the scene. The model will look pink at first, because so far it has no material applied onto it. You can use the ready materials from the Demo scenes or create your own.
-
-Every time you press the _Export Mesh_ button, the generated model is slightly different, as each time the new seed of random is used.
-
-When a model is generated, the _Foliage Generator_ gives this model a name, which consists of prefixes like ‘Carrier Mesh’, ‘Particle Mesh’, a word from the ‘File Name Prefix’ field. Pressing _Export Mesh_ will always create a new model every time you use a different _Carrier Mesh_, _Particle Mesh_ and values in _Export_ group. That’s because the title of the generated mesh would be different in this case. Otherwise, _Export Mesh_ will just overwrite the existing model and will update it in a scene.
-
-**TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).
-{: .notice--info}
-
-## How to Create a Basic Plant
-
-In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
-
-  * Load the _Foliage Generator_. [Here's how](#beginning-to-work-with-foliage-generator);
-  * Set the parameters according to screenshot in the [Brief Overview section](#foliage-generator-brief-overview):
-  * Export mesh. [Here's how](#parameters-of-export);
-  * Create a material like on the screenshot in the _Foliage_ shader chapter — [Brief Overview](../foliage-shader/#foliage-shader-brief-overview) (or use one from the _Sample Scene with Quibli_ Demo scene folder.
-
-**Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](../foliage-shader/#global-billboard-parameter). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because this way the _Foliage_ shader renders the faces only once. Should you set it to '90' instead, the shader will render front _and_ back faces. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
-
-## Using Your Own Models
-
-_Foliage Generator_ can process external models that are used as _Carrier Meshes_ (more about what is a _Carrier Mesh_ is [here](#generation-parameters)). Foliage Generator processes the normals and UVs of those meshes according to the parameters you set in its interface, so that the applied _particles_ would look suitable.
-
-## Next Steps After Using Foliage Generator
-
-### Updating Existing Exported Models
-
-If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
-
-![Using the Preset menu for the Foliage Generator](../assets/images/manual_images/foliage_generator_presets_menu.png)  
-*Using the Preset menu for the Foliage Generator*
-
-### Applying Materials to Exported Meshes
-
-The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look, the material is needed.
-  * **For foliage** Use the specialized [Foliage shader](../foliage-shader). Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. The beautiful thing is that this shader can also turn the foliage models not made by the _Foliage Generator_ into plants. More on this you can find in [Foliage shader](../foliage-shader) chapter.
-  * **For the clouds**, use [Cloud3D](../cloud3d-shader) shader.
-
-When you drag the exported plant or cloud model into the scene, you'll notice that it is pink, which tells that it is has no material yet. You can create a [Foliage](../foliage-shader/#beginning-to-work-with-the-foliage-shader) or [Cloud3D](../cloud3d-shader/#beginning-to-work-with-cloud3d-shader) material or choose one the bundled materials coming with Quibli, and either drag it onto the model, or select a material in the model's _Mesh Renderer_.
+Depending on which tool you use, you might need to add a collider to the grass prefab. A good way of doing this is to add a sphere collider to the root of the grass prefab and removing the collider component once the grass has been placed. This way the grass on the scene doesn't have the collider which would be unused.
+{: .notice--warning}
