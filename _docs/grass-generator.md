@@ -5,20 +5,17 @@ excerpt: "Quibli Grass Generator Script"
 ---
 
 ## Grass Generator Brief Overview
-Creating anime-looking bushes and trees requires not only specific shading but also properly created models in regards to display of the shading. This also applies to creating 3D clouds.
-Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model.  
-So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere.  
-But creating a bush and its variations still would take much time. Also, changing the number of faces sound like a hassle.  
-_Foliage Generator_ prefab/component allows you to create a plant or a cloud in a few minutes, and then make changes instantly. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals.  
-After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) or [Cloud3D](../cloud3d-shader) shader containing a particle texture. We did all the foliage and 3D clouds models in the demo scenes this way. Quibli includes already made models, textures and materials.  
-Another beautiful thing is that _Foliage Generator_ can take external models (there are nuances — described [here](#using-your-own-models)) and prepare their normals and apply the particles for you.  
+_Grass Generator_ is a simple tool that creates a mesh for one patch of grass. This mesh has multiple variants for different [Levels Of Detail](https://docs.unity3d.com/Manual/LevelOfDetail.html) which are all packed into one Game Object with the LOD settings populated automatically.
+
+The mesh is generated from scratch and consists of a few intersecting quads. This makes sure the grass looks good from any horizontal angle while keeping the performance cost to a minimum.
+
 ![Quibli Grass Generator Interface](../assets/images/manual_images/grass_generator_inspector_interface.png)  
 *Quibli Foliage Generator Interface*
 
-Please, note that _Foliage Generator_ doesn't produce the trunks of the trees, neither does it create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
+Please, note that _Grass Generator_ doesn't populate the trass patches on the scene, for that you can use any prefab painting asset, for example, Polybrush.
 {: .notice--warning}
 
-## Beginning to work with Foliage Generator
+## Beginning to work with Grass Generator
 
 The _Grass Generator_ can be loaded into a scene in two ways.
 
@@ -32,24 +29,13 @@ _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Pr
 
 ### Loading Method #2 — Component
 
-Another way to add the _Foliage Generator_ to the scene is to use it as a Component.
+Another way to add the _Grass Generator_ to the scene is to use it as a Component.
 
   1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty**;
   1. Select the created empty Game Object;
   1. In the **Inspector panel**, please, click **Add Component**;
-  1. Search for ‘Foliage Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Foliage Generator**. Click on it once found;
+  1. Search for ‘Grass Generator’, or locate it manually under **Scripts** ▶︎ **Dustyroom** ▶︎ **Grass Generator**. Click on it once found;
   1. It is ready to be tweaked.
-
-### Operating the Grass Generator After Loading
-
-When you have the _Foliage Generator_ loaded to the scene, you'll probably want to [adjust the parameters or load an existing preset](#parameters-of-the-foliage-generator) and will need to [apply a material to an exported mesh](#applying-materials-to-the-exported-meshes) — to finalize the plant model. Please, keep reading this chapter to get acquainted with the details of doing these steps.
-
-  1. Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
-  1. Click _Export Mesh_ button;
-  1. Locate an exported model in the export target folder. By default, it is:  
-_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Common Models** folder_;
-  1. Add this model in your scene (it looks pink)
-  1. Apply the material to it.
 
 ## Parameters of the Grass Generator
 
