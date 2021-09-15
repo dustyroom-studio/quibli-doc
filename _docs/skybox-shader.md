@@ -27,11 +27,11 @@ Now you can apply this material as your skybox: either drag it onto any empty sp
 The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)
 {: .notice--info}
 
-- **Intensity** This parameter defines how strong (read: bright) the skybox is.
+- **Intensity** Defines how strong (or bright) the skybox is.
 - **Exponent** A bias towards either of the ends of the _Gradient_.
 
 TIP. You can animate the _Exponent_ parameter for adding transition effects.
 {: .notice--info}
 
-- **Direction X Angle** Rotation in world-space on the X axis.
-- **Direction Y Angle** Rotation in world-space on the Y axis.
+- **Direction X Angle** Rotation in on the X axis (Pitch).
+- **Direction Y Angle** Rotation in on the Y axis (Yaw).
