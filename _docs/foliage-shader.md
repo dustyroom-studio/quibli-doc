@@ -10,6 +10,7 @@ excerpt: "Quibli Foliage Shader"
 The _Foliage_ shader is a specialized shader to be used with the models to give them a foliage look. We're talking not only about the ones made using the [Foliage Generator](../foliage-generator) tool, but also other models, including primitives, letters, monkeys, everything you usually want to cover with leaves.
 
 ![Quibli Foliage Shader Interface](../assets/images/manual_images/quibli_foliage_shader_interface.png)  
+{:.image-caption}
 *Quibli Foliage Shader Interface*
 
 ## Beginning to Work with the Foliage Shader
@@ -41,7 +42,8 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 - **Fresnel Power** Sets the visibility of the fresnel property of the object. The fresnel effect provides stronger reflection on the flatter view angles (think edges of mesh, contour of the sphere) and weaker reflection in the steeper view angles (center of a mesh).
 
 ![A chart about fresnel](../assets/images/manual_images/fresnel_chart.png)  
-*A chart about fresnel*
+{:.image-caption}
+*What is fresnel*
 
 - **Fresnel Color** Defines the color of the fresnel effect.
 - **Shadow Strength** Controls the intensity of the self-shadowing effect. In the Shader Graph, there is no easy possibility to reduce the self-shadowing phenomenon. This parameter is our attempt at overcoming this limitation. 
@@ -70,4 +72,5 @@ _Billboard Rotation_ parameter has three options:
   * **Whole Object** — rotates the whole object; the individual faces don't change relative rotation.
 
 ![Foliage Shader Billboard Rotation parameter options](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
+{:.image-caption}
 *Foliage Shader Billboard Rotation parameter options*
