@@ -22,6 +22,7 @@ After the importing, to finalize the installation it is advised to configure Qui
 Quibli comes with the **Readme** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can also be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
 
 ![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png)  
+{:.image-caption}
 *Readme tool interface*
 
 If you would like to use your own **Rendering Pipeline Asset File** [what's this?](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/universalrp-asset.html){:target="_blank"} instead of the one that comes with Quibli ('Quibli URP Config' file), you'll need to do it manually. The procedure is described in [Manual Finalizing](#manual-finalizing) 
