@@ -10,6 +10,7 @@ The scenes can be found in:
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demo Scenes** folder_
 
 ![Path to the Demo Scenes included in Quibli](../assets/images/manual_images/quibli_demo_scenes_path.png)  
+{:.image-caption}
 *Path to the Demo Scenes included in Quibli*
 
 #### Nature Scene  
@@ -22,15 +23,19 @@ Another detailed scene showing all the shaders and additional tools in action.
 This is a family of mostly saturated brightly colored scenes designed to show more unusual use of the [Stylized Lit shader](../stylized-lit-shader). Aside from the anime shading, it is possible to conveniently generate something unrelated, be it the basic coloring or something wild and unique. There is nothing unconventional going on, it is just the choice of the colors and the parameters that made up these scenes, particularly the Gradient editor settings on _Stylized Lit_ and [Skybox](../skybox-shader) shaders.  
 
 ![Kitchenware Demo Scene 1](../assets/images/manual_images/demo_kitchenware_scene_1.jpg)  
+{:.image-caption}
 *Kitchenware Demo Scene 1 — smooth-mode Color Gradient ramp with vibrant colors*
 
 ![Kitchenware Demo Scene 2](../assets/images/manual_images/demo_kitchenware_scene_2.jpg)  
+{:.image-caption}
 *Kitchenware Demo Scene 2 — smooth-mode Color Gradient ramp with color stops set tightly and loosely, with vibrant colors. The Skybox is made with the [Skybox shader](../skybox-shader), using a single color ramp, also with tight and loose color stops*
 
 ![Kitchenware Demo Scene 3](../assets/images/manual_images/demo_kitchenware_scene_3.jpg)  
+{:.image-caption}
 *Kitchenware Demo Scene 3 — fixed-mode Color Gradient ramp with vibrant colors*
 
 ![Kitchenware Demo Scene 4](../assets/images/manual_images/demo_kitchenware_scene_4.jpg)  
+{:.image-caption}
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
 
 #### Plants Scene
@@ -40,6 +45,7 @@ A scene showing a variety of plants made using the [Foliage Generator](../foliag
 As in [Flat Kit](https://flatkit.dustyroom.com/#6-demo-scenes){:target="_blank"}, we added the same demo scene contents to be used with Quibli's main shader — [Stylized Lit shader](../stylized-lit-shader) materials. This scene is made to showcase a fraction of styles that can be achieved with the _Stylized Lit_ shader. ‘A fraction’ is because these examples are only a few of the possible unique and unseen results due to the power of parameter combinations. We limited the colors to only one palette, making it easier to see the capabilities of the _Stylized Lit_ shader.  
 
 ![Mugs Demo Scene](../assets/images/manual_images/demo_mugs_scene.jpg)  
+{:.image-caption}
 *Mugs demo scene*
 
 #### Sample Scene with Quibli  
@@ -49,4 +55,5 @@ This is a modified start-up Unity scene, which you can see when you open a new p
 A showcase of a few examples of the [Cloud2D shader](../cloud2d-shader). The way the shader works can be utilized in a wide variety of creative use cases. As you can see, with _Cloud2D_ shader, it is possible to do more than clouds: fire, smoke, even some more unusual effects like northern lights.  
 
 ![Clouds Demo Scene](../assets/images/manual_images/demo_clouds_scene.png)  
+{:.image-caption}
 *Clouds Demo Scene*
