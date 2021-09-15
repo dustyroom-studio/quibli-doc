@@ -11,6 +11,7 @@ There are _Carrier models_ for the clouds included in Quibli, as well as are the
 {: .notice--info}
 
 ![Quibli Cloud3D Shader Interface](../assets/images/manual_images/quibli_cloud3d_shader_interface.png)
+
 {:.image-caption}
 *Quibli Cloud3D Shader Interface*
 
