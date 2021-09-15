@@ -10,9 +10,7 @@ Electric wires seem to be the Thing in Japan. We made a tool that makes wires in
 
 Of course, _Curve Renderer_ can be used not only for generating the wires. Its core function is to make curves render them as meshes.
 
-![Curve Renderer interface](../assets/images/manual_images/curve_renderer_interface.png)
-
-{:.image-caption}
+![Curve Renderer interface](../assets/images/manual_images/curve_renderer_interface.png)  
 *Curve Renderer interface*
 
 ## Examples of Curve Renderer Usage
