@@ -23,7 +23,7 @@ A good place to look at _Curve Renderer_ in action is to load the included [City
 
   1. Create an empty Game Object: right-click in the empty space in the **Hierarchy panel** ▶︎ select and click **Create Empty** Name it, for example, _'Curve Renderer Container'_;
   1. Create two more empty Game Objects, name them, for example, _'Point A'_ and _'Point B'_;
-  1. _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;
+  1. _[Optional]_ Nest the last two Game Objects (_'Point A'_ and _'Point B'_) into _'Curve Renderer Container_ — select the game objects and drag them onto the _'Curve Renderer Container'_. This will make the _'Curve Renderer Container'_ a parent of _'Point A'_ and _'Point B'_;  
 ![Curve Renderer and two end points hierarchy](../assets/images/manual_images/curve_renderer_hierarchy_container.png)  
 *Curve Renderer and two end points hierarchy*
   1. Select the _'Curve Renderer Container'_ Game Object;
@@ -47,9 +47,7 @@ deliberate thing to do).
 
 - **Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click → _Add Key_ or left double-click anywhere on the line adds a point, right-click → _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.
 
-![Curve editor, which opens up once you click on the 'Curve' parameter](../assets/images/manual_images/curve_renderer_curve.png)
-
-{:.image-caption}
+![Curve editor, which opens up once you click on the 'Curve' parameter](../assets/images/manual_images/curve_renderer_curve.png)  
 *Curve editor, which opens up once you click on the 'Curve' parameter*
 
 - **Curve Multiplier** The number which the _Curve_ values are multiplied by. This can be helpful to make the curve larger or smaller without the need for opening and changing the parameters in the _Curve_ editor.
@@ -58,9 +56,7 @@ deliberate thing to do).
 - **Curve Variability** Using this parameter you can introduce some randomness into the positioning of the generated part of the curve — while the _End_ points remain their positions, the rendered curvature can have some deviation from the set-up earlier _Curve_ parameter. For example, if you take a bunch of wires of a similar length, attach their ends to the poles and let them hang, some of them will be closer to the ground, some will be less stretched.
 - **Thickness Variability** Sets the range for the deviation from the _Thickness_ parameter. Can be useful if you set _Quantity_ to more than '1' and would like to add variation to the width of each of the curves.
 
-![Curve Renderer variability parameters bypassed and engaged](../assets/images/manual_images/curve_renderer_variability_parameters.png)
-
-{:.image-caption}
+![Curve Renderer variability parameters bypassed and engaged](../assets/images/manual_images/curve_renderer_variability_parameters.png)  
 *Curve Renderer variability parameters bypassed and engaged. On the upper example there is no variability. On the lower example you can see that both _Curve Variability_ and _Thickness Variability are used, as well as the _Random Seed_. The _Quantity_ is set to '3'*
 
 - **Random Seed** Changes and remembers the seed of the randomness for the deviation parameters, such as _Curve Variability_ and _Thickness Variability_.
@@ -78,9 +74,7 @@ When you have at least one container with pair of the points set up, please, lau
 
 As it was mentioned earlier, once you load the _Curve Renderer_, a Unity _Mesh Renderer_ is created, too. In this _Mesh Renderer_ you can find a _Materials_ part, which lets you choose the material for the generated mesh. A simple lit shader will do.
 
-![Material slot in the Mesh Renderer](../assets/images/manual_images/curve_renderer_mesh_renderer_material.png)
-
-{:.image-caption}
+![Material slot in the Mesh Renderer](../assets/images/manual_images/curve_renderer_mesh_renderer_material.png)  
 *Material slot in the Mesh Renderer*
 
 ### Editing the Curve Renderer Afterwards
