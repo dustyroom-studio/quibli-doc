@@ -45,7 +45,7 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 ![A chart about fresnel](../assets/images/manual_images/fresnel_chart.png)
 
 {:.image-caption}
-*What is fresnel*
+*Fresnel effect*
 
 - **Fresnel Color** Defines the color of the fresnel effect.
 - **Shadow Strength** Controls the intensity of the self-shadowing effect. In the Shader Graph, there is no easy possibility to reduce the self-shadowing phenomenon. This parameter is our attempt at overcoming this limitation. 
