@@ -10,7 +10,8 @@ _Cloud3D_ shader is an easy and flexible way to add the clouds to your scene. It
 There are _Carrier models_ for the clouds included in Quibli, as well as are the presets for the _Foliage Generator_.
 {: .notice--info}
 
-![Quibli Cloud3D Shader Interface](../assets/images/manual_images/quibli_cloud3d_shader_interface.png)  
+![Quibli Cloud3D Shader Interface](../assets/images/manual_images/quibli_cloud3d_shader_interface.png)
+{:.image-caption}
 *Quibli Cloud3D Shader Interface*
 
 _Cloud3D_ shader was made in a Shader Graph, so you can easily edit and modify it in the Shader Graph editor.  
