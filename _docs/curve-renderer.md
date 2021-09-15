@@ -11,6 +11,7 @@ Electric wires seem to be the Thing in Japan. We made a tool that makes wires in
 Of course, _Curve Renderer_ can be used not only for generating the wires. Its core function is to make curves render them as meshes.
 
 ![Curve Renderer interface](../assets/images/manual_images/curve_renderer_interface.png)
+
 {:.image-caption}
 *Curve Renderer interface*
 
@@ -40,12 +41,14 @@ Loading the _Curve Renderer_ script also automatically creates the _Mesh Rendere
 deliberate thing to do).
 
 ![Increasing and decreasing the number of points increases and decreases the curve resolution](../assets/images/manual_images/curve_renderer_points_fidelity.gif) 
+
 {:.image-caption}
 *Increasing and decreasing the number of points increases and decreases the curve resolution*
 
 - **Curve** Opens the curve editor in which you can form an approximation of the actual generated curve. You can add and remove points, change the steepness of the curvature by clicking on the points and adjusting their handles. Right-click → _Add Key_ or left double-click anywhere on the line adds a point, right-click → _Remove Key_ deletes a point. It is possible to scroll over the editor to zoom in for finer adjustments and zoom out for making the curve larger. There are presets of the the curve shapes, which can be loaded and adjusted.
 
-![Curve editor, which opens up once you click on the 'Curve' parameter](../assets/images/manual_images/curve_renderer_curve.png)  
+![Curve editor, which opens up once you click on the 'Curve' parameter](../assets/images/manual_images/curve_renderer_curve.png)
+
 {:.image-caption}
 *Curve editor, which opens up once you click on the 'Curve' parameter*
 
@@ -56,6 +59,7 @@ deliberate thing to do).
 - **Thickness Variability** Sets the range for the deviation from the _Thickness_ parameter. Can be useful if you set _Quantity_ to more than '1' and would like to add variation to the width of each of the curves.
 
 ![Curve Renderer variability parameters bypassed and engaged](../assets/images/manual_images/curve_renderer_variability_parameters.png)
+
 {:.image-caption}
 *Curve Renderer variability parameters bypassed and engaged. On the upper example there is no variability. On the lower example you can see that both _Curve Variability_ and _Thickness Variability are used, as well as the _Random Seed_. The _Quantity_ is set to '3'*
 
@@ -74,7 +78,8 @@ When you have at least one container with pair of the points set up, please, lau
 
 As it was mentioned earlier, once you load the _Curve Renderer_, a Unity _Mesh Renderer_ is created, too. In this _Mesh Renderer_ you can find a _Materials_ part, which lets you choose the material for the generated mesh. A simple lit shader will do.
 
-![Material slot in the Mesh Renderer](../assets/images/manual_images/curve_renderer_mesh_renderer_material.png)  
+![Material slot in the Mesh Renderer](../assets/images/manual_images/curve_renderer_mesh_renderer_material.png)
+
 {:.image-caption}
 *Material slot in the Mesh Renderer*
 
