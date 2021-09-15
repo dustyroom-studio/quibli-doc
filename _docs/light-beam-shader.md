@@ -11,6 +11,7 @@ The _Light Beam_ shader has an ability to decay with distance — once the neede
 The _Light Beam_ is in HDR colors, meaning that it can glow if the scene has some kind of a bloom in it.
 
 ![Quibli Light Beam Shader Interface](../assets/images/manual_images/quibli_light_beam_shader_interface.png)  
+{:.image-caption}
 *Quibli Light Beam Shader Interface*
 
 **TIP.** One of the pro-looking use cases of _Light Beam_ can be highlighting some kind of a power-up item located in the scene in some distance from you, reminding you to pick it up. As you approach it, the effect has an option to decrease its intensity.
