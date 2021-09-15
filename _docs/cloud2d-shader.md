@@ -12,7 +12,6 @@ This shader is a on a bit more experimental side. Although this is a 2D effect, 
 {: .notice--warning}
 
 ![Quibli Cloud2D Shader Interface](../assets/images/manual_images/quibli_cloud2d_shader_interface.png)
-
 {:.image-caption}
 *Quibli Cloud2D Shader Interface*
 
