@@ -9,6 +9,13 @@ layout: single
 **<span style="font-size:larger;">[Full documentation online](https://quibli.dustyroom.com)</span>**
 {: .notice--info}
 -->
+
+Important! After the initial release (15 Sep 2021) we got reports about the missing materials in [Sample Scene](../demo-scene/#sample-scene-with-quibli) Demo scene. The issue has been already fixed and sent for the review.
+{: .notice--warning}
+
+Important! After the initial release (15 Sep 2021) we got reports about Quibli asset trying to unpack the files into Flat Kit folder if there is already one existing. The issue has been already fixed and sent for the review.
+{: .notice--danger}
+
 ## Quibli Brief Overview
 
 Quibli is a collection of shaders, effects and scripts whose main task is to help easily create the look of the Japanese animation films. Quibli’s capabilities extend way beyond this, however, and we have included the demo scenes with all the used resources showing that.
