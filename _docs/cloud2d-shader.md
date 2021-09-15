@@ -34,24 +34,25 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 - **Geometry gradient**  Opens a similar _Gradient Editor_ as the one in _Main Gradient_. This gradient specifically uses black and white channel only, so it does not impact any color work but rather the shape of the cloud, more precisely, the fading out of the contour of a cloud into transparency. White color is fully visible (opaque), black is fully invisible (transparent). Thus, if you have a tightly placed black → white color stops, the edges of a cloud will be sharper than if the gradient would be more smooth. You can have up to 8 color stops.
 - **Edge Distortion** Distorts the contour of a cloud using an internal noise map.
 - **Base Vertical Offset** Moves a cloud upwards and downwards in an exponential way — it stretches the cloud near the extreme values of this parameter.
-- **Shadow** This Is the section responsible for controlling the shadows of a cloud.
-- **Color** Sets the color of the shadowed part of a cloud.
+- **Shadow** This section responsible for controlling the shadowed region of the cloud. Usually this is the lower part of the object that does not receive direct sunlight.
+- **Color** Sets the color of the shadowed part of a cloud. For example, you can use red-ish color for a sunset look.
 - **Amount**  Sets how visible the shadow is.
-- **Distortion** Increases the intensity of the ‘grainy’ effect, where grains are made by being mapped onto the internal displacement map.
+- **Distortion** Controls the randomness of the shadow edge.
 - **Center** Sets the coordinates of the center of the shadow.
-- **Range** Sets how spread out the shadow is.
-- **Edge Highlight** Opens the color chooser to pick up the color of a halo visible around a cloud.
+- **Range** Sets how spread out the shadow is in horizontal (X) and vertical (Y) directions.
+- **Edge Highlight** The color of a halo visible around the cloud.
 - **Opacity** Sets how visible the _Edge highlight_ is.
-- **Height gradient strength** Controls vertical shading of the cloud using the _Main Gradient_.
-- **Random Offset** Changing the values on the axis scrolls the internal displacement map of a cloud against the mesh itself along that axis. Dragging the cloud itself and tweaking _Random Offset_ have the same effect, because translating the mesh does not preserve the noise stamp (seed) it is being mapped to. The cloud is always being projected onto a static world-space internal noise map to form the fluffiness of it.  
-_Random Offset_ can be used as a parameter to change the seed of random. Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud. Please, look at the next parameter, _Offset Speed_, to apply a motion.  
+- **Height Gradient Strength** Controls vertical shading of the cloud using the _Main Gradient_.
+- **Random Offset** Changing the values on the axis scrolls the internal displacement map of a cloud against the mesh itself along that axis. Dragging the cloud itself and tweaking _Random Offset_ have the same effect, because translating the mesh does not preserve the noise seed it is being mapped to. The cloud is always being projected onto a static world-space internal noise map to form the fluffiness of it.  
+_Random Offset_ can be used as a parameter to change the randomness seed and form unique clouds with otherwise same parameters.
+Animating either this parameter or the cloud itself can be used to create the effect of a realistic ever-changing cloud. Please, look at the next parameter, _Offset Speed_, to apply a motion.  
 ![Animating the Random Offset parameter to create a cloud movement](../assets/images/manual_images/cloud2d_shader_animated_clouds_moving.gif)  
 *Animating the Random Offset parameter to create a cloud movement*
 - **Offset Speed** Sets the speed of the pseudo-motion of the clouds. It is a pseudo-motion, because the planes carrying the _Cloud2D_ shader remain in place but the mapping onto the internal noise map is being offset, thus you see an illusion of the clouds moving. Please, see _Random Offset_ parameter description for additional explanation.  
 _X_ value is for horizontal motion, _Y_ value is for vertical motion.  
 Initially, the parameter is set to _X_ : 0, _Y_ : 0, which means, the clouds are static. If you change _X_ or _Y_ to positive numbers, the motion will be seen as to the right or upwards respectively. Dialing negative values 'moves' the cloud to the left or downwards respectively. The further the value is from '0', the faster the speed is.
 - **Object Position Impact** Determines how cloud reacts to its position change. At the value of 0 the cloud doesn't change its shape while being moved. At the value of 1 a slight position change has a great impact on the cloud's shape. Placing the slider somewhere in the middle makes the cloud's shape morph slowly, like in real world.
-- **Geometry density** This is a group of parameters that control the small-, medium- and large-scale details of a cloud shape.
+- **Geometry Density** This is a group of parameters that control the small-, medium- and large-scale details of the cloud shape.
 - **Large** Changes the size of large-scale details in the internal displacement map. Increasing the value makes the details smaller; decreasing the values makes the details larger.
 - **Medium** Changes the size of medium-scale details in the internal displacement map.
 - **Small** Changes the size of small-scale details in the internal displacement map.
