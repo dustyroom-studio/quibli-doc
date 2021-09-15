@@ -21,7 +21,8 @@ After the importing, to finalize the installation it is advised to configure Qui
 
 Quibli comes with the **Readme** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can also be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
 
-![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png)  
+![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png)
+
 {:.image-caption}
 *Readme tool interface*
 
