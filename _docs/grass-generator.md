@@ -10,6 +10,7 @@ _Grass Generator_ is a simple tool that creates a mesh for one patch of grass. T
 The mesh is generated from scratch and consists of a few intersecting quads. This makes sure the grass looks good from any horizontal angle while keeping the performance cost to a minimum.
 
 ![Quibli Grass Generator Interface](../assets/images/manual_images/grass_generator_inspector_interface.png)  
+{:.image-caption}
 *Quibli Grass Generator Interface*
 
 Please note that _Grass Generator_ doesn't populate the trass patches on the scene, for that you can use any prefab painting asset, for example, Polybrush.
@@ -37,6 +38,7 @@ The _Grass Generator_ can create up to three LOD levels, each with own parameter
 - **Vertices Y** Same as _Vertices X_, but the subdivision is vertical. Because of how the wind moves the grass, this parameter is generally more important than _Vertices X_.
 
 ![Quibli Grass Generator Interface](../assets/images/manual_images/grass_generator_plane_wireframe.png)  
+{:.image-caption}
 *Grass Plane Vertices (X: 2, Y: 4)*
 
 ## Export options
