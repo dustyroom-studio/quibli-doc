@@ -12,7 +12,8 @@ But creating a bush and its variations still would take much time. Also, changin
 _Foliage Generator_ prefab/component allows you to create a plant or a cloud in a few minutes, and then make changes instantly. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals.  
 After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) or [Cloud3D](../cloud3d-shader) shader containing a particle texture. We did all the foliage and 3D clouds models in the demo scenes this way. Quibli includes already made models, textures and materials.  
 Another beautiful thing is that _Foliage Generator_ can take external models (there are nuances — described [here](#using-your-own-models)) and prepare their normals and apply the particles for you.  
-![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)  
+![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)
+
 {:.image-caption}
 *Quibli Foliage Generator Interface*
 
@@ -137,7 +138,8 @@ _Foliage Generator_ can process external models that are used as _Carrier Meshes
 
 If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
 
-![Using the Preset menu for the Foliage Generator](../assets/images/manual_images/foliage_generator_presets_menu.png)  
+![Using the Preset menu for the Foliage Generator](../assets/images/manual_images/foliage_generator_presets_menu.png)
+
 {:.image-caption}
 *Using the Preset menu for the Foliage Generator*
 
