@@ -8,7 +8,9 @@ excerpt: "Quibli Skybox Shader"
 The _Gradient Skybox_ shader is a modified version of the Flat Kit’s [Gradient Skybox](https://flatkit.dustyroom.com/#34-gradient-skybox-shader){:target="_blank"} shader.
 Instead of two colors that you pick in two color choosers to form a gradient in the skybox, the Quibli version has a single Gradient Editor with a continuous color ramp. It means that you can have up to 8 independent color stops in the skybox with varying transition smoothness.
 
-![Quibli Skybox Shader Interface](../assets/images/manual_images/quibli_skybox_shader_interface.png)  
+![Quibli Skybox Shader Interface](../assets/images/manual_images/quibli_skybox_shader_interface.png)
+
+{:.image-caption}
 *Quibli Skybox Shader Interface*
 
 ## Beginning to Work with the Skybox Shader
@@ -21,7 +23,9 @@ Now you can apply this material as your skybox: either drag it onto any empty sp
 ## Parameters of the Skybox Shader
 - **Gradient** Clicking on the colored rectangle opens a _Gradient Editor_, where you can make a gradient to be displayed on the skybox. For more info about _Gradient Editor_, please, refer to the _Gradient_ parameter description of the [Stylized Lit Shader](../stylized-lit-shader) chapter in this manual.
 
-![Gradient Editor in Skybox shader](../assets/images/manual_images/quibli_skybox_gradient_editor.png)  
+![Gradient Editor in Skybox shader](../assets/images/manual_images/quibli_skybox_gradient_editor.png)
+
+{:.image-caption}
 *Gradient Editor in Skybox shader*
 
 The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)
