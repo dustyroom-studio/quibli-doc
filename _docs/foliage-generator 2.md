@@ -11,6 +11,7 @@ So, another way is to create models from textured planes. The plants are usually
 But creating a bush and its variations still would take much time. The _Foliage Generator_ prefab/component allows you to create a plant in seconds. It automatically forms the model from the ‘branch’ of your choice, wraps them (as many of them as you’d need) around a carrier model and handles the normals. After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) shader containing a branch texture. We did all the foliage models in the demo scenes this way. Quibli includes already made models, textures and materials.
 Another beautiful thing is that _Foliage Generator_ can take external models and prepare their normals and apply the particles for you.  
 ![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)  
+{:.image-caption}
 *Quibli Foliage Generator Interface*
 
 Please, note that _Foliage Generator_ doesn't produce the trunks of the trees, neither does it create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
@@ -131,6 +132,7 @@ In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss
 If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
 
 ![Using the Preset menu for the Foliage Generator](../assets/images/manual_images/foliage_generator_presets_menu.png)  
+{:.image-caption}
 *Using the Preset menu for the Foliage Generator*
 
 ### Applying Materials to Exported Meshes
