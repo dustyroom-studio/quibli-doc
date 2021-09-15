@@ -11,7 +11,10 @@ You can see _Cloud2D_ in action in the [City](../demo-scenes/#city-scene) demo s
 This shader is a on a bit more experimental side. Although this is a 2D effect, it still uses a lot of processing, specifically it works a lot with transparency, which can be hungry for the resources. Please, count that when creating the clouds: it is better for the performance to have one big cloud than a dozen of small ones.
 {: .notice--warning}
 
-{% include image.html url="../assets/images/manual_images/quibli_cloud2d_shader_interface.png" description="Quibli Cloud2D Shader Interface" %}
+![Quibli Cloud2D Shader Interface](../assets/images/manual_images/quibli_cloud2d_shader_interface.png)
+
+{:.image-caption}
+*Quibli Cloud2D Shader Interface*
 
 _Cloud2D_ shader was made in a Shader Graph, so you can easily edit and modify it in the Shader Graph editor.  
 
