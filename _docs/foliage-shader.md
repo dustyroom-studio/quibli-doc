@@ -24,7 +24,7 @@ The _Foliage_ shader is a specialized shader to be used with the models to give 
 
 **Shading Gradient** Opens the Gradient Editor where you can choose the colors for the material.
 
-The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
 {: .notice--info}
 
 ### Texturing Parameters
@@ -34,7 +34,6 @@ The same Gradient Editor is available for the following shaders: [Stylized Lit](
 - **Fill Texture** This is a detail texture to be used over the branch / particle defined by _Shape Texture_.
 - **Fill Impact** Sets how visible the _Fill Texture_ is. Higher values make the texture more visible.
 - **Fill Scale** Sets the scale of the _Fill Texture_.
-- **Billboard Scale** Sets the scale of the branch textures aka particles (particles are described [here](../foliage-generator#parameters-of-the-foliage-generator). Effectively, using this parameter, you can scale the whole mesh. _Billboard Scale_ works only when billboards are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
 - **Offset Along Normal** Slides the particles along the normals. Visually it 'inflates' or 'deflates' the mesh.
 
 ### Additional Coloring Parameters
@@ -59,6 +58,7 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 
 ### Global Billboard Parameter
 
+- **Billboard Scale** Sets the scale of the branch textures aka particles (particles are described [here](../foliage-generator#parameters-of-the-foliage-generator). Effectively, using this parameter, you can scale the whole mesh. _Billboard Scale_ works only when billboards are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
 - **Billboard Rotation** Defines how the particles / branches are being rotated with the move of the camera.
 
 ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will always create an impression of a more complex one.

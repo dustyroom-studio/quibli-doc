@@ -21,7 +21,7 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples.
 
-The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader).
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
 {: .notice--info}
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object.
@@ -29,7 +29,7 @@ Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can 
 ![Gradient Editor is real-time](../assets/images/manual_images/gradient_editor_adjusting.gif)  
 *Gradient Editor is real-time*
 
-**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.
+**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
 ![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)
 *Using presets in the Gradient Editor*
 {: .notice--info}
@@ -48,7 +48,6 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 *Gradient Editor in Blend mode with partially tight color stops*
 
 - **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.
-
 ![Gradient Editor is real-time](../assets/images/manual_images/gradient_shading_offset_adjusting.gif)  
 *Gradient Editor is real-time*
 
@@ -139,11 +138,7 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 #### Shadow Parameters
 
-- **Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Please, note that there is no option to set the material in the way that would allow an object to receive the shadows from other objects but not from itself. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.
-
-**TIP.** It's important to remember that apart from this _Receive Shadows_ parameter, there is a sister parameter _Cast Shadows_ in any object's _Mesh Renderer_, which has _Off_, _On_ and _Shadows Only_ options. The last option (_Shadows Only_) lets you bypass the rendering of the object itself while leaving its shadow visible. Combining these parameters you can achieve pretty wide spectrum of results, for example, when you would like an object to cast a shadow elsewhere except itself.
-{: .notice--info}
-
+- **Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.
 - **Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.
 - **Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.
 - **Shadow Color** This control picks up the color of the received shadow.
@@ -168,7 +163,7 @@ Please, notice that this outline feature is simplified as compared to [Outline I
 - **Camera Distance Impact** Lets the outline change its width with the distance from the camera. If you want to make it gradually thinner as the object moves from camera, drag the slider to the right.
 
 ### Rendering Parameters
-- **Rendering Options**
+**Rendering Options**
 _Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
 ![Stylized Lit Shader — Rendering parameters](../assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)  
 *Stylized Lit Shader — Rendering parameters*
