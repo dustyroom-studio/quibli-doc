@@ -48,7 +48,7 @@ When you have the _Foliage Generator_ loaded to the scene, you'll probably want 
 
   1. Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   1. Click _Export Mesh_ button;
-  1. Locate an exported model in the export target folder. The path to this folder is set in the _File Name Prefix_ parameter in [Generation Parameters](#generation-parameters);
+  1. Locate an exported model in the export target folder. The path to this folder is set in the _Folder Path_ parameter in [Parameters of Export](#parameters-of-export);
   1. Add this model in your scene (it looks pink);
   1. Apply the material to it.
 
@@ -103,9 +103,9 @@ The **Placement Type** parameter in **Uniform** mode is useful when engaging **B
 
 **Export** is a set of parameters for controlling the export process of the generated mesh.
 
-- **Folder Path** This is where the generated plant model would go. Currently it is set to the common folder which contains all the foliage meshes used in the Demo scenes.
-- **File Name Prefix** is a part of the title of the model that is going to be generated. Starting with 'Quibli', you can type in any path (if the folder doesn't exist, the script will create it). For instance, all common generated models are here (copy and paste this path in the _File Name Prefix_ field):  
+- **Folder Path** This is where the generated plant model would go. You can type in any path starting with 'Quibli' (if the target folder doesn't exist, the script will create it). For instance, all common generated models are here (copy and paste this path in the _File Name Prefix_ field):  
 _Quibli/Demos/[Common]/Models/Foliage Generator Exported Meshes_
+- **File Name Prefix** is a part of the title of the model that is going to be generated.
 - **Append Mesh Name** Adds the _Carrier Mesh_ name to the name of the exported mesh.
 - **Append Take Number** Adds the value from the _Take Number_ field to the exported filename.
 - **Take Number** This is the current iteration number of the model. Only used if “Append Take Number” is enabled.
