@@ -167,6 +167,9 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 #### Shadow Parameters
 
 - **Receive Shadows** Once enabled, the mesh will receive the shadows cast from itself and other objects. Turning _Receive Shadows_ off would disable received shadows from elsewhere as well as self-shadowing.
+
+Turning _Receive Shadows_ off is, probably, the parameter you'd want to turn off right away (it is impossible to do it automatically, since loading _Quibli Stylized Lit_ shader inherits the shadows in 'on' state — from the _Unity Standard Lit_ shader, which is loaded every time you create a new material, and which you are switching to the _Stylized Lit_ from).
+{: .notice--info}
 - **Override Realtime Shadow** Once enabled, a few shadow-related parameters appear.
 - **Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.
 - **Shadow Color** This control picks up the color of the received shadow.
