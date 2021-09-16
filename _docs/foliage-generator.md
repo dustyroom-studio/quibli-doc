@@ -94,11 +94,11 @@ The **Placement Type** parameter in **Uniform** mode is useful when engaging **B
 
 **Normal Noise** is a group of parameters that control the nonlinearities in the normals of the generated mesh.
 - **Enable** Turns the _Normal Noise_ group on.
-- **Frequency**
-- **Amplitude**
-- **Octaves**
+- **Frequency** The period of the cycle at which the noise is sampled. In other words, how dense the noise is.
+- **Amplitude** The range of the noise from its minimum to its maximum effect.
+- **Octaves** The number of layers of details of the noise. Combining low-level with high-level details results in more natural-looking output.
 - **Scale** The scale of the internal noise map that controls the nonlinearities.
-- **Seed**
+- **Seed** A fixed 'footprint', or a 'snapshot' of the noise.
 
 ### Parameters of Export
 
