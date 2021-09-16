@@ -128,17 +128,17 @@ When creating a plant (or a cloud — they have common creation approach) model,
 ### Billboard approach
 **Billboard** means that the whole object or just its particles/branches always look into camera. Whether it's a whole object or only its particles is determined by the [Foliage Shader's Global Billboard parameters](../foliage-shader/#global-billboard-parameter), as well as by some of the [Generation Parameters](#generation-parameters) here, in the _Foliage Generator_. Particularly, 
 
- - In _Foliage Generator_:
- - **Particle placement type**
+- In _Foliage Generator_:
+  * **Particle placement type**
 ![Particle Placement Type](../assets/images/manual_images/foliage_generator_particles_placement_type.png)  
 You'll need to choose between **Random** placed branches: for chaotic branch distribution or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above.
 
- - **Billboard whole object** group of parameters (_Particle Rotation Bias_ and _Bias Toward Rotation_)
+  * **Billboard whole object** group of parameters (_Particle Rotation Bias_ and _Bias Toward Rotation_)
 ![Billboard Whole Object group](../assets/images/manual_images/foliage_generator_billboard_whole_object_group.png)  
 If you want the whole mesh to be looking into the camera, set _Particle Rotation Bias_ to the maximum right position. It will force the branches always look where the following parameter, _Bias Toward Rotation_ is set. Here you don't have to change anything from zeroes if you have already camera-facing _Mesh Particle_, which you can see in the small mesh preview icon in the parameter's interface. If it is facing any other direction, you'll need to rotate it using _Bias Toward Rotation_ parameter's axis.
 
- - In _Foliage Shader_:
- - **Billboard Rotation** parameters, [described in detail on the Foliage Shader page here](../foliage-shader/#global-billboard-parameter)  
+- In _Foliage Shader_:
+  * **Billboard Rotation** parameters, [described in detail on the Foliage Shader page here](../foliage-shader/#global-billboard-parameter)  
 ![Particle Placement Type](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 If you want the whole mesh to be looking into the camera, please, choose **Whole Object**. In this case it is better to place these models far into background. Usually, for the construction of such billboard models you'll need only up to 100 _Particles_, which is relatively low poly, if you use a Quad as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)).  
 If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. These can sometimes be set in the middle of the scene or in the background as well. It is better to use _Each Face_ mode in conjunction with **Uniform** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.  
