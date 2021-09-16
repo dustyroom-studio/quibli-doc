@@ -73,21 +73,26 @@ The **Placement Type** parameter in **Uniform** mode is useful when engaging **B
 {: .notice--info}
 - **Offset Along Normal** ‘Inflates’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
 - **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.  
+- **Particle Rotation Range** How much _Particle_ rotation can deviate from _Carrier Mesh_ normals.
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
 
 **TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
 {: .notice--info}
-- **Particle Rotation Range** How much _Particle_ rotation can deviate from _Carrier Mesh_ normals.
-- **Particle Rotation Bias** Nudge _Particles_ to face the positive X axis.  
+
+### Billboard Whole Object Parameters
+
+**Billboard Whole Object** is a group of parameters that prepare rotation of the _Particles_ in order for the generated mesh to be used as a [Billboard](#billboard-approach)
+
+- **Particle Rotation Bias** Forces the _Particles_ to face the positive X axis.  
+- **Bias Toward Rotation** Sets the rotation on the axis for the _Particle Mesh_.
 
 **TIP.** _Particle Rotation Bias_ is useful for billboard foliage. ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will always create an impression of a more complex one.
 {: .notice--info}
-- **Bias Toward Rotation**
+
 
 ### Normal Noise Parameters
 
-- **Normal Noise**
-A group of parameters that control the nonlinearities in the normals of the generated mesh.
+**Normal Noise** is a group of parameters that control the nonlinearities in the normals of the generated mesh.
 - **Enable** Turns the _Normal Noise_ group on.
 - **Frequency**
 - **Amplitude**
@@ -97,8 +102,7 @@ A group of parameters that control the nonlinearities in the normals of the gene
 
 ### Parameters of Export
 
-**Export**
-A set of parameters for controlling the export process of the generated mesh.
+**Export** is a set of parameters for controlling the export process of the generated mesh.
 
 - **Folder Path** This is where the generated plant model would go. Currently it is set to the common folder which contains all the foliage meshes used in the Demo scenes.
 - **File Name Prefix** is a part of the title of the model that is going to be generated.
@@ -117,8 +121,31 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 **TIP.** It is convenient to use presets with _Foliage Generator_: every time you export a nice model, save the parameters for later. After changing everything up on the _Foliage Generator_ interface you can always load a preset (preferably previously titled in a proper way) to fix that bush that bothers you. Because the preset, whose _Carrier Mesh_, _Particle Mesh_ and _Export Parameters_ are loaded but not altered, will not create a new separate mesh, but overwrite and update the model that was created earlier (if it was already created).
 {: .notice--info}
 
-## How to Create a Basic Plant
+## How to Create a Basic Plant/Cloud
 
+When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh.
+
+### Billboard approach
+**Billboard** means that the whole object or just its particles/branches always look into camera. Whether it's a whole object or only its particles is determined by the [Foliage Shader's Global Billboard parameters](../foliage-shader/#global-billboard-parameter), as well as by some of the [Generation Parameters](#generation-parameters) here, in the _Foliage Generator_. Particularly, 
+
+ - In _Foliage Generator_:
+ - **Particle placement type**
+![Particle Placement Type](../assets/images/manual_images/foliage_generator_particles_placement_type.png)  
+You'll need to choose between **Random** placed branches: for chaotic branch distribution or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above.
+
+ - **Billboard whole object** group of parameters (_Particle Rotation Bias_ and _Bias Toward Rotation_)
+![Billboard Whole Object group](../assets/images/manual_images/foliage_generator_billboard_whole_object_group.png)  
+If you want the whole mesh to be looking into the camera, set _Particle Rotation Bias_ to the maximum right position. It will force the branches always look where the following parameter, _Bias Toward Rotation_ is set. Here you don't have to change anything from zeroes if you have already camera-facing _Mesh Particle_, which you can see in the small mesh preview icon in the parameter's interface. If it is facing any other direction, you'll need to rotate it using _Bias Toward Rotation_ parameter's axis.
+
+ - In _Foliage Shader_:
+ - [**Billboard Rotation** parameters](foliage-shader/#global-billboard-parameter)
+![Particle Placement Type](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
+If you want the whole mesh to be looking into the camera, please, choose **Whole Object**. In this case it is better to place these models far into background. Usually, for the construction of such billboard models you'll need only up to 100 _Particles_, which is very low poly, if you use a Quad as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)). We have written about the noticeable rotation effect of billboards placed closely to camera in the [here in the Limitations page](../limitations/#foliage-whole-object-billboards-always-look-into-camera). If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. These can sometimes be set in the middle of the scene or in the background as well. It is better to use _Each Face_ mode in conjunction with **Uniform** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.
+
+### Non-Billboard approach
+**Non-Billboard** foresees the commonly understood behavior of the meshes: they do not rotate with camera movement and they usually require more particles in order to cover its whole volume, unlike the billboards, where _only the front (in 'Whole Object' Billboard mode)_ or _only the particles/branches (in 'Each Face' Billboard mode)_ of the model will always be visible to the camera.
+
+### Shading Generated Model
 In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
 
   * Load the _Foliage Generator_. [Here's how](#beginning-to-work-with-foliage-generator);
