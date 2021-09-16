@@ -133,14 +133,13 @@ _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 - **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 ![Stylized Lit Shader — Detail mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)
-
 {:.image-caption}
 *Stylized Lit Shader — Detail mapping parameters*
 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
 
-**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
+**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.  
 ![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
@@ -170,7 +169,7 @@ _Lighting_ is a collapsible/expandable group of parameters that manages the beha
 
 Turning _Receive Shadows_ off is, probably, the parameter you'd want to turn off right away (it is impossible to do it automatically, since loading _Quibli Stylized Lit_ shader inherits the shadows in 'on' state — from the _Unity Standard Lit_ shader, which is loaded every time you create a new material, and which you are switching to the _Stylized Lit_ from).
 {: .notice--info}
-- **Override Realtime Shadow** A tick box that enables you to replace standard Unity cast shadow with stylized cast shadow, where you can change color, intensity and edge softness. Once enabled, a few shadow-related parameters appear.
+- **Override Realtime Shadow** A tick box that enables you to replace standard Unity cast shadow with stylized cast shadow, where you can change color, intensity and edge softness. Once enabled, a few shadow-related parameters appear:
   - **Shadow Attenuation Remap** This range slider is a multi-tool, which can control the tightness, intensity and the scale of the cast shadow. Drag the left and right brackets of the range slider to tighten up or loosen down the shadow edges, move the slider by clicking and dragging its center in order to adjust the intensity. To become familiar with what this parameter does, please, experiment with it a bit.
   - **Shadow Color** This control picks up the color of the received shadow.
 If _Shadow Color_’s Alpha is set to 0 in the color chooser, you’ll get Unity’s native shadows. In other words, Alpha influences the Shadow Color’s impact.
