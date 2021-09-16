@@ -29,6 +29,8 @@ Of course, it is very important to have the stylistically fitting models. Partic
 
 In addition to the shaders, and post effects, we included the tools used in making the [Demo scenes](demo-scenes). All the foliage models were made with [Foliage Generator](foliage-generator), a flexible tool for creating and modifying anime-looking plants. The stretched wires between the electric poles in the [City](demo-scenes#city-scene) demo scene, for example, are generated and can be modified in the Unity Editor using the [Curve Renderer](curve-renderer) tool.
 
+Quibli is easy to use and is beginner friendly. However, the foliage and cloud generating tools may have a slightly steep learning curve for complete beginners. 
+
 ## Requirements
 
   * Unity version 2020.3.1f1 or higher;
