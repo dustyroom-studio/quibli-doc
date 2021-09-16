@@ -44,7 +44,7 @@ Another way to add the _Foliage Generator_ to the scene is to use it as a Compon
 
 ### Operating the Foliage Generator After Loading
 
-When you have the _Foliage Generator_ loaded to the scene, you'll probably want to [adjust the parameters or load an existing preset](#parameters-of-the-foliage-generator) and will need to [apply a material to an exported mesh](#applying-materials-to-the-exported-meshes) — to finalize the plant model. Please, keep reading this chapter to get acquainted with the details of doing these steps.
+When you have the _Foliage Generator_ loaded to the scene, you'll probably want to [adjust the parameters or load an existing preset](#parameters-of-the-foliage-generator) and will need to [apply a material to an exported mesh](#shading-generated-model) — to finalize the plant model. Please, keep reading this chapter to get acquainted with the details of doing these steps.
 
   1. Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   1. Click _Export Mesh_ button;
@@ -150,14 +150,13 @@ We have written about the noticeable rotation effect of billboards placed closel
 **Non-Billboard** foresees the commonly understood behavior of the meshes: they do not rotate with camera movement and they usually require more particles in order to cover its whole volume, unlike the billboards, where _only the front (in 'Whole Object' Billboard mode)_ or _only the particles/branches (in 'Each Face' Billboard mode)_ of the model will always be visible to the camera.
 
 ### Shading Generated Model
-In the [section below](#applying-materials-to-the-exported-meshes) we'll discuss two ways of shading the Foliage Generator-made mesh. As the _Foliage Generator_ and [Foliage shader](../foliage-shader) are best buddies, let's assume, you want to use a specialized _Foliage shader_ for this task. Here is a quick plant cook-up guide.
+The _Foliage Generator_ and [Foliage shader](../foliage-shader) with [Cloud3D shader](../cloud3d-shader) are best buddies. These shaders work specifically on the models created by the _Foliage Generator_. Particularly, [Billboarding] has to be set in both _Foliage Generator_ and _Foliage Shader_.
 
-  * Load the _Foliage Generator_. [Here's how](#beginning-to-work-with-foliage-generator);
-  * Set the parameters according to screenshot in the [Brief Overview section](#foliage-generator-brief-overview):
-  * Export mesh. [Here's how](#parameters-of-export);
-  * Create a material like on the screenshot in the _Foliage_ shader chapter — [Brief Overview](../foliage-shader/#foliage-shader-brief-overview) (or use one from the _Sample Scene with Quibli_ Demo scene folder.
+The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look, the material is needed.
+  * **For foliage** Use the specialized [Foliage shader](../foliage-shader). Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. The beautiful thing is that this shader can also turn the foliage models not made by the _Foliage Generator_ into plants. More on this you can find in [Foliage shader](../foliage-shader) chapter.
+  * **For the clouds**, use [Cloud3D](../cloud3d-shader) shader.
 
-**Some explanation.** In the second step we created a mesh with a thought of using it as a billboard, explained [here](#billboard-approach). That's why we used only a handful of _Particles_. The _Particle Rotation Bias_ was set to '1' to make the particles fully rotate using _Foliage_ shader's _Billboard_ parameter. _Bias Toward Rotation_ was set to '-90', because the _Particle Mesh_ was not facing the camera. The _Particle Scale_ is set to a small number to generate a smaller mesh with pronounced shape (please, look through the [Generation Parameters](#generation-parameters) section for more descriptions.
+When you drag the exported plant or cloud model into the scene, you'll notice that it is pink, which tells that it is has no material yet. You can create a [Foliage](../foliage-shader/#beginning-to-work-with-the-foliage-shader) or [Cloud3D](../cloud3d-shader/#beginning-to-work-with-cloud3d-shader) material or choose one the bundled materials coming with Quibli, and either drag it onto the model, or select a material in the model's _Mesh Renderer_.
 
 ## Using Your Own Models
 
@@ -174,10 +173,3 @@ If you didn't change the name of the exported model after you created and used i
 {:.image-caption}
 *Using the Preset menu for the Foliage Generator*
 
-### Applying Materials to Exported Meshes
-
-The _Foliage Generator_ script makes up a mesh ready to be imported in your scene, but to finalize its look, the material is needed.
-  * **For foliage** Use the specialized [Foliage shader](../foliage-shader). Its niche controls give access to finer details in regards to finalizing the shaping of the models look, and not only the coloring. It has a _Wind_ set of parameters, the color controls are more streamlined for working with Foliage, a separate slot for alpha clipping map. The beautiful thing is that this shader can also turn the foliage models not made by the _Foliage Generator_ into plants. More on this you can find in [Foliage shader](../foliage-shader) chapter.
-  * **For the clouds**, use [Cloud3D](../cloud3d-shader) shader.
-
-When you drag the exported plant or cloud model into the scene, you'll notice that it is pink, which tells that it is has no material yet. You can create a [Foliage](../foliage-shader/#beginning-to-work-with-the-foliage-shader) or [Cloud3D](../cloud3d-shader/#beginning-to-work-with-cloud3d-shader) material or choose one the bundled materials coming with Quibli, and either drag it onto the model, or select a material in the model's _Mesh Renderer_.
