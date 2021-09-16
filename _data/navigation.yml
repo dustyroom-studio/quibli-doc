@@ -17,6 +17,12 @@ docs:
         url: /installation/
       - title: "Demo Scenes Included"
         url: /demo-scenes/
+	- title: "FAQs"
+        url: /faqs/
+      - title: "Limitations"
+        url: /limitations/
+      - title: "Quibli or Flat Kit"
+        url: /quibli-or-flat-kit/
   - title: Shaders
     children:
       - title: "Stylized Lit Shader"
@@ -49,11 +55,5 @@ docs:
         url: /curve-renderer/
   - title: Help
     children:
-      - title: "FAQs"
-        url: /faqs/
-      - title: "Limitations"
-        url: /limitations/
-      - title: "Quibli or Flat Kit"
-        url: /quibli-or-flat-kit/
       - title: "Contact"
         url: /contact-details/
