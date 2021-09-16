@@ -133,6 +133,7 @@ _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 - **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 ![Stylized Lit Shader — Detail mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)
+
 {:.image-caption}
 *Stylized Lit Shader — Detail mapping parameters*
 
@@ -140,7 +141,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 {: .notice--info}
 
 **TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.  
-![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)
+![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
