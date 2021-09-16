@@ -10,11 +10,10 @@ layout: single
 {: .notice--info}
 -->
 
-Important! After the initial release (15 Sep 2021) we got reports about the missing materials in [Sample Scene](../demo-scenes/#sample-scene-with-quibli) Demo scene. The issue has been already fixed and sent for the review.
+<!--
+Important! Announcement here.
 {: .notice--danger}
-
-Important! After the initial release (15 Sep 2021) we got reports about Quibli asset trying to unpack the files into Flat Kit folder if there is already one existing. The issue has been already fixed and sent for the review.
-{: .notice--danger}
+-->
 
 ## Quibli Brief Overview
 
