@@ -4,7 +4,7 @@ permalink: /demo-scenes/
 excerpt: "Demo Scenes Included in Quibli"
 ---
 
-In the scenes we tried to showcase a variety of use cases for the Quibli shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader), [Light Beam]([../light-beam-shader) as well as the post effects and additional tools.  
+In the scenes we tried to showcase a variety of use cases for the Quibli shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader), [Light Beam]([../light-beam-shader) as well as the post effects and additional tools.  
 
 Our demo scenes were made in _Linear Color Space_. If you use open Quibli Demo Scenes in  _Gamma Color Space_, the scenes will look differently.
 {: .notice--warning}
@@ -30,22 +30,22 @@ Another detailed scene showing all the shaders and additional tools in action.
 #### Kitchenware Scene
 This is a family of mostly saturated brightly colored scenes designed to show more unusual use of the [Stylized Lit shader](../stylized-lit-shader). Aside from the anime shading, it is possible to conveniently generate something unrelated, be it the basic coloring or something wild and unique. There is nothing unconventional going on, it is just the choice of the colors and the parameters that made up these scenes, particularly the Gradient editor settings on _Stylized Lit_ and [Skybox](../skybox-shader) shaders.  
 
-![Kitchenware Demo Scene 1](../assets/images/manual_images/demo_kitchenware_scene_1.jpg)
+![Kitchenware Demo Scene 1](../assets/images/manual_images/demo_kitchenware_scene_1.png)
 
 {:.image-caption}
 *Kitchenware Demo Scene 1 — smooth-mode Color Gradient ramp with vibrant colors*
 
-![Kitchenware Demo Scene 2](../assets/images/manual_images/demo_kitchenware_scene_2.jpg)
+![Kitchenware Demo Scene 2](../assets/images/manual_images/demo_kitchenware_scene_2.png)
 
 {:.image-caption}
 *Kitchenware Demo Scene 2 — smooth-mode Color Gradient ramp with color stops set tightly and loosely, with vibrant colors. The Skybox is made with the [Skybox shader](../skybox-shader), using a single color ramp, also with tight and loose color stops*
 
-![Kitchenware Demo Scene 3](../assets/images/manual_images/demo_kitchenware_scene_3.jpg)
+![Kitchenware Demo Scene 3](../assets/images/manual_images/demo_kitchenware_scene_3.png)
 
 {:.image-caption}
 *Kitchenware Demo Scene 3 — fixed-mode Color Gradient ramp with vibrant colors*
 
-![Kitchenware Demo Scene 4](../assets/images/manual_images/demo_kitchenware_scene_4.jpg)
+![Kitchenware Demo Scene 4](../assets/images/manual_images/demo_kitchenware_scene_4.png)
 
 {:.image-caption}
 *Kitchenware Demo Scene 4 — fixed-mode toon-looking Color Gradient ramp with monochrome colors*
