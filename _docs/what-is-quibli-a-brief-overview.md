@@ -10,10 +10,9 @@ layout: single
 {: .notice--info}
 -->
 
-<!--
-Important! Announcement here.
+Important! In the current version some importing problems were detected. We have already fixed the cause of these issues and submitted a fix patch for the review, it should be working shortly. Meanwhile, if you are experiencing import issues, please go to **Assets** folder -> right click on the **Quibli Folder** -> **Reimport**. If you are still having issues, please write to info@dustyroom.com, include your invoice number and we'll send you a direct link to the fixed unitypackage.
 {: .notice--danger}
--->
+
 
 ## Quibli Brief Overview
 
