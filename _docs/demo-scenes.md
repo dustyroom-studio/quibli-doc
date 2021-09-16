@@ -6,6 +6,9 @@ excerpt: "Demo Scenes Included in Quibli"
 
 In the scenes we tried to showcase a variety of use cases for the Quibli shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Grass](../grass-shader), [Skybox](../skybox-shader), [Cloud2D](../cloud2d-shader), [Light Beam]([../light-beam-shader) as well as the post effects and additional tools.  
 
+Our demo scenes were made in _Linear Color Space_. If you use open Quibli Demo Scenes in  _Gamma Color Space_, the scenes will look differently.
+{: .notice--warning}
+
 The scenes can be found in:  
 _**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demo Scenes** folder_
 
