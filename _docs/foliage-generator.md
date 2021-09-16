@@ -48,8 +48,8 @@ When you have the _Foliage Generator_ loaded to the scene, you'll probably want 
 
   1. Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   1. Click _Export Mesh_ button;
-  1. Locate an exported model in the export target folder. By default, it is:  
-_**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Common Resources** folder ▶︎ **Common Models** folder_;
+  1. Locate an exported model in the export target folder. For example, all common models are saved in:  
+**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demos** folder ▶︎ **[Common]** folder ▶︎ **Models** folder ▶︎ **Foliage Generator Exported Meshes** folder.
   1. Add this model in your scene (it looks pink)
   1. Apply the material to it.
 
@@ -105,7 +105,8 @@ The **Placement Type** parameter in **Uniform** mode is useful when engaging **B
 **Export** is a set of parameters for controlling the export process of the generated mesh.
 
 - **Folder Path** This is where the generated plant model would go. Currently it is set to the common folder which contains all the foliage meshes used in the Demo scenes.
-- **File Name Prefix** is a part of the title of the model that is going to be generated.
+- **File Name Prefix** is a part of the title of the model that is going to be generated. Starting with 'Quibli', you can type in any path (if the folder doesn't exist, the script will create it). For instance, all common generated models are here (copy and paste this path in the _File Name Prefix_ field):  
+_Quibli/Demos/[Common]/Models/Foliage Generator Exported Meshes_
 - **Append Mesh Name** Adds the _Carrier Mesh_ name to the name of the exported mesh.
 - **Append Take Number** Adds the value from the _Take Number_ field to the exported filename.
 - **Take Number** This is the current iteration number of the model. Only used if “Append Take Number” is enabled.
@@ -166,7 +167,7 @@ _Foliage Generator_ can process external models that are used as _Carrier Meshes
 
 ### Updating Existing Exported Models
 
-If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, — as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, dee the screenshot below.
+If you didn't change the name of the exported model after you created and used it, and given that you didn't change any parameters that contribute to the name of the exported mesh in the ongoing _Foliage Generator_ interface (see the descriptions of the parameters above), you can always come back to the _Foliage Generator_ in any of the scenes ([load the script](#beginning-to-work-with-foliage-generator) anywhere, anytime) and update the exported mesh — change the _Particle Scale_ or _Particles_ parameters, for example, as soon as the model is exported, it will update existing one. That's where saving presets of the _Foliage Generator_ is useful. Please, see the screenshot below.
 
 ![Using the Preset menu for the Foliage Generator](../assets/images/manual_images/foliage_generator_presets_menu.png)
 
