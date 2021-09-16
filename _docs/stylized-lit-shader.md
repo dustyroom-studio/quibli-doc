@@ -121,16 +121,15 @@ Once you enable _Height Gradient_, the following parameters will appear.
 **Texture Maps**
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
-- **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.
+- **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.  
+_Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.
+_Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 ![Stylized Lit Shader — Albedo mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)
 
 {:.image-caption}
 *Stylized Lit Shader — Albedo mapping parameters*
 
-_Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.
-_Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
-
-- **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
+- **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.  
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 ![Stylized Lit Shader — Detail mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)
 
