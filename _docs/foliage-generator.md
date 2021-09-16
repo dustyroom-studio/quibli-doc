@@ -48,9 +48,8 @@ When you have the _Foliage Generator_ loaded to the scene, you'll probably want 
 
   1. Adjust needed parameters or load a preset. The explanation of the parameters can be found [below](#parameters-of-the-foliage-generator);
   1. Click _Export Mesh_ button;
-  1. Locate an exported model in the export target folder. For example, all common models are saved in:  
-**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ **Demos** folder ▶︎ **[Common]** folder ▶︎ **Models** folder ▶︎ **Foliage Generator Exported Meshes** folder.
-  1. Add this model in your scene (it looks pink)
+  1. Locate an exported model in the export target folder. The path to this folder is set in the _File Name Prefix_ parameter in [Generation Parameters](#generation-parameters);
+  1. Add this model in your scene (it looks pink);
   1. Apply the material to it.
 
 ## Parameters of the Foliage Generator
