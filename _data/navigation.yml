@@ -17,7 +17,7 @@ docs:
         url: /installation/
       - title: "Demo Scenes Included"
         url: /demo-scenes/
-	- title: "FAQs"
+      - title: "FAQs"
         url: /faqs/
       - title: "Limitations"
         url: /limitations/
