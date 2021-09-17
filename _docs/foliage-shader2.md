@@ -16,10 +16,14 @@ excerpt: "Quibli Foliage Shader Temp page"
 | --- |
 | ![](../assets/images/manual_images/billboard_nothing.gif) 111|
 
-|*Billboard: Nothing*|
+
 |---|
 |![](../assets/images/manual_images/billboard_nothing.gif) 222|
+|*Billboard: Nothing*|
 
+|---|---|
+|![](../assets/images/manual_images/billboard_nothing.gif) 333|![](../assets/images/manual_images/billboard_nothing.gif) 333|
+|*Billboard: Nothing*|*Billboard: Nothing*|
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
 
