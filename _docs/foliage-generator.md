@@ -20,7 +20,7 @@ Another beautiful thing is that _Foliage Generator_ can take external models (th
 Please, note that _Foliage Generator_ doesn't produce the trunks of the trees, neither does it create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
 {: .notice--warning}
 
-It is highly recommended that you opened, for example, the [Plants demo scene](../demo-scenes/#plants-scene), located any of the plants in the _Hierarchy_ panel and experimented with its own _Foliage Generator_ instance. Press _Export Mesh_, will update this model. This way you can get to know the parameters better. And, please, remember that all parameters have mouse-hover tooltips. If you find any of them unclear, please, [shoot us an email] an we'll try to improve them.
+It is highly recommended that you opened, for example, the [Plants demo scene](../demo-scenes/#plants-scene), located any of the plants in the _Hierarchy_ panel and experimented with its own _Foliage Generator_ instance. Pressing _Export Mesh_, will update this model. This way you can get to know the parameters better. And, please, remember that all parameters have mouseover tooltips. If you find any of them unclear, please, [shoot us an email](../contact-details) an we'll try to improve them.
 {: .notice--info}
 
 ## Beginning to work with Foliage Generator
