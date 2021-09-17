@@ -14,6 +14,10 @@ The _Foliage_ shader is a specialized shader to be used with the models to give 
 {:.image-caption}
 *Quibli Foliage Shader Interface*
 
+It is highly recommended that you opened, for example, the [Plants demo scene](../demo-scenes/#plants-scene), located any of the plants in the _Hierarchy_ panel and experimented with its own material, which carries the _Foliage Shader_. Please, remember that all parameters have mouseover tooltips. If you find any of them unclear, please, [shoot us an email](../contact-details) an we'll try to improve them.
+{: .notice--info}
+
+
 ## Beginning to Work with the Foliage Shader
 
   1. Create a material;
