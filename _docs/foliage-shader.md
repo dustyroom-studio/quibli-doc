@@ -64,7 +64,7 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 - **Wind Turbulence** Introduces nonlinearities to the object’s motion.
 - **Wind Strength** The amount of deviation of the object from its initial position. In other words, it is how strong the movement is.
 
-### Global Billboard Parameter
+### Global Billboard Parameters
 
 ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and/or rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will often create an impression of a more complex one. Also, sometimes it is possible to achieve a specific look only if using billboard plants.
 {: .notice--info}

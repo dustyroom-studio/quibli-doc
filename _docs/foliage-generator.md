@@ -129,7 +129,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh.
 
 ### Billboard approach
-**Billboard** means that the whole object or just its particles/branches always look into camera. Whether it's a whole object or only its particles is determined by the [Foliage Shader's Global Billboard parameters](../foliage-shader/#global-billboard-parameter), as well as by some of the [Generation Parameters](#generation-parameters) here, in the _Foliage Generator_. Particularly, 
+**Billboard** means that the whole object or just its particles/branches always look into camera. Whether it's a whole object or only its particles is determined by the [Foliage Shader's Global Billboard parameters](../foliage-shader/#global-billboard-parameters), as well as by some of the [Generation Parameters](#generation-parameters) here, in the _Foliage Generator_. Particularly, 
 
 - In _Foliage Generator_:
   * **Particle placement type**
@@ -145,9 +145,6 @@ If you want the whole mesh to be looking into the camera, set _Particle Rotation
 ![Particle Placement Type](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 If you want the whole mesh to be looking into the camera, please, choose **Whole Object**. In this case it is better to place these models far into background. Usually, for the construction of such billboard models you'll need only up to 100 _Particles_, which is relatively low poly, if you use a Quad as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)).  
 If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. These can sometimes be set in the middle of the scene or in the background as well. It is better to use _Each Face_ mode in conjunction with **Uniform** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.  
-
-We have written about the noticeable rotation effect of billboards placed closely to camera in the [here in the Limitations page](../limitations/#foliage-whole-object-billboards-always-look-into-camera).
-{: .notice--warning}
 
 ### Non-Billboard approach
 **Non-Billboard** foresees the commonly understood behavior of the meshes: they do not rotate with camera movement and they usually require more particles in order to cover its whole volume, unlike the billboards, where _only the front (in 'Whole Object' Billboard mode)_ or _only the particles/branches (in 'Each Face' Billboard mode)_ of the model will always be visible to the camera.
