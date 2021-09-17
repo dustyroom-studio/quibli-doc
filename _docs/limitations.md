@@ -24,4 +24,4 @@ Also, it doesn't create conventional flower plants. It works with included as we
 Please, use the _Billboard Face Camera Position_ parameter in Foliage Shader's [Global Billboard Parameters](foliage-shader/#global-billboard-parameters).
 
 #### Shaders that are Built in the Shader Graph
-This is not a limitation but rather a technical detail worth mentioning. The following shaders are built in the Shader Graph: [Grass](../grass-shader), [Cloud3D](../cloud3d-shader), [Cloud2D]([Cloud2D](../cloud2d-shader), [Foliage](../foliage-shader). The [Stylized Lit](../stylized-lit-shader), [Skybox](../skybox-shader) and [Light Beam](../light-beam-shader) shaders are made as the hlsl script files.
+This is not a limitation but rather a technical detail worth mentioning. The following shaders are built in the Shader Graph: [Grass](../grass-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader), [Foliage](../foliage-shader). The [Stylized Lit](../stylized-lit-shader), [Skybox](../skybox-shader) and [Light Beam](../light-beam-shader) shaders are made as the hlsl script files.
