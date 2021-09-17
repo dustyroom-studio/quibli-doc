@@ -11,8 +11,9 @@ excerpt: "Quibli Foliage Shader Temp page"
 {:.image-caption}
 *Foliage Shader Billboard Rotation parameter options*
   * **Nothing** — bypasses the billboard rotation, meaning, the model is a non-billboard;  
+
 |---|
-|![](../assets/images/manual_images/billboard_nothing.gif)  222|
+|![](../assets/images/manual_images/billboard_nothing.gif)|
 |*Billboard: Nothing*|
 
 |---|---|
