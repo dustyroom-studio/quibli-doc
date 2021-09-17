@@ -81,13 +81,9 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 *Billboard: Nothing*
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
---- | --- 
-![](../assets/images/billboard_each_face_bfcp_no.gif) | ![](../assets/images/billboard_each_face_bfcp_yes.gif) 
-*Billboard: _Each Face_; B. Face Cam. Pos.: _No_* | *Billboard: _Each Face_; B. Face Cam. Pos.: _Yes_* 
+
 
   * **Whole Object** — rotates the whole object; the individual faces don't change relative rotation. Like the _Each Face_ mode, this mode is one of two billboarding methods.  
---- | --- 
-![](../assets/images/billboard_whole_object_bfcp_no.gif) | ![](../assets/images/billboard_whole_object_bfcp_yes.gif) 
-*Billboard: _Whole Object_; B. Face Cam. Pos.: _No_* | *Billboard: _Whole Object_; B. Face Cam. Pos.: _Yes_*   
+
 
 - **Billboard Face Camera Position** If _Billboard Rotation_ is enabled, the billboard will face the camera position. Otherwise, the billboard will face the camera plane. This makes billboards look nicer when camera rotates but is more expensive to render.
