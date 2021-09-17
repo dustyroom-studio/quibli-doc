@@ -144,7 +144,7 @@ If you want the whole mesh to be looking into the camera, set _Particle Rotation
   * **Billboard Rotation** parameters, [described in detail on the Foliage Shader page here](../foliage-shader/#global-billboard-parameters).  
 ![Particle Placement Type](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 If you want the whole mesh to be looking into the camera, please, choose **Whole Object**.  Usually, for the construction of such billboard models you'll need only up to 50—150 _Particles_, which is relatively low poly, if you use a Quad as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)).  
-If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. **It is better to use _Each Face_ mode in conjunction with **_Uniform_** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.  
+If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. **It is better to use _Each Face_ mode in conjunction with _Uniform_** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.  
 
 ### Non-Billboard approach
 **Non-Billboard** foresees the commonly understood behavior of the meshes: they do not rotate with camera movement and they usually require more particles in order to cover its whole volume, unlike the billboards, where _only the front (in 'Whole Object' Billboard mode)_ or _only the particles/branches (in 'Each Face' Billboard mode)_ of the model will always be visible to the camera.
