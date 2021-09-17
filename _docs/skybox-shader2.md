@@ -1,6 +1,6 @@
 ---
 title: "Skybox Shader"
-permalink: /skybox-shader/
+permalink: /skybox-shader2/
 excerpt: "Quibli Skybox Shader"
 ---
 
