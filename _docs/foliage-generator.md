@@ -128,6 +128,10 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh.
 
+|---|---|---|
+|![](../assets/images/manual_images/billboard_nothing.gif)|![](../assets/images/manual_images/billboard_each_face_bfcp_yes.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
+|*Billboard: Nothing*|*Billboard: Each Face*|*Billboard: Whole Object*|
+
 ### Billboard approach
 **Billboard** means that the whole object or just its particles/branches always look into camera. Whether it's a whole object or only its particles is determined by the [Foliage Shader's Global Billboard parameters](../foliage-shader/#global-billboard-parameters), as well as by some of the [Generation Parameters](#generation-parameters) here, in the _Foliage Generator_. Particularly, 
 
