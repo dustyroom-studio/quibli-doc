@@ -77,8 +77,10 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 *Foliage Shader Billboard Rotation parameter options*
   * **Nothing** — bypasses the billboard rotation, meaning, the model is a non-billboard;  
 
-![](../assets/images/manual_images/billboard_nothing.gif)  
-*Billboard: Nothing*
+*Billboard: Nothing* | ---
+--- | ---
+![](../assets/images/manual_images/billboard_nothing.gif) | ---  
+
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
 
