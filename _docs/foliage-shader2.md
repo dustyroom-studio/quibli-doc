@@ -79,11 +79,11 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 
 | *Billboard: Nothing* |
 | --- |
-| ![](../assets/images/manual_images/billboard_nothing.gif) |
+| ![](../assets/images/manual_images/billboard_nothing.gif) 111|
 
 |*Billboard: Nothing*|
 |---|
-|![](../assets/images/manual_images/billboard_nothing.gif)|
+|![](../assets/images/manual_images/billboard_nothing.gif) 222|
 
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
