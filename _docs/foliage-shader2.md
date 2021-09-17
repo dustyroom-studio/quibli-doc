@@ -12,18 +12,28 @@ excerpt: "Quibli Foliage Shader Temp page"
 *Foliage Shader Billboard Rotation parameter options*
   * **Nothing** — bypasses the billboard rotation, meaning, the model is a non-billboard;  
 
-| *Billboard: Nothing* |
-| --- |
-| ![](../assets/images/manual_images/billboard_nothing.gif) 111|
-
 
 |---|
-|![](../assets/images/manual_images/billboard_nothing.gif) 222|
+|![](../assets/images/manual_images/billboard_nothing.gif)  222|
 |*Billboard: Nothing*|
 
 |---|---|
-|![](../assets/images/manual_images/billboard_nothing.gif) 333|![](../assets/images/manual_images/billboard_nothing.gif) 333|
+|![](../assets/images/manual_images/billboard_nothing.gif)|![](../assets/images/manual_images/billboard_nothing.gif)|
 |*Billboard: Nothing*|*Billboard: Nothing*|
+
+
+|---|---|
+|![](../assets/images/manual_images/billboard_each_face_bfcp_no.gif)|![](../assets/images/manual_images/billboard_each_face_bfcp_yes.gif)|
+|*Billboard: Each Face; Billboard Face Camera Position: No*|*Billboard: Each Face; Billboard Face Camera Position: Yes*|
+
+
+|---|---|
+|![](../assets/images/manual_images/billboard_whole_object_bfcp_no.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
+|*Billboard: Whole Object; Billboard Face Camera Position: No*|*Billboard: Whole Object; Billboard Face Camera Position: Yes*|
+
+
+
+
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
 
