@@ -126,7 +126,13 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## How to Create a Basic Plant/Cloud
 
-When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh.
+Creating a finished model consists of two steps:
+1. Generate the mesh from _Mesh Carrier_ and _Mesh Particles_ using _Foliage Generator_, export it. The exported model will have only the _Particles_ visible, the _Carrier Mesh_ won't be exported.
+2. Shade the model using [Foliage Shader](../foliage-shader), where you apply the colors, textures of branches to the _Particles_, apply wind and make it a **billboard** or a **non-billboard**.
+
+When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. Also, how large the _Particles_ and _Carrier Mesh_ are going to be. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh. If you are going after a **non-billboard** model, the number of _Particles_ is going to be high (something like 500—1000) — to cover whole _Carrier Mesh_ volume without gaps. The size of _Particles_ is usually small (0.1—1) — should the particles be high, the non-pleasant plane intersections will be visible. If you are making a *billboard* model, the _Particles_ may be bigger and you can have much less of them: you won't see the _Particles from the sides and the intersections won't be as much obvious.
+
+Below you can see how **billboard** and **non-billboard** behave with camera's rotation and position change. This behavior is set in [Foliage shader](../foliage-shader)
 
 |---|---|---|
 |![](../assets/images/manual_images/billboard_nothing.gif)|![](../assets/images/manual_images/billboard_each_face_bfcp_yes.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
