@@ -64,26 +64,30 @@ A group of parameters that control the creation of the plant mesh.
 
 - **Carrier Mesh** The triangles of this mesh are used for placement of the spawned _Particles_. Quibli comes with a handful of these. Also, of course, you can create your own ones. Think of it as a 'core' of the future plant/cloud model.
 - **Particle Mesh** The building block of the foliage. Multiple copies of this mesh are combined in the exported mesh. In other words, this is what would be a ‘branch’ of the plant. These particles aka branches are applied to the _Carrier Mesh_ to form the resulting plant model. You can use the simplest Quad model from Unity or select one from Quibli’s package.
-- **Carrier Scale** Scaling applied to the _Carrier Mesh_ when spawning _Particles_. The bigger the _Carrier Mesh_ the more pronounced the shape of the resulting plant model would be.
-- **Particle Scale** Scaling applied to each individual _Particle_. This parameter controls how large the ‘branch’ of the plant model would be. The smaller the values the more detailed the resulting mesh is going to be. More so, if the _Carrier Scale_ values are high, smaller branches will contribute to the overall shape of the _Carrier Mesh_. If the _Particle Scale_ values are high, however, the resulting plant’s look would have less of the initial _Carrier Mesh_’s shape.
+- **Carrier Scale** Scaling applied to the _Carrier Mesh_ when spawning _Particles_. The bigger the _Carrier Mesh_, the more pronounced the shape of the resulting plant model would be.
+- **Particle Scale** Scaling applied to each individual _Particle_. This parameter controls how large the ‘branch’/'puff' of the plant/cloud model would be. The smaller the values the more detailed the resulting mesh is going to be. More so, if the _Carrier Scale_ values are high, smaller branches will contribute to the overall shape of the _Carrier Mesh_. If the _Particle Scale_ values are high, the resulting plant’s look would have less of the initial _Carrier Mesh_’s shape. Lower values (~0.05—1) are good for **non-billboards**, higher values (~0.5—3) are suitable for **billboards**, [explained here](#how-to-create-a-basic-plantcloud).
 - **Particle Scale Variance** Randomness of scale applied to each individual _Particle_.
-- **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have.
-- **Placement Type** Determines how to distribute the particles over the _Carrier Mesh_. Parameter has two options: **Random** and **Uniform**. _Random_ populates the particles chaotically, _Uniform_ distributes the particles evenly over the _Carrier Mesh_'s surface.  
+- **Particles** A number of _Particles_ to generate. In other words, this parameter sets how many of the branches the plant will have. Higher values (250—1000) are good for **non-billboards**, lower values (~25—150) are suitable for **billboards**, [explained here](#how-to-create-a-basic-plantcloud).
+- **Placement Type** Determines how to distribute the particles over the _Carrier Mesh_. Parameter has two options: **Random** and **Uniform**. _Random_ populates the particles chaotically, _Uniform_ distributes the particles evenly over the _Carrier Mesh_'s surface. It is an important parameter for **billboarding**, [explained here](#how-to-create-a-basic-plantcloud). 
 ![Foliage Generator Particles Placement Type menu](../assets/images/manual_images/foliage_generator_particles_placement_type_menu.png)
 
 The **Placement Type** parameter in **Uniform** mode is useful when engaging **Billboard Rotation** → **Each Face** mode in the _Foliage_ shader, [described here](../foliage-shader/#global-billboard-parameter).
 {: .notice--info}
+
+The **Placement Type** → **Uniform** mode is suitable for 3D clouds making, as the _Billboard Rotation_ → _Each Face_ mode is hardwired in [Cloud3D shader](../cloud3d-shader).
+{: .notice--info}
+
 - **Offset Along Normal** ‘Inflates’ the mesh by moving each _Particle_ along the _Carrier Mesh_ normal by this value.
 - **Fraction of Particles** Defines which particles offset is applied to. The value of 1 means all particles are offset. Useful to create branches that stick out of the general foliage shape. This parameter is grayed out when _Offset Along Normal_ is at the value of 0 — as soon as you change the latter, the former will become available for tweaking.  
 - **Particle Rotation Range** How much _Particle_ rotation can deviate from _Carrier Mesh_ normals.
 - **One Normal Per Particle** If enabled, the vertices within each _Particle_ will have the same normal values.
 
-**TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections.
+**TIP.** _One Normal Per Particle_ parameter is useful to hide plane intersections. Also, it is suitable if you want each _Particle_ to be more visually pronounced.
 {: .notice--info}
 
 ### Billboard Whole Object Parameters
 
-**Billboard Whole Object** is a group of parameters that prepare rotation of the _Particles_ in order for the generated mesh to be used as a [Billboard](#billboard-approach)
+**Billboard Whole Object** is a group of parameters that prepare rotation of the _Particles_ in order for the generated mesh to be used as a [Billboard](#billboard-approach). **Billboarding** is [explained here](#how-to-create-a-basic-plantcloud).
 
 - **Particle Rotation Bias** Forces the _Particles_ to face the positive X axis.  
 - **Bias Toward Rotation** Sets the rotation on the axis for the _Particle Mesh_.
@@ -128,7 +132,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 Creating a finished model consists of two steps:
 1. Generate the mesh from _Mesh Carrier_ and _Mesh Particles_ using _Foliage Generator_, export it. The exported model will have only the _Particles_ visible, the _Carrier Mesh_ won't be exported.
-2. Shade the model using [Foliage Shader](../foliage-shader), where you apply the colors, textures of branches to the _Particles_, apply wind and make it a **billboard** or a **non-billboard**.
+2. Shade the plant model using [Foliage Shader](../foliage-shader), where you apply the colors, textures of branches to the _Particles_, wind and make the model a **billboard** or a **non-billboard**. For the cloud models, please use the [Cloud3D shader](../cloud3d-shader). The _Cloud3D_ shader has an embedded billboarding (_Each Face_ type, we'll explain it later in this documentation).
 
 When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. Also, how large the _Particles_ and _Carrier Mesh_ are going to be. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh. If you are going after a **non-billboard** model, the number of _Particles_ is going to be high (something like 500—1000) — to cover whole _Carrier Mesh_ volume without gaps. The size of _Particles_ is usually small (0.1—1) — should the particles be high, the non-pleasant plane intersections will be visible. If you are making a *billboard* model, the _Particles_ may be bigger and you can have much less of them: you won't see the _Particles from the sides and the intersections won't be as much obvious.
 
@@ -144,7 +148,7 @@ Below you can see how **billboard** and **non-billboard** behave with camera's r
 - In _Foliage Generator_:
   * **Particle placement type**
 ![Particle Placement Type](../assets/images/manual_images/foliage_generator_particles_placement_type.png)  
-You'll need to choose between **Random** placed branches: for chaotic branch distribution or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above.
+You'll need to choose between **Random** placed branches: for chaotic branch distribution, or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above. For 3d cloud creation, we suggest using _Uniform_ mode.
 
   * **Billboard whole object** group of parameters (_Particle Rotation Bias_ and _Bias Toward Rotation_)
 ![Billboard Whole Object group](../assets/images/manual_images/foliage_generator_billboard_whole_object_group.png)  
