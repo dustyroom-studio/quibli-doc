@@ -7,7 +7,8 @@ excerpt: "Quibli Foliage Shader"
 
 ## Foliage Shader Brief Overview
 
-The _Foliage_ shader is a specialized shader to be used with the models to give them a foliage look. We're talking not only about the ones made entirely using the [Foliage Generator](../foliage-generator) tool, but also other models run through _Foliage Generator_, including primitives, letters, monkeys, everything you usually want to cover with leaves.  
+The _Foliage_ shader is a specialized shader to be used with the models to give them a foliage look. We're talking not only about the ones made entirely using the [Foliage Generator](../foliage-generator) tool, but also other models run through _Foliage Generator_, including primitives, letters, monkeys, everything you usually want to cover with leaves.
+
 ![Quibli Foliage Shader Interface](../assets/images/manual_images/quibli_foliage_shader_interface.png). 
 *Quibli Foliage Shader Interface*  
 {:.image-caption}

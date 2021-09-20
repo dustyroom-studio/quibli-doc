@@ -127,15 +127,20 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## How to Create a Basic Plant/Cloud
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tZv7lSg0d_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+*A brief tutorial on creating and shading a basic plant in non-billboard, 'Each Face' and 'Whole Object' modes*
+{:.image-caption}
+
 Creating a finished model consists of two steps:
 1. Generate the mesh from _Mesh Carrier_ and _Mesh Particles_ using _Foliage Generator_, export it. The exported model will have only the _Particles_ visible, the _Carrier Mesh_ won't be exported.
 2. Shade the plant model using [Foliage Shader](../foliage-shader), where you apply the colors, textures of branches to the _Particles_, wind and make the model a **billboard** or a **non-billboard**. For the 3D cloud models, please use the [Cloud3D shader](../cloud3d-shader). The _Cloud3D_ shader has an embedded billboarding (_Each Face_ type, we'll explain it later in this documentation).
 
-When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have and where it will be placed in the scene. Also, how large the _Particles_ and _Carrier Mesh_ are going to be. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh.  
+When creating a plant (or a cloud — they have common creation approach) model, we suggest to think in advance how many [particles](#generation-parameters) it should have, where it will be placed in the scene and how large the _Particles_ and _Carrier Mesh_ are going to be. It is important, because in the end the mesh will be made either as **billboard** or **non-billboard**/regular mesh. In addition to this, billboarding is the way to create uniquely looking plants/clouds, which are impossible to create otherwise.    
 If you are going after a **non-billboard** model, the number of _Particles_ is going to be high (something like 500—1000) — to cover whole _Carrier Mesh_ surface area without gaps. The size of _Particles_ is usually small (around 0.05—1) — should the particles be high, the non-pleasant plane intersections will be visible. These ranges apply to **billboards** in [Each Face](../foliage-shader/#global-billboard-parameters) mode as well.  
-If you are making a model as a *billboard* in [Whole Object](foliage-shader/#global-billboard-parameters) mode, the _Particles_ may be bigger and you can have much less of them: you won't see the _Particles from the sides and the intersections won't be as much obvious. For such billboards, the shader will take this handful of _Particles_ and 'squash' them in the camera direction, which will create an illusion of the full-bodied model.
+If you are making a model as a *billboard* in [Whole Object](foliage-shader/#global-billboard-parameters) mode, the _Particles_ may be bigger and you can have much less of them: you won't see the _Particles from the sides and the intersections won't be as much obvious. For such billboards, the shader will take this handful of Particles and 'squash' them in the camera direction, which will create an illusion of the full-bodied model.
 
-Below you can see how **billboard** and **non-billboard** behave with camera's rotation and position change. This behavior is set in [Foliage shader](../foliage-shader)
+Below you can see how **billboard** and **non-billboard** behave with camera's rotation and position change. This behavior is set in [Foliage shader](../foliage-shader).
 
 |---|---|---|
 |![](../assets/images/manual_images/billboard_nothing.gif)|![](../assets/images/manual_images/billboard_each_face_bfcp_yes.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
@@ -147,16 +152,16 @@ Below you can see how **billboard** and **non-billboard** behave with camera's r
 - In _Foliage Generator_:
   * **Particle placement type**
 ![Particle Placement Type](../assets/images/manual_images/foliage_generator_particles_placement_type.png)  
-You'll need to choose between **Random** placed branches: for chaotic branch distribution, or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above. For 3d cloud creation, we suggest using _Uniform_ mode.
+You'll need to choose between **Random** placed branches: for chaotic branch distribution, or **Uniform** placed branches: for the branches to be placed on the faces of the [Carrier Mesh](#generation-parameters). Please, look into the descriptions of these parameters, described above. For 3D cloud creation, we suggest using _Uniform_ mode.
 
   * **Billboard whole object** group of parameters (_Particle Rotation Bias_ and _Bias Toward Rotation_)
 ![Billboard Whole Object group](../assets/images/manual_images/foliage_generator_billboard_whole_object_group.png)  
-If you want the whole mesh to be looking into the camera, set _Particle Rotation Bias_ to the maximum right position. It will force the branches always look where the following parameter, _Bias Toward Rotation_ is set. Here you don't have to change anything from zeroes if you have already camera-facing _Mesh Particle_, which you can see in the small mesh preview icon in the parameter's interface. If it is facing any other direction, you'll need to rotate it using _Bias Toward Rotation_ parameter's axis.
+If you want the whole mesh to be looking into the camera, set _Particle Rotation Bias_ to the maximum right position. It will force the branches always look where the following parameter, _Bias Toward Rotation_, is set. Here you don't have to change anything from zeroes if you have already camera-facing _Mesh Particle_, which you can see in the small mesh preview icon in the parameter's interface. If it is facing any other direction, you'll need to rotate it using _Bias Toward Rotation_ parameter's axis.
 
 - In _Foliage Shader_:
   * **Billboard Rotation** parameters, [described in detail on the Foliage Shader page here](../foliage-shader/#global-billboard-parameters).  
 ![Particle Placement Type](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
-If you want the whole mesh to be looking into the camera, please, choose **Whole Object**.  Usually, for the construction of such billboard models you'll need only up to 25—150 large (value of ~1) _Particles_, which is relatively low poly, if you use a Quad as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)).  
+If you want the whole mesh to be looking into the camera, please, choose **Whole Object**.  Usually, for the construction of such billboard models you'll need only up to 25—150 large (value of ~1) _Particles_, which is relatively low poly, if you use a [Quad](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.html){:target="_blank"} as a _Particle Mesh_ (_Carrier Mesh_ and _Particle Mesh_ are described above in the [Generation Parameters](#generation-parameters)).  
 If you want the mesh itself NOT to be rotating, but rather its particles/branches, please, choose **Each Face** mode. **It is better to use _Each Face_ mode in conjunction with _Uniform_** _Particle Placement Type_ parameter of the _Foliage Generator_, described above.  
 
 ### Non-Billboard approach
