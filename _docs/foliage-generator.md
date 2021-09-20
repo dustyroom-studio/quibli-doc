@@ -127,7 +127,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 ## How to Create a Basic Plant/Cloud
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tZv7lSg0d_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MfTuySe2gJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 *A brief tutorial on creating and shading a basic plant in non-billboard, 'Each Face' and 'Whole Object' modes*
 {:.image-caption}

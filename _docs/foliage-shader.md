@@ -17,6 +17,12 @@ It is highly recommended that you opened, for example, the [Plants demo scene](.
 {: .notice--info}
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MfTuySe2gJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+*A brief tutorial on creating and shading a basic plant in non-billboard, 'Each Face' and 'Whole Object' modes*
+{:.image-caption}
+
+
 ## Beginning to Work with the Foliage Shader
 
   1. Create a material;
