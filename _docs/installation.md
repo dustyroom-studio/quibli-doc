@@ -11,7 +11,8 @@ Please, make sure you have the Universal RP project running (not Built-In RP or 
   * In Unity, go to **Window** ▶︎ **Package Manager**; 
   * On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import;  
   * Click **Download** (if it is not downloaded yet);  
-  * Click **Import**.  
+  * Click **Import**;
+  * Finalize Installation.
 
 ## Finalizing Quibli Installation
 
@@ -68,4 +69,8 @@ Below you can find typical possible issues when installing Quibli as well as oth
 #### After importing, Quibli gives errors
   * First, try restarting Unity. A simple restart indeed sometimes fixes some strange issues.
   * Re-import Quibli. Either delete it from the project and repeat [setting it up](#importing-quibli), or right-click on the _Quibli_ folder in the _Project_ panel and select _Reimport_.
+  * Check if the Unity version is or older than 2020.3.1f1.
+  * Check if you have a Universal RP project open.
+  * Check if you have [finalized the installation](../installation/#finalizing-quibli-installation).
   * This also may be due to unsupported Unity version, for example, a Unity beta release (with a 'b' in its title — the stable ones are named with 'f') not _yet_ stable enough to be listed in the supported Unity versions, or a very old version that hadn't ever been listed in Quibli supported Unity versions.
+  * If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Readme file's Inspector panel found in **Assets** folder > **Quibli** folder.
