@@ -7,12 +7,10 @@ excerpt: "Quibli Foliage Shader"
 
 ## Foliage Shader Brief Overview
 
-The _Foliage_ shader is a specialized shader to be used with the models to give them a foliage look. We're talking not only about the ones made using the [Foliage Generator](../foliage-generator) tool, but also other models, including primitives, letters, monkeys, everything you usually want to cover with leaves.
-
-![Quibli Foliage Shader Interface](../assets/images/manual_images/quibli_foliage_shader_interface.png)
-
+The _Foliage_ shader is a specialized shader to be used with the models to give them a foliage look. We're talking not only about the ones made entirely using the [Foliage Generator](../foliage-generator) tool, but also other models run through _Foliage Generator_, including primitives, letters, monkeys, everything you usually want to cover with leaves.  
+![Quibli Foliage Shader Interface](../assets/images/manual_images/quibli_foliage_shader_interface.png). 
+*Quibli Foliage Shader Interface*  
 {:.image-caption}
-*Quibli Foliage Shader Interface*
 
 It is highly recommended that you opened, for example, the [Plants demo scene](../demo-scenes/#plants-scene), located any of the plants in the _Hierarchy_ panel and experimented with its own material, which carries the _Foliage Shader_. Please, remember that all parameters have mouseover tooltips. If you find any of them unclear, please, [shoot us an email](../contact-details) an we'll try to improve them.
 {: .notice--info}
@@ -75,27 +73,27 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 
 - **Billboard Scale** Sets the scale of the branch textures aka particles (particles are described [here](../foliage-generator#parameters-of-the-foliage-generator)). Effectively, using this parameter, you can scale the whole mesh. _Billboard Scale_ works only when billboards are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
 - **Billboard Rotation** Defines whether the model will to act as a billboard or a non-billboard (regular mesh). If in _Each Face_ or _Whole Object_ mode, the model becomes a billboard. This parameter sets how the particles / branches are being rotated with the movement of the camera. _Billboard Rotation_ parameter has three options:  
-![Foliage Shader Billboard Rotation parameter options](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)
-
-{:.image-caption}
+![Foliage Shader Billboard Rotation parameter options](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  
 *Foliage Shader Billboard Rotation parameter options*
+{:.image-caption}
+
   * **Nothing** — bypasses the billboard rotation, meaning, the model is a non-billboard;  
 
 |---|
 |![](../assets/images/manual_images/billboard_nothing.gif)|
-|*Billboard: Nothing*|
+|*Billboard: Nothing. The entire object and its Particles rotate as in real world*|
 
   * **Each Face** — rotates each individual face, while the overall object shape stays non-rotating. It is one of the billboarding methods;  
 
 |---|---|
 |![](../assets/images/manual_images/billboard_each_face_bfcp_no.gif)|![](../assets/images/manual_images/billboard_each_face_bfcp_yes.gif)|
-|*Billboard: Each Face; Billboard Face Camera Position: No*|*Billboard: Each Face; Billboard Face Camera Position: Yes*|
+|*Billboard: Each Face; Billboard Face Camera Position: No. The particles follow camera plane*|*Billboard: Each Face; Billboard Face Camera Position: Yes. The Particles follow camera position*|
 
   * **Whole Object** — rotates the whole object; the individual faces don't change relative rotation. Like the _Each Face_ mode, this mode is one of two billboarding methods.  
 
 |---|---|
 |![](../assets/images/manual_images/billboard_whole_object_bfcp_no.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
-|*Billboard: Whole Object; Billboard Face Camera Position: No*|*Billboard: Whole Object; Billboard Face Camera Position: Yes*|
+|*Billboard: Whole Object; Billboard Face Camera Position: No. The whole mesh follows camera plane*|*Billboard: Whole Object; Billboard Face Camera Position: Yes. The whole mesh follows camera position*|
 
 - **Billboard Face Camera Position** If _Billboard Rotation_ is enabled, the billboard will face the camera position. Otherwise, the billboard will face the camera plane. This makes billboards look nicer when camera rotates but is more expensive to render. Basically, if you have an unpleasant rotation effect of your plants, try enabling this parameter. This is most visible when using a VR headset.  
 
