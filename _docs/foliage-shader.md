@@ -19,7 +19,7 @@ It is highly recommended that you opened, for example, the [Plants demo scene](.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MfTuySe2gJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
-*A brief tutorial on creating and shading a basic plant in non-billboard, 'Each Face' and 'Whole Object' modes*
+*A brief tutorial on creating and shading a basic plant in non-billboard, billboard 'Each Face' and billboard 'Whole Object' modes*
 {:.image-caption}
 
 
@@ -49,7 +49,8 @@ Apart from its texturing purpose, **Fill Impact** is useful for making the [Part
 {: .notice--info}
 
 - **Fill Scale** Sets the scale of the _Fill Texture_.
-- **Offset Along Normal** Slides the particles along the normals. Visually it 'inflates' or 'deflates' the mesh.
+- **Offset Along Normal** Slides the particles along the normals. Visually it 'inflates' or 'deflates' the mesh. _Offset Along Normal_ works only when [billboards](../foliage-generator/#billboard-approach) are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
+
 
 ### Additional Coloring Parameters
 
@@ -78,7 +79,7 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 ‘Billboard’ means that the meshes always face the camera regardless of the camera’s position and/or rotation. It is a handy feature because you can make up the plant model from only a handful of planes to spare resources, and this plant will often create an impression of a more complex one. Also, sometimes it is possible to achieve a specific look only if using billboard plants.
 {: .notice--info}
 
-- **Billboard Scale** Sets the scale of the branch textures aka particles (particles are described [here](../foliage-generator#parameters-of-the-foliage-generator)). Effectively, using this parameter, you can scale the whole mesh. _Billboard Scale_ works only when billboards are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
+- **Billboard Scale** Sets the scale of the branch textures aka particles (particles are described [here](../foliage-generator#parameters-of-the-foliage-generator)). Effectively, using this parameter, you can scale the whole mesh. _Billboard Scale_ works only when [billboards](../foliage-generator/#billboard-approach) are active: when in the _Billboard Rotation_ parameter _Each Face_ or _Whole Object_ are selected.
 - **Billboard Rotation** Defines whether the model will to act as a billboard or a non-billboard (regular mesh). If in _Each Face_ or _Whole Object_ mode, the model becomes a billboard. This parameter sets how the particles / branches are being rotated with the movement of the camera. _Billboard Rotation_ parameter has three options:  
 
 ![Foliage Shader Billboard Rotation parameter options](../assets/images/manual_images/quibli_foliage_shader_billboard_rotation_options.png)  

@@ -129,7 +129,7 @@ When a model is generated, the _Foliage Generator_ gives this model a name, whic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MfTuySe2gJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
-*A brief tutorial on creating and shading a basic plant in non-billboard, 'Each Face' and 'Whole Object' modes*
+*A brief tutorial on creating and shading a basic plant in non-billboard, billboard 'Each Face' and billboard 'Whole Object' modes*
 {:.image-caption}
 
 Creating a finished model consists of two steps:
@@ -178,7 +178,11 @@ When you drag the exported plant or cloud model into the scene, you'll notice th
 
 ## Using Your Own Models
 
-_Foliage Generator_ can process external models that are used as _Carrier Meshes_ (more about what is a _Carrier Mesh_ is [here](#generation-parameters)). Foliage Generator processes the normals and UVs of those meshes according to the parameters you set in its interface, so that the applied _particles_ would look suitable.
+_Foliage Generator_ can process external models that are used as _Carrier Meshes_ (more about what is a _Carrier Mesh_ is [here](#generation-parameters)). Foliage Generator processes the normals and UVs of those meshes according to the parameters you set in its interface, so that the applied _particles_ would look suitable.  
+
+![Distribution of the polygons for custom Carrier Meshes](../assets/images/manual_images/foliage_generator_custom_mesh_topology_1.png)  
+*For custom Carrier meshes, it is recommended to use the models that have as even quad distribution as possible. Such models would carry the particles evenly, so that the exported meshes won't have unfilled gaps on their surface.*
+{:.image-caption}
 
 ## Next Steps After Using Foliage Generator
 
