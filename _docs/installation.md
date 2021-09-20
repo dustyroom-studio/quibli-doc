@@ -73,4 +73,4 @@ Below you can find typical possible issues when installing Quibli as well as oth
   * Check if you have a Universal RP project open.
   * Check if you have [finalized the installation](../installation/#finalizing-quibli-installation).
   * This also may be due to unsupported Unity version, for example, a Unity beta release (with a 'b' in its title — the stable ones are named with 'f') not _yet_ stable enough to be listed in the supported Unity versions, or a very old version that hadn't ever been listed in Quibli supported Unity versions.
-  * If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Readme file's Inspector panel found in **Assets** folder > **Quibli** folder.
+  * If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is located in **Assets** folder ▶︎ **Quibli** folder.
