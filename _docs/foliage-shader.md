@@ -97,14 +97,14 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 |![](../assets/images/manual_images/billboard_whole_object_bfcp_no.gif)|![](../assets/images/manual_images/billboard_whole_object_bfcp_yes.gif)|
 |*Billboard: Whole Object; Billboard Face Camera Position: No*|*Billboard: Whole Object; Billboard Face Camera Position: Yes*|
 
-- **Billboard Face Camera Position** If _Billboard Rotation_ is enabled, the billboard will face the camera position. Otherwise, the billboard will face the camera plane. This makes billboards look nicer when camera rotates but is more expensive to render.
+- **Billboard Face Camera Position** If _Billboard Rotation_ is enabled, the billboard will face the camera position. Otherwise, the billboard will face the camera plane. This makes billboards look nicer when camera rotates but is more expensive to render. Basically, if you have an unpleasant rotation effect of your plants, try enabling this parameter. This is most visible when using a VR headset.  
 
 ![](../assets/images/manual_images/billboard_face_camera_position_disabled.gif)  
-*Billboard: Face Camera Position Disabled*
+*Billboard: Face Camera Position Disabled. Visible flicker between particles. View from Oculus VR headset*
 {:.image-caption}
 
-![](../assets/images/manual_images/billboard_face_camera_position_enabled.gif)
-*Billboard: Face Camera Position Enabled*
+![](../assets/images/manual_images/billboard_face_camera_position_enabled.gif)  
+*Billboard: Face Camera Position Enabled. The flicker between particles is not visible. View from Oculus VR headset*
 {:.image-caption}
 
 
