@@ -99,16 +99,12 @@ The _Wind_ part of the shader allows you to apply a shader-based displacement to
 
 - **Billboard Face Camera Position** If _Billboard Rotation_ is enabled, the billboard will face the camera position. Otherwise, the billboard will face the camera plane. This makes billboards look nicer when camera rotates but is more expensive to render.
 
-![](../assets/images/manual_images/billboard_whole_object_bfcp_no.gif)|![](../assets/images/manual_images/billboard_face_camera_position_disabled.gif)
-
-
-{:.image-caption}
+![](../assets/images/manual_images/billboard_face_camera_position_disabled.gif)  
 *Billboard: Face Camera Position Disabled*
-
-![](../assets/images/manual_images/billboard_whole_object_bfcp_no.gif)|![](../assets/images/manual_images/billboard_face_camera_position_enabled.gif)
-
-
 {:.image-caption}
+
+![](../assets/images/manual_images/billboard_face_camera_position_enabled.gif)
 *Billboard: Face Camera Position Enabled*
+{:.image-caption}
 
 
