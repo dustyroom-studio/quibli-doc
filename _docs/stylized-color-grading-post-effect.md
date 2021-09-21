@@ -8,16 +8,16 @@ excerpt: "Stylized Detail Post Effect"
 
 The _Stylized Color Grading_ includes the essence of the color correction processing — it is narrowed down for the anime-looking picture creation. Each of the parameters like _Blue Shadows_, _Green Shadows_ and _Red Highlights_ seem to be complicated in a designer work field, but in _Stylized Color Grading_ each of them were made to be working by their own formula tailored for the animation film stylistic look. Using a simplistically looking parameter slider you operate with an array of fairly sophisticated processing under the hood, which makes it very easy to use.
 
-![Stylized Detail Post Effect interface](../assets/images/manual_images/quibli_stylized_color_grading_post_effect_interface.png)
-
+![Stylized Detail Post Effect interface](../assets/images/manual_images/quibli_stylized_color_grading_post_effect_interface.png)  
+*Stylized Detail Post Effect interface*  
 {:.image-caption}
-*Stylized Detail Post Effect interface*
+
 
 ## Beginning to Work with Stylized Color Grading Post Effect
 
 **STEP 1.** The _Stylized Detail_ effect has to be added to the currently used [_Forward Renderer_](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/urp-forward-renderer.html){:target="_blank"} as a [_Renderer Feature_](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/urp-renderer-feature.html){:target="_blank"}. The _Renderer Feature_ is called **Quibli Post Process** and includes **Stylized Color Grading** and **Stylized Detail** [described here](../stylized-detail-post-effect) in the **Before Post Processing** and **After Post Processing** sections. The steps are below.  
-![Stylized Post Effects Renderer Features loaded in Forward Renderer](../assets/images/manual_images/quibli_post_processing_renderer_features.png)
-*Stylized Post Effects Renderer Features loaded in Forward Renderer*
+![Stylized Post Effects Renderer Features loaded in Forward Renderer](../assets/images/manual_images/quibli_post_processing_renderer_features.png)  
+*Stylized Post Effects Renderer Features loaded in Forward Renderer*. 
 {: .notice--info}
 
   1. Locate the currently active _Forward Renderer_. It can be done in a few ways. One of them is to look at your camera’s _Inspector_ panel ▶ _Forward Renderer_ field. Search for this _Forward Renderer_, select it and look at the _Inspector_ panel;

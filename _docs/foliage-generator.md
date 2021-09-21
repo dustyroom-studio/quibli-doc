@@ -184,6 +184,12 @@ _Foliage Generator_ can process external models that are used as _Carrier Meshes
 *For custom Carrier meshes, it is recommended to use the models that have as even quad distribution as possible. Such models would carry the particles evenly, so that the exported meshes won't have unfilled gaps on their surface.*
 {:.image-caption}
 
+Another important moment in choosing a custom _Carrier Mesh_ is to look if it is convex. Even if the model is concave, it is still better to not use the models that have big parts of surface closely located. In the example below you can see that outer and inner surface parts of the vase are located very closely to each other. In the end Foliage Generator will place branches on both outer and inner parts of the vase, and in addition to that, they will be crossing each other.  
+![Try not using thin solidified models](../assets/images/manual_images/foliage_generator_custom_mesh_concave_model.png)  
+*Please, try not using thin solidified models, as the particles will be on both sides and they will be crossing each other badly.*
+{:.image-caption}
+
+
 ## Next Steps After Using Foliage Generator
 
 ### Updating Existing Exported Models
