@@ -12,8 +12,8 @@ excerpt: "How to quickly install and setup Quibli"
 *A guide on downloading, importing and setting up Quibli*
 {:.image-caption}
 
-First of all, you need to import Quibli into your project.  
-Please, make sure you have the Universal RP project running (not Built-In RP ('3D', 'Mobile 3D' or HDRP).  
+First of all, you need to import Quibli into your URP project.  
+Please, make sure you have the Universal RP project running, not Built-In RP ('3D', 'Mobile 3D') or HDRP.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
  
   * In Unity, go to **Window** ▶︎ **Package Manager**; 
@@ -75,11 +75,11 @@ Below you can find typical possible issues when installing Quibli as well as oth
 > _Linux:_ ~/.local/share/unity3d/Asset Store-5.x  
 
 #### After importing, Quibli gives errors
-  * First, try restarting Unity. A simple restart indeed sometimes fixes some strange issues.
-  * Re-import Quibli. Either delete it from the project and repeat [setting it up](#importing-quibli), or right-click on the _Quibli_ folder in the _Project_ panel and select _Reimport_.
-  * Check if the Unity version is or older than 2020.3.1f1.
-  * Check if you have a Universal RP project open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
+  * First, try **restarting Unity**. A simple restart indeed sometimes fixes some strange issues.
+  * **Re-import Quibli**. Either delete it from the project and repeat [setting it up](#importing-quibli), or right-click on the _Quibli_ folder in the _Project_ panel and select _Reimport_.
+  * Verify if the Unity version is or newer than **2020.3.1f1**.
+  * Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
-  * Check if you have [finalized the installation](../installation/#finalizing-quibli-installation).
-  * This also may be due to unsupported Unity version, for example, a Unity beta release (with a 'b' in its title — the stable ones are named with 'f') not _yet_ stable enough to be listed in the supported Unity versions, or a very old version that hadn't ever been listed in Quibli supported Unity versions.
+  * Check if you have completed the Quibli set-up for URP — the process is described in [Finalizing Quibli installation paragraph](../installation/#finalizing-quibli-installation).
+  * Make sure that you are not using a Unity **beta** release (with a 'b' in its title — the stable ones are named with 'f') not _yet_ stable enough to be listed in the supported Unity versions, or a very old version that hadn't ever been listed in Quibli supported Unity versions.
   * If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is located in **Assets** folder ▶︎ **Quibli** folder.
