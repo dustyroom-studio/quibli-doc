@@ -20,7 +20,7 @@ Please, make sure you have the Universal RP project running, not Built-In RP ('3
   * On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import;  
   * Click **Download** (if it is not downloaded yet);  
   * Click **Import**;
-  * Finalize Installation.
+  * Finalize Installation (either automatically, or manually — described just below).
 
 ## Finalizing Quibli Installation
 
@@ -68,18 +68,24 @@ You can use your own custom settings file. The Quibli one is needed for viewing 
 Below you can find typical possible issues when installing Quibli as well as other assets in Unity.  
 
 #### Can't import Quibli
-  * First of all, please check if it has been downloaded in the _Package Manager_ (the steps for downloading are described [above](#importing-quibli)).
-  * If Quibli has been previously downloaded but you cannot see the _Import_, it may be due to the known Package Manager 'cache' issue. You'll need to locate the **Package Manager Cache** in your OS and delete the folder contents. As soon as you do so, the _Import_ button should appear right away. The cache folder location depends on the OS you are using. Here are the paths:  
-> _Mac OS:_ ~/Library/Unity/Asset Store-5.x _(press Shift+Cmd+G in any Finder Window and paste this path)_  
-> _Windows:_ %APPDATA%\Unity\Asset Store-5.x _(it is a hidden folder)_  
-> _Linux:_ ~/.local/share/unity3d/Asset Store-5.x  
+- First of all, please, make sure you downloaded Quibli using the _Package Manager_, as shown in the [video](#importing-quibli).
+- If the 'Import' button is greyed out, it may be due to the known Package Manager 'cache' issue. Here is how to fix it:  
+  1. Please, locate the **Readme** helper tool:  
+**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ select **Readme** and go to _Inspector_ panel;  
+  1. Press **Clear Cache**;
+  1. Download and import Quibli from the _Package Manager_ as shown in the [video](#importing-quibli).
 
 #### After importing, Quibli gives errors
-  * First, try **restarting Unity**. A simple restart indeed sometimes fixes some strange issues.
-  * **Re-import Quibli**. Either delete it from the project and repeat [setting it up](#importing-quibli), or right-click on the _Quibli_ folder in the _Project_ panel and select _Reimport_.
-  * Verify if the Unity version is or newer than **2020.3.1f1**.
-  * Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
+- First, try **restarting Unity**. A simple restart indeed sometimes fixes some strange issues.
+- **Re-import Quibli**. Here is how:
+  1. Please, locate the **Readme** helper tool:  
+**Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ select **Readme** and go to _Inspector_ panel;  
+  1. Press **Clear Cache**;
+  1. Delete the **Quibli** folder from the **Project** panel ▶︎ **Assets** folder;
+  1. Download and import Quibli from the _Package Manager_ as shown in the [video](#importing-quibli).
+- Verify if the Unity version is or is newer than **2020.3.1f1**.
+- Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
-  * Check if you have [finalized the Quibli set-up for URP](../installation/#finalizing-quibli-installation).
-  * Make sure that you are not using a Unity **beta** release.
-  * If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is located in **Assets** folder ▶︎ **Quibli** folder.
+- Check if you have [finalized the Quibli set-up for URP](../installation/#finalizing-quibli-installation).
+- Make sure that you are not using a Unity **beta** release.
+- If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is located in **Assets** folder ▶︎ **Quibli** folder.
