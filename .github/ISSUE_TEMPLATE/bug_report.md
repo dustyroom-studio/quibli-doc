@@ -23,15 +23,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Unity details:**
- - Quibli version: [e.g. 1.0.1]
- - Unity version: [e.g. 2020.3.3f1]
- - URP version: [e.g. 10.3.1]
- - Development OS: [e.g. Windows]
-
-**Build platform:**
- - Platform: [e.g. iOS]
- - Test device: [e.g. iPhone6]
+**Unity details**:
+(Use the `Copy` button in your project *Quibli/Readme* file and paste here.)
 
 **Additional context**
 Add any other context about the problem here.
