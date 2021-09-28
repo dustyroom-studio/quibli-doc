@@ -60,7 +60,7 @@ You can use your own custom settings file. The Quibli one is needed for viewing 
 ![URP Config file should have Depth Texture and Opaque Texture turned on](../assets/images/manual_images/urp_config_file_depth_texture_opaque_texture.png)  
 *URP Config file should have Depth Texture and Opaque Texture turned on*
 
-**NOTE.** Should you have any difficulties with the installation of Quibli, please read through the [Troubleshooting](#troubleshooting) chapter on this page as well as have a look at the [FAQs](../faqs) page. It your questions are not answered yet, please [Report an Issue]() or write to us to info@dustyroom.com. We should be able to help you quickly. Please, don't forget to include your set-up details like Unity and Quibli versions.
+**NOTE.** Should you have any difficulties with the installation of Quibli, please read through the [Troubleshooting](#troubleshooting) chapter on this page as well as have a look at the [FAQs](../faqs) page. If your questions are not answered yet, please [Report an Issue](https://github.com/dustyroom-studio/quibli-doc/issues/new/choose) or write to us to info@dustyroom.com. We should be able to help you quickly. Please, don't forget to include your set-up details like Unity and Quibli versions.
 {: .notice--info}
 
 ## Troubleshooting
