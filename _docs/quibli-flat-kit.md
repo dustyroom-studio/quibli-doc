@@ -1,10 +1,10 @@
 ---
-title: "Quibli or Flat Kit"
-permalink: /quibli-or-flat-kit/
-excerpt: "Quibli or Flat Kit"
+title: "Quibli and Flat Kit"
+permalink: /quibli-flat-kit/
+excerpt: "Quibli and Flat Kit"
 ---
 
-## Quibli or Flat Kit?
+## Quibli and Flat Kit
 
 We describe [Flat Kit](http://u3d.as/1uVy){:target="_blank"} as a one-stop choice for getting bread-and-butter toon look and a great tool for experimentation. With Flat Kit you can take a scarily boring plain scene and turn it into a pro-looking polished material in the matter of half an hour. Quibli takes this idea to the next level.
 
