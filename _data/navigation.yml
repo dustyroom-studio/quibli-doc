@@ -23,8 +23,8 @@ docs:
         url: /faqs/
       - title: "Limitations"
         url: /limitations/
-      - title: "Quibli or Flat Kit"
-        url: /quibli-or-flat-kit/
+      - title: "Quibli and Flat Kit"
+        url: /quibli-flat-kit/
   - title: Shaders
     children:
       - title: "Stylized Lit Shader"
