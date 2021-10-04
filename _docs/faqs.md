@@ -6,7 +6,7 @@ toc: false
 ---
 
 #### What is the difference between Quibli and Flat Kit?
-> Please, look at [this chapter](../quibli-or-flat-kit), which compares the two.
+> Please, look at [this chapter](../quibli-flat-kit), which compares the two.
 
 ---
 
