@@ -33,7 +33,7 @@ Quibli is easy to use and is beginner friendly. However, the foliage and cloud g
 
 ## Requirements
 
-  * Unity version 2020.3.18f1 or higher;
+  * Unity version 2020.3.21f1 or higher;
   * Universal Rendering Pipeline (also known as 'URP', previously known as 'LWRP').
 
 ## What Is Included in Quibli?
