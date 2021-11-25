@@ -31,7 +31,7 @@ After the importing, to finalize the installation it is advised to configure Qui
 Quibli comes with the **Readme** script tool, whose one of the jobs is to automatically configure URP to be working with Quibli. This procedure can also be done and undone manually, which is described in [Manual Finalizing](#manual-finalizing) paragraph.  
 
 ![Readme tool interface](../assets/images/manual_images/quibli_readme_interface.png)  
-*Readme tool interface and its location*  
+*Readme tool interface and its default location*  
 {:.image-caption}
 
 
@@ -70,7 +70,7 @@ Below you can find typical possible issues when installing Quibli as well as oth
 #### Can't import Quibli
 - First of all, please, make sure you downloaded Quibli using the _Package Manager_, as shown in the [video](#importing-quibli).
 - If the 'Import' button is greyed out, it may be due to the known Package Manager 'cache' issue. Here is how to fix it:  
-  1. Please, locate the **Readme** helper tool:  
+  1. Please, [locate](#automatic-finalizing) the **Readme** helper tool:  
 **Project** panel ▶︎ **Assets** folder ▶︎ **Quibli** folder ▶︎ select **Readme** and go to _Inspector_ panel;  
   1. Press **Clear Cache**;
   1. Download and import Quibli from the _Package Manager_ as shown in the [video](#importing-quibli).
@@ -83,9 +83,9 @@ Below you can find typical possible issues when installing Quibli as well as oth
   1. Press **Clear Cache**;
   1. Delete the **Quibli** folder from the **Project** panel ▶︎ **Assets** folder;
   1. Download and import Quibli from the _Package Manager_ as shown in the [video](#importing-quibli).
-- Verify if the Unity version is or is newer than **2020.3.21f1**.
+- Verify if the Unity version is equal or is newer than **2020.3.21f1**.
 - Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
 - Check if you have [finalized the Quibli set-up for URP](../installation/#finalizing-quibli-installation).
 - Make sure that you are not using a Unity **beta** release.
-- If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is located in **Assets** folder ▶︎ **Quibli** folder.
+- If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is by default located in **Assets** folder ▶︎ **Quibli** folder.
