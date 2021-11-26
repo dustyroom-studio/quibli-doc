@@ -10,7 +10,7 @@ toc: false
 
 ---
 
-#### After installing Quibli there are errors in the Console.
+#### After installing Quibli there are some issues.
 > Please, look into the [Troubleshooting](../installation#troubleshooting) section.
 
 ---

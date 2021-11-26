@@ -233,3 +233,7 @@ Below you can find answers to the typical possible questions when working with S
 #### Can't apply the texture
   * Please, make sure the model you are applying the material to is UV-unwrapped.
   * If you are using a custom texture, please, make sure the format is supported.
+
+
+#### Can't find Stylized Lit in the list of the shaders
+  * Please try **completely** reimporting Quibli. [Here's how](../installation/#after-importing-quibli-gives-errors)
