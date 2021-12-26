@@ -34,7 +34,7 @@ Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can 
 *Gradient Editor is real-time*
 
 **TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
-![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)
+![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)  
 *Using presets in the Gradient Editor*
 {: .notice--info}
 
