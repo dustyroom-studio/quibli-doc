@@ -194,8 +194,9 @@ _Outline_ is a collapsible/expandable group of parameters for working with the s
 Please, notice that this outline feature is simplified as compared to [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a few handy parameters for making it look nice in most of the basic cases.
 {: .notice--warning}
 
-- **Width** As soon as the slider is at 0, the effect is bypassed and doesn't affect the performance. Once you start dragging the control to the right, the outline appears on the screen and is becoming thicker as long as you are moving the slider.
 - **Color** Selects the color of the contour.
+- **Width** As soon as the slider is at 0, the effect is bypassed and doesn't affect the performance. Once you start dragging the control to the right, the outline appears on the screen and is becoming thicker as long as you are moving the slider.
+- **Scale** adjust this parameter when you have gaps on the vertices (please note, this is not an ultimate solution, the gaps need a complex approach — in modelling, adjusting the normals, adjusting camera distance etc).
 - **Depth Offset** Pushes the outline 'outside of the mesh'. This is particularly useful if the mesh has lots of faces and you want it to look clean and uncluttered. When you move the slider to the right, the mesh loses the outline details inside while emphasizing its outer contour.
 - **Camera Distance Impact** Lets the outline change its width with the distance from the camera. If you want to make it gradually thinner as the object moves from camera, drag the slider to the right.
 
