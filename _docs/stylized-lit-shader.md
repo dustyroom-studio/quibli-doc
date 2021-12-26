@@ -57,6 +57,9 @@ In _Smooth_ mode you can set all or some of the color stops closely to the adjac
 {:.image-caption}
 *Gradient Editor in Blend mode with partially tight color stops*
 
+Please, note that if you would like to get a smooth gradient, your model should have smooth normals. Otherwise, even if you have the _Blend_ mode chosen, but you have a model with hard normals, you'll likely see a stepped gradient. If you have no option to edit a model, you can try adjusting the parameters in the model's _Import Settings_
+{: .notice--warning}
+
 - **Shading Offset** _Shading Offset_ moves the gradient over the model. It’s a convenience parameter, because this effect can be also made by moving all the stop points in the _Gradient Editor_.
 ![Gradient Editor is real-time](../assets/images/manual_images/gradient_shading_offset_adjusting.gif)
 
