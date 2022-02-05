@@ -11,13 +11,13 @@ In this chapter the known limitations of working with Quibli are described.
 Currently VR works in multi-pass mode only. We are working on it, it is our prioritised feature to implement.
 
 #### In _Foliage_ and _Grass_ shaders, there is no support for the shadows when working with additional lights.
-During making of the _Foliage_ and _Grass_ shaders, we had to completely revisit Unity's emission behavior for these shaders, in order to flexibly control the color shading. Otherwise, there would be a poor looking shadow rendered over the foliage objects, which there is no control over.
+During making of the _Foliage_ and _Grass_ shaders, we had to completely revisit Unity's emission behavior for these shaders, in order to flexibly control the color shading. Otherwise, there would have been a poor looking shadow rendered over the foliage objects, which there would be no control over.
 
 #### Quibli does not include a tool for automatic prefab placement.
 Our grass needs to be placed with a mesh-painting tool, like [Polybrush](https://unity.com/features/polybrush){:target="_blank"}, as opposed to being spawned by Unity’s terrain tool.
 
 #### Foliage can not be used with Terrain.
-Currently the _Foliage_ and _Grass_ shaders don't work on the 'details' objects painted with Unity Terrain.
+Currently the _Foliage_ and _Grass_ shaders don't work on the 'details' objects painted with Unity Terrain, which is a way of an automatic prefab/texture placement. It is possible to place the foliage either by such tools as [Polybrush](https://unity.com/features/polybrush){:target="_blank"}, or by hand.
 
 #### _Foliage Generator_ doesn't produce the trunks of the trees.
 Also, it doesn't create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
