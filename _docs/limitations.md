@@ -17,7 +17,7 @@ During making of the _Foliage_ and _Grass_ shaders, we had to completely revisit
 Our grass needs to be placed with a mesh-painting tool, like [Polybrush](https://unity.com/features/polybrush){:target="_blank"}, as opposed to being spawned by Unity’s terrain tool.
 
 #### Foliage can not be used with Terrain.
-Currently the _Foliage_ and _Grass_ shaders don't work on the 'details' objects painted with Unity Terrain, which is a way of an automatic prefab/texture placement. It is possible to place the foliage either using such tools as [Polybrush](https://unity.com/features/polybrush){:target="_blank"}, or manually.
+Currently the _Foliage_ and _Grass_ shaders don't work on the 'details' objects painted with Unity Terrain, which is a way of an automatic prefab/texture placement.
 
 #### _Foliage Generator_ doesn't produce the trunks of the trees.
 Also, it doesn't create conventional flower plants. It works with included as well as external meshes and processes them so that the generated plants can work as stylized leafy parts of  the foliage. However, using the proper textures and a bit non-literal approach, the floral decorations can be created with the _Foliage Generator_.
