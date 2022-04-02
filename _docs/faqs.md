@@ -35,5 +35,22 @@ toc: false
 
 ---
 
+#### Is Quibli mobile-friendly?
+> The short answer is yes, Quibli shaders are mobile-friendly. The longer answer is the following.
+The performance of the shaders is comparable to the Unity standard Lit shader; the Quibli post effects work similarly to the Unity post effects. But, of course, you have to be mindful of the modeling optimization.
+Also, below you can find a few general Unity optimization points I could think of that performance depends on.
+- The performance depends on the hardware you are working/testing it on. If it is not an ancient phone, for example, Quibli was tested to be running smoothly with the appropriate number of shaders and parameters engaged.
+- Check if the test device meets the requirements: the object shaders target 3.5 (or es 3.0 and WebGL 2.0).
+- Also, if possible, try reusing materials as much as possible. Although SRP batching should deal with it, it still is a good practice to keep the materials number moderate.
+- If you use many objects on the scene, make sure you use occlusion culling.
+- The performance gain can vary significantly based on the number of vertices and materials used.
+- The Quibli Foliage and Cloud2D shaders use transparency. If you use a lot of alpha clipping, it is expected that the performance can be struggling. If the framerate is still low, please try out any Unity shader with alpha clipping. The low performance might be caused by the fact that the hardware can't handle alpha clipping well enough.
+- If you can, toggle the unused parameters off. Some of them are still in use even if they are at the 0 value. That's why most of the Quibli's main parameters can be bypassed by pressing a tick off.
+
+---
+
 #### How do I get 50% discount for Quibli if I have (am going to purchase) Flat Kit?
 > Please, log into the same account with which you purchased Flat Kit, open the Quibli's Asset Store page — you should see the automatically applied 50% discount there.
+
+
+
