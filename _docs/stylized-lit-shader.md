@@ -106,7 +106,7 @@ Please, note that _Rim_ is not a substitution for the proper outline effect, lik
 {:.image-caption}
 *Stylized Lit Shader — Height Gradient parameters*
 
-**TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the electric poles and houses, which otherwise would have looked kind of detached from the pavement.
+**TIP.** In a _City_ Demo scene the _Height Gradient_ is sometimes used as a subtle pseudo ambient occlusion, particularly on the bottom of electric poles and houses, which otherwise would have looked kind of detached from the pavement.
 {: .notice--info}
 
 **TIP.** If your scene has some kind of a bloom effect, raising the intensity of the HDR of _Specular_, _Rim_, _Height Gradient_ parameters create a glowing effect. It can contribute to the anime look greatly.
@@ -119,6 +119,7 @@ Once you enable _Height Gradient_, the following parameters will appear.
 - **Size** How spread the _Height Gradient_ is.
 - **Gradient Angle** Rotates the _Height Gradient_ around the **Center X** and **Center Y** values in world-space.
 - **Enable Vertex Colors** If enabled, the final shading of the object is multiplied by the mesh’s vertex color values. It is a debug parameter, usually this is not used for changing the look.
+- **Enable Outline** If enabled, the outline and the [group of parameters](#outline-parameters) for tweaking it will appear.
 
 ### Texture Mapping Parameters
 **Texture Maps**
