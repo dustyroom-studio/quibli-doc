@@ -1,9 +1,9 @@
 main:
   - title: "Asset Store"
     url: https://u3d.as/2FwR
-  - title: "Report an Issue on Git"
+  - title: "Report an issue on GitHub"
     url: https://github.com/dustyroom-studio/quibli-doc/issues/new/choose
-  - title: "Report an Issue on Trello"
+  - title: "Report an issue on Trello"
     url: https://trello.com/b/tOhjxOib/quibli
   - title: "FAQs"
     url: /faqs/
