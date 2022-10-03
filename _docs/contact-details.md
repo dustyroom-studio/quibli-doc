@@ -14,4 +14,4 @@ Have questions? Here's how to get support:
 > Please, include as many details as possible such as Unity and Quibli versions, screenshots / recordings etc. Any suggestions and feature requests are welcome, too!  
 
 Email: [{{ site.email }}](mailto:{{ site.email }})  
-Twitter: [{{ site.twitter_username }}](https:/twitter.com/{{ site.twitter_username }})  
+Twitter: [{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})  
