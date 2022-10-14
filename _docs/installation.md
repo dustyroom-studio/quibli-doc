@@ -87,10 +87,14 @@ Below you can find typical possible issues when installing Quibli as well as oth
 - Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_2.png)
 - Make sure you initially created your project as a URP project, not an 'upgraded from Built-in RP' one.
+- If you must use Quibli in a project 'upgraded from Built-in RP', make sure you have the **Universal RP** and the **Shader Graph** packages installed from the Package Manager.
 - Check if you have [finalized the Quibli set-up for URP](../installation/#finalizing-quibli-installation).
 - Make sure that you are not using a Unity **beta** release.
-- If nothing helps, please, write to info@dustyroom.com and include the screenshot of the Inspector panel of the **Readme** file, which is by default located in **Assets** folder ▶︎ **Quibli** folder.
+- If nothing helps, please, write to info@dustyroom.com and include the following:
+  1. Info about the errors (a screenshot of Console panel, for example)
+  1. Locate and select the **Readme** file (located by default in **Assets** folder ▶︎ **Quibli** folder), in the Inspector panel, press **Copy** button in the _Debug info_ section and paste the copied text in your mail (or just make a screenshot of the panel.
 
 #### After importing, some of the shaders are missing or cannot be compiled
+- In **Project** tab ▶︎ **Assets** folder, right-click on **Quibli** folder, press _Reimport_.
 - Check whether your setup meets the [requirements](../#requirements).
 - Try a complete reimport for Quibli. [Here's how](#after-importing-quibli-gives-errors)
