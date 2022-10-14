@@ -83,7 +83,7 @@ Below you can find typical possible issues when installing Quibli as well as oth
   1. Press **Clear Cache**;
   1. Delete the **Quibli** folder from the **Project** panel ▶︎ **Assets** folder;
   1. Download and import Quibli from the _Package Manager_ as shown in the [video](#importing-quibli).
-- Verify if the Unity version is equal or is newer than **2020.3.37f1**, **2021.3.5f1** or **2022.1.10**.
+- Verify if the Unity version is equal or is newer than **2020.3.37f1**, **2021.3.5f1** or **2022.1.10f1**.
 - Check if you have a **Universal RP project** open. When creating a new project, it is important to choose **Universal Rendering Pipeline** and _not_ **Built-In aka '3D' or 'Mobile 3D'**.  
 ![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
 - Make sure you initially created your project as a URP project, not an 'upgraded from Built-in RP' one.
