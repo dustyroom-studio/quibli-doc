@@ -92,9 +92,9 @@ Below you can find typical possible issues when installing Quibli as well as oth
 - Make sure that you are not using a Unity **beta** release.
 - If nothing helps, please, write to info@dustyroom.com and include the following:
   1. Info about the errors (a screenshot of Console panel, for example)
-  1. Locate and select the **Readme** file (located by default in **Assets** folder ▶︎ **Quibli** folder), in the Inspector panel, press **Copy** button in the _Debug info_ section and paste the copied text in your mail (or just make a screenshot of the panel.
+  1. Locate and select the **Readme** file (located by default in **Assets** folder ▶︎ **Quibli** folder), go to the Inspector panel, press **Copy** button in the _Debug info_ section and paste the copied text in your mail (or just make a screenshot of the panel).
 
 #### After importing, some of the shaders are missing or cannot be compiled
 - In **Project** tab ▶︎ **Assets** folder, right-click on **Quibli** folder, press _Reimport_.
 - Check whether your setup meets the [requirements](../#requirements).
-- Try a complete reimport for Quibli. [Here's how](#after-importing-quibli-gives-errors)
+- Try a complete reimport for Quibli. [Here's how](#after-importing-quibli-gives-errors).
