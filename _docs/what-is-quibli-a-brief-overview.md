@@ -33,7 +33,7 @@ Quibli is easy to use and is beginner friendly. However, the foliage and cloud g
 
 ## Requirements
 
-  * Unity version **2020.3.30f1** or higher;
+  * Unity version **2020.3.37f1**, **2021.3.5f1** or **2022.1.10** or higher;
   * Universal Rendering Pipeline (also known as 'URP');
   * The Shader Compilation Target Level for mobile devices should be 3.5 (or es 3.0 and WebGL 2.0).
 
