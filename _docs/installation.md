@@ -14,7 +14,7 @@ excerpt: "How to quickly install and setup Quibli"
 
 First of all, you need to import Quibli into your URP project.  
 Please, make sure you have the Universal RP project running, not Built-In RP ('3D', 'Mobile 3D') or HDRP.  
-![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_1.png)
+![Create a URP project, not Built-In RP](../assets/images/manual_images/create_new_unity_project_unity_hub_2.png)
  
   * In Unity, go to **Window** ▶︎ **Package Manager**; 
   * On the top left, please, find the **Packages** drop down menu. Select **My Assets** item there. You’ll find **Quibli** among your assets. Choose the version you’d like to import;  
