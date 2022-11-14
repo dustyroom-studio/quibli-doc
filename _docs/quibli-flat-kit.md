@@ -36,7 +36,8 @@ If you use both Quibli together with Flat Kit, you have the best of both worlds.
 | Number of possible independent shade colors per material | **8** (using a single Gradient Editor) | **3** (_Base color_ and 2 _additional cel layers_) parameters |
 | Wind | **Yes**, in [Grass shader](../grass-shader) and [Foliage shader](../foliage-shader) | No |
 | Skybox shader | **Yes**, with **up to 8 color multi-stop gradient** color editor | **Yes**, with **2 colors** interpolation |
-| Textures support (maps) in main shaders | Albedo, Normal, Detail | Albedo, Normal, Emission |
+| Textures support (maps) in main shaders | Albedo, Normal, Detail, Emission[^1]) | Albedo, Normal, Emission |
 | Shaders built in Shader Graph | [Grass](../grass-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader), [Foliage](../foliage-shader) | - |
 | Pipelines support | URP | URP, Built-In RP LTS |
 
+[^1]: Emission map for Quibli works in Unity 2021 an up.
