@@ -1,10 +1,10 @@
 main:
   - title: "Asset Store"
     url: https://u3d.as/2FwR
+  - title: "Get help on Discord"
+    url: https://discord.gg/kfumMFahBj
   - title: "Report an issue on GitHub"
     url: https://github.com/dustyroom-studio/quibli-doc/issues/new/choose
-  - title: "Report an issue on Trello"
-    url: https://trello.com/b/tOhjxOib/quibli
   - title: "FAQs"
     url: /faqs/
   - title: "Contact"
