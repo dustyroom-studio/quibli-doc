@@ -8,7 +8,8 @@ toc: false
 Have questions? Here's how to get support:
 1. Skim through this manual or use a search on this site in the top right corner. Some chapters have a 'Troubleshooting' paragraphs, where the typical issues and their solutions are described;  
 1. Read the [Frequently Asked Questions](../faqs), chances are you’ll find the answers here; 
-1. If the question is still not answered, please [Report an Issue](https://github.com/dustyroom-studio/quibli-doc/issues/new/choose){:target="_blank"}; 
+1. If the question is still not answered, please look through [open issues](https://github.com/dustyroom-studio/quibli-doc/issues){:target="_blank"}, [closed issues](https://github.com/dustyroom-studio/quibli-doc/issues?q=is%3Aissue+is%3Aclosed){:target="_blank"} or [report a new one](https://github.com/dustyroom-studio/quibli-doc/issues/new/choose){:target="_blank"};
+1. Go to our [Discord](https://discord.gg/kfumMFahBj);
 1. If you still need help, please, shoot a letter to _{{ site.email }}_. We always do our best to respond as quickly as possible.
 
 > Please, include as many details as possible such as Unity and Quibli versions, screenshots / recordings etc. Any suggestions and feature requests are welcome, too!  
