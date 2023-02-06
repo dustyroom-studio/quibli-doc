@@ -192,8 +192,10 @@ _Outline_ is a collapsible/expandable group of parameters for working with the s
 {:.image-caption}
 *Stylized Lit Shader — Outline parameters*
 
-Please, notice that this outline feature is simplified as compared to [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"}. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a few handy parameters for making it look nice in most of the basic cases.
-{: .notice--warning}
+We also have an [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"} which is a
+completely different approach to outlines. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a
+few handy parameters for making it look nice in most of the basic cases.
+{: .notice--success}
 
 - **Color** Selects the color of the contour.
 - **Width** As soon as the slider is at 0, the effect is bypassed and doesn't affect the performance. Once you start dragging the control to the right, the outline appears on the screen and is becoming thicker as long as you are moving the slider.
