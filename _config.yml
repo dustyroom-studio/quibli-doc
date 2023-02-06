@@ -10,9 +10,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Quibli is a collection of shaders, effects and scripts whose first task is to help easily create the look of the japanese animation films.
 twitter_username: _dstrm
 google_analytics: UA-53337407-22
-
 minimal_mistakes_skin: default
+
+# search_provider: algolia
 search: true
+search_full_content: true
 
 # Build settings
 markdown: kramdown
@@ -107,6 +109,3 @@ logo: "/assets/images/quibli_logo_type_1.png"
 
 mermaid:
   src: https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js
-  
-lunr:
-  search_within_pages: true
