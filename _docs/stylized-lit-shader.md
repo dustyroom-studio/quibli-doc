@@ -201,6 +201,32 @@ Please, notice that this outline feature is simplified as compared to [Outline I
 - **Depth Offset** Pushes the outline 'to the back of the mesh'. This is particularly useful if the mesh has lots of faces and you want it to look clean and uncluttered. When you move the slider to the right, the mesh loses the outline details inside while emphasizing its outer contour. Also, try using 0 or a very low value if the outline color interferes with the skybox.
 - **Camera Distance Impact** Lets the outline change its width with the distance from the camera. If you want to make it gradually thinner as the object moves from camera, drag the slider to the right.
 
+One of the frequently asked questions is how to get rid of the outline gaps. Below you can find one of the ways to address it.
+
+Here we see the gaps in the outline on the hard edges.
+
+![Import settings of the model](../assets/images/manual_images/outline-gaps-suzanne-1.png)
+
+{:.image-caption}
+Gaps are clearly visible
+
+In the Import Settings of the mesh, please, find the _Normals_ parameter and change it from **Import** to **Calculate**. Then, drag the _Smoothing Angle_ slider to the right. By doing so, you make the mesh smooth instead of sharp. The more you move this control to the right the bigger angle Unity will expect to consider it as sharp. Click _Apply_. The gaps should be gone.
+
+![Import settings of the model](../assets/images/manual_images/outline-gaps-suzanne-2.png)
+
+{:.image-caption}
+No gaps
+
+As an extra step, to clean up the result a bit, you go to the material and increase _Depth Offset_ a bit. This will 'push' the outlines away from the camera.
+
+![Import settings of the model](../assets/images/manual_images/outline-gaps-suzanne-3.png)
+
+{:.image-caption}
+Using the _Depth Offset_ parameter on the Stylized Lit shader to clean up the result
+
+Please note that this way of doing the outlines is made to be super fast, but unlike in Photoshop it can't produce an ideal outline. This method is called **Inverted hull**, and there are fundamental limitations to this fast approach of making the outline. For example, the outline itself in not a hollow contour as such but rather a modified (roughly said, 'expanded') copy of a model layered on the back of the original model. In most cases it can produce very good results with very fast performance, but the transparency on this model won't work, as reducing the model's opacity will reveal the filled pseudo-outline layer in the background.
+{: .notice--warning}
+
 ### Rendering Parameters
 **Rendering Options**
 _Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
