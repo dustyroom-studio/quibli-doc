@@ -23,7 +23,7 @@ Now you can apply this material to a 3D game object on your Scene or in the Hier
 
 This is one of the highlight features of Quibli shaders. Put simply, _Gradient_ (also referred as _Gradient Editor_) lets you dial in up to 8 independent colors per single material. You can make the color bands as wide or narrow as you want. In this manual we keep returning to this über-parameter with different examples.
 
-The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)  
+The same Gradient Editor is available for the following shaders: [Stylized Lit](../stylized-lit-shader), [Foliage](../foliage-shader), [Skybox](../skybox-shader), [Cloud3D](../cloud3d-shader), [Cloud2D](../cloud2d-shader). You can find the detailed explanation of the _Gradient_ in the ['Gradient' sub-chapter of 'Stylized Lit shader' chapter](../stylized-lit-shader/#gradient)
 {: .notice--info}
 
 Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can freely add up to eight individual independent color _breakpoints_ (color stops) and move them across the ramp. The layout of the colors on the _breakpoints_ corresponds to the layout of the colors on the scene object the material is applied to. When you move the _breakpoint_ or change the color values in _Gradient Editor_, the shading changes on the affected object(s) simultaneously, **in real time**. It is extremely useful for fine-tuning the color positions on the object. Also, it works for the models that have no UV maps.
@@ -33,8 +33,8 @@ Clicking on an icon of the _Gradient_ opens the _Gradient Editor_ where you can 
 {:.image-caption}
 *Gradient Editor is real-time*
 
-**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.  
-![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)  
+**TIP.** Whenever you make up an interesting gradient in the Gradient Editor, you can save it by pressing the ‘New’ button in the ramp presets section of the Gradient Editor. This adds an icon of the gradient to the collection, which is really useful if you want to quickly preview different possible gradients.
+![Using presets in the Gradient Editor](../assets/images/manual_images/gradient_editor_ramps_presets.png)
 *Using presets in the Gradient Editor*
 {: .notice--info}
 
@@ -125,7 +125,7 @@ Once you enable _Height Gradient_, the following parameters will appear.
 **Texture Maps**
 _Texture Maps_ is a collapsible/expandable group of parameters that control the albedo, bump (normal) and detail maps. To use these parameters, please, make sure the model is UV-unwrapped.
 
-- **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.  
+- **Albedo** The input for a diffuse texture. Select the texture by clicking on the _Select_ texture slot.
 _Tiling_ shrinks and repeats the texture by _X_ and _Y_ axis. Values less than 1 stretch the texture, values bigger than 1 squeeze the texture.
 _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 ![Stylized Lit Shader — Albedo mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_albedo_map_parameters.png)
@@ -133,7 +133,7 @@ _Offset_ moves the texture over the UV map along _X_ and _Y_ axis.
 {:.image-caption}
 *Stylized Lit Shader — Albedo mapping parameters*
 
-- **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.  
+- **Detail Map** The input for another kind of diffuse texture. This one has two additional blending modes, which is useful for adding some kind of details into the material.
 _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there for the description.
 ![Stylized Lit Shader — Detail mapping parameters](../assets/images/manual_images/quibli_stylized_lit_shader_detail_map_parameters.png)
 
@@ -143,8 +143,8 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
 
-**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.  
-![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
+**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
+![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
@@ -205,7 +205,7 @@ One of the frequently asked questions is how to get rid of the outline gaps. Bel
 
 Here we see the gaps in the outline on the hard edges.
 
-![Import settings of the model](../assets/images/manual_images/outline-gaps-suzanne-1.png)
+[![Import settings of the model](../assets/images/manual_images/outline-gaps-suzanne-1.png)](../assets/images/manual_images/outline-gaps-suzanne-1.png)
 
 {:.image-caption}
 Gaps are clearly visible
@@ -229,14 +229,14 @@ Please note that this way of doing the outlines is made to be super fast, but un
 
 ### Rendering Parameters
 **Rendering Options**
-_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.  
+_Rendering options_ is a collapsible/expandable group of parameters that deal with opacity and transparency alongside a few other rendering and instancing parameters.
 ![Stylized Lit Shader — Rendering parameters](../assets/images/manual_images/quibli_stylized_lit_shader_rendering_options_parameters.png)
 
 {:.image-caption}
 *Stylized Lit Shader — Rendering parameters*
 
 - **Surface Type** The two options are _Opaque_ and _Transparent_.
-![Stylized Lit Shader — Surface Type menu](../assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
+![Stylized Lit Shader — Surface Type menu](../assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)
 If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.
 ![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](../assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)
 
@@ -244,7 +244,7 @@ If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available
 {:.image-caption}
 Blend Mode menu under Transparent Surface Type
 
-- **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.  
+- **Render Faces** Determines what faces to render. The three options are _Both_, _Front_, _Back_.
 ![Stylized Lit Shader — Render Faces menu](../assets/images/manual_images/quibli_stylized_lit_shader_render_faces_menu.png)
 
 {:.image-caption}
