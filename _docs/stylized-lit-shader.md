@@ -237,8 +237,8 @@ _Rendering options_ is a collapsible/expandable group of parameters that deal wi
 {:.image-caption}
 *Stylized Lit Shader — Rendering parameters*
 
-- **Surface Type** The two options are _Opaque_ and _Transparent_.
-![Stylized Lit Shader — Surface Type menu](../assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)
+- **Surface Type** The two options are _Opaque_ and _Transparent_.  
+![Stylized Lit Shader — Surface Type menu](../assets/images/manual_images/quibli_stylized_lit_shader_surface_type_menu.png)  
 If _Transparent_ Surface Type is selected, the Blend Mode menu becomes available with the following Blend Mode options: _Alpha_, _Premultiply_, _Additive_ and _Multiply_.  
 ![Stylized Lit Shader — Blend Mode menu under Transparent Surface Type](../assets/images/manual_images/quibli_stylized_lit_shader_blend_mode_menu.png)
 
