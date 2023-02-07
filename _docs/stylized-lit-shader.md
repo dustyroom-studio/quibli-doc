@@ -144,8 +144,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 {: .notice--info}
 
 **TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
-![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)
-{:.image-caption}
+![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
 
