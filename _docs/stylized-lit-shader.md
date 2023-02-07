@@ -192,7 +192,7 @@ _Outline_ is a collapsible/expandable group of parameters for working with the s
 {:.image-caption}
 *Stylized Lit Shader — Outline parameters*
 
-We also have an [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/#42-outline-image-effect){:target="_blank"} which is a
+We also have an [Outline Image Effect in Flat Kit](https://flatkit.dustyroom.com/outlines/){:target="_blank"} which is a
 completely different approach to outlines. In the Quibli's _Stylized Lit_ shader you have an option to quickly add a contour based on normals of the mesh, though it has a
 few handy parameters for making it look nice in most of the basic cases.
 {: .notice--success}
@@ -256,7 +256,7 @@ Render Faces menu
 - **Threshold** The minimum alpha in the Albedo texture to render a pixel, i.e. determines how soon the transparent portion is ‘transparent enough’ to be cut out.
 - **Enable GPU Instancing** Uses GPU Instancing to render multiple copies of the mesh at once. More information in [Unity's documentation](https://docs.unity3d.com/Manual/GPUInstancing.html){:target="_blank"}.
 
-**TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/#31-stylized-surface-shader){:target="_blank"}.
+**TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/stylized-surface/){:target="_blank"}.
 {: .notice--info}
 
 ## Troubleshooting
