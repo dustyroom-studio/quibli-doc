@@ -4,6 +4,7 @@ permalink: /foliage-shader/
 excerpt: "Quibli Foliage Shader"
 ---
 
+![](../assets/images/manual_images/quibli_type_bushes_1.png)
 
 ## Foliage Shader Brief Overview
 

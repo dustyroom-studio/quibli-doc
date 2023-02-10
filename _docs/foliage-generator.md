@@ -6,10 +6,15 @@ excerpt: "Quibli Foliage Generator Script"
 
 ## Foliage Generator Brief Overview
 Creating anime-looking bushes and trees requires not only specific shading but also properly created models in regards to display of the shading. This also applies to creating 3D clouds.
-Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model.  
-So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere.  
-But creating a bush and its variations still would take much time. Also, changing the number of faces sound like a hassle.  
-_Foliage Generator_ prefab/component allows you to create a plant or a cloud in a few minutes, and then make changes instantly. It automatically forms the model from the ‘branch’ of your choice, wraps its copies (as many of them as you’d need) around a carrier model and handles the normals.  
+
+Of course, this can be done using a 3D-editors’ particle systems by combining both big and small emitters, but the good-looking plants would easily have 50 thousand vertices per model.
+
+So, another way is to create models from textured planes. The plants are usually modelled by placing (either carefully or haphazardly) the planes that contain the textures of the branches. The problem is that each of the quads has its own normal. After rotating and moving all the quads while forming, let’s say, a bush, all the normals would also be chaotically rotated and pointed in all imaginable directions. Thus, later in Unity, the shader would take each of the quads and apply its shading using data from all of these chaotic normals. Such a bush usually would not look well. 
+
+Knowing this, you’d make the normals look better by borrowing them from something more simple like a sphere. But creating a bush and its variations still would take much time. Also, changing the number of faces sound like a hassle.  
+
+_Foliage Generator_ prefab/component allows you to create a plant or a cloud in a few minutes, and then make changes instantly. It automatically forms the model from the ‘branch’ of your choice, wraps its copies (as many of them as you’d need) around a carrier model and handles the normals.
+
 After generating, the model appears in your project folder ready to be dragged onto the scene. Then you’ll need to just apply a material with the [Foliage](../foliage-shader) or [Cloud3D](../cloud3d-shader) shader containing a particle texture. We did all the foliage and 3D clouds models in the demo scenes this way. Quibli includes already made models, textures and materials.  
 Another beautiful thing is that _Foliage Generator_ can take external models (there are nuances — described [here](#using-your-own-models)) and prepare their normals and apply the particles for you.  
 ![Quibli Foliage Generator Interface](../assets/images/manual_images/foliage_generator_inspector_interface.png)
