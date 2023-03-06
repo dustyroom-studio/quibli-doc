@@ -15,6 +15,8 @@ Important!
 {: .notice--danger}
 -->
 
+![](../assets/images/manual_images/demo_city_scene.png)
+
 ## Quibli Brief Overview
 
 Quibli is a collection of shaders, effects and scripts whose main task is to help easily create the look of the Japanese animation films. Quibli’s capabilities extend way beyond this, however, and we have included the demo scenes with all the used resources showing that.

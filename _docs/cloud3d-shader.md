@@ -4,6 +4,8 @@ permalink: /cloud3d-shader/
 excerpt: "Quibli Cloud3D Shader"
 ---
 
+![](../assets/images/manual_images/demo_sample_scene_with_quibli_scene.png)
+
 ## Cloud3D Shader Brief Overview
 _Cloud3D_ shader is an easy and flexible way to add the clouds to your scene. It works the best with the models processed with the [Foliage Generator](../foliage-generator). with the models  planes, or quads, and it works regardless of whether you have the skybox or not. The shader is applied to 2D objects like Quads. 
 
