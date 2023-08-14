@@ -21,7 +21,7 @@ toc: false
 ---
 
 #### Colors in the scene differ from those I chose.
-> Please go to _Window_ ▶︎ _Rendering_ ▶︎ _Lighting_ ▶︎ _Environment_ ▶︎ _Environment Lighting_ ▶︎ Source and select _Color_, then set it to black. The colors picked in the materials now look equal to those in the scene.
+> Please go to _Window_ ▶︎ _Rendering_ ▶︎ _Lighting_ ▶︎ _Environment_ ▶︎ _Environment Lighting_ ▶︎ _Source_. If it's set to _Skybox_ please try setting _Intesity Multiplier_ to _0_. Alternatively, change the _Source_ to _Color_, then set the color to black. The colors picked in the materials now look equal to those in the scene.
 
 ---
 
