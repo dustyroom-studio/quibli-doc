@@ -20,6 +20,11 @@ toc: false
 
 ---
 
+#### Colors in the scene differ from those I chose.
+> Please go to _Window_ ▶︎ _Lighting_ ▶︎ _Environment_ ▶︎ _Environment Lighting_ ▶︎ Source and select _Color_, then set it to black. The colors picked in the materials are now look equal to those in the scene.
+
+---
+
 #### Which Rendering Pipelines does Quibli support?
 > Quibli supports Universal (URP, fka LWRP) only. It won't work in Built-In RP and HDRP.
 
