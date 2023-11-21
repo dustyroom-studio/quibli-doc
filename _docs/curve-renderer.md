@@ -4,7 +4,7 @@ permalink: /curve-renderer/
 excerpt: "Quibli Wire Renderer Script"
 ---
 
-## Cloud2D Shader Brief Overview
+## Curve Renderer Brief Overview
 
 Electric wires seem to be the Thing in Japan. We made a tool that makes wires in your scene. You’ll need to have two points distanced somewhere over the scene, and the renderer will generate a wire (or multiple wires at once) for you. Between these two points you can have either one or as many wires as you’d like, with or without curvature and width seeded-random variation.
 
