@@ -143,7 +143,7 @@ _Tiling_ and _Offset_ parameters are the same as in _Albedo_, please look there 
 **TIP.** As this texture input is independent from the _Albedo_ map, you can place a copy of the texture you are using in _Albedo_ map slot, set _Blending Mode_ to _Add_ and by raising the _Detail Impact_ you will have a brighter and more contrast material. We’ve done it in the included  _Unity Default Sample Scene_ — the _Ellen_ character has an increased brightness and vividness thanks to this trick.
 {: .notice--info}
 
-**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.
+**TIP.** If you don’t use any detail textures, select any color in _Detail Color_ chooser, pick an appropriate _Blending Mode_, then by adjusting the _Detail Impact_ slider you can change the overall tint of the material by moving a single control.  
 ![Using Detail Color parameter as an overall material tint](../assets/images/manual_images/quibli_stylized_lit_shader_detail_color_tint.png)  
 *Using Detail Color parameter as an overall material tint*
 {: .notice--info}
