@@ -103,7 +103,7 @@ defaults:
       read_time: false
       author_profile: false
       share: false
-      comments: false
+      comments: true
       toc: true
       toc_sticky: true
       # classes: wide
