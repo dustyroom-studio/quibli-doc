@@ -35,6 +35,12 @@ toc: false
 
 ---
 
+#### Is Quibli compatible with DOTs?
+
+> Yes, please refer to [this paragraph](../stylized-lit-shader/#dots-instancing)
+
+---
+
 #### I'm getting errors after moving the Quibli folder from _Assets_. 
 > This is due to a [bug in Shader Graph](https://issuetracker.unity3d.com/issues/shadergraph-reference-to-hlsl-file-is-lost-after-moving-it-to-a-different-folder) which has been fixed in URP 12 (Unity 2021.2). To work-around the issue in earlier versions of URP, please click the "Reimport Quibli files" button in the Readme file after you've moved the Quibli folder.
 
