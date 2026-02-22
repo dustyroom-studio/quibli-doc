@@ -26,7 +26,7 @@ toc: false
 ---
 
 #### Which Rendering Pipelines does Quibli support?
-> Quibli supports Universal (URP, fka LWRP) only. It won't work in Built-In RP and HDRP.
+> Quibli supports Universal RP (URP) only. It won't work in Built-In RP and HDRP.
 
 ---
 
@@ -37,7 +37,7 @@ toc: false
 
 #### Is Quibli compatible with DOTs?
 
-> Yes, please refer to [this paragraph](../stylized-lit-shader/#dots-instancing)
+> Yes, please refer to [this paragraph](../stylized-lit-shader/#dots-instancing).
 
 ---
 
