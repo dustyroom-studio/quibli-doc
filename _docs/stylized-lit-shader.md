@@ -262,6 +262,7 @@ Render Faces menu
 ## DOTs Instancing
 
 To enable DOTs instancing, please locate the _StylizedLit.shader_ file (by default, it's in _Assets/Quibli/Shaders_) and open it in a text editor. Then, find and uncomment the line (102) with the following code:
+
 `// #define DR_DOTS_INSTANCING_ON //`
 
 ## Troubleshooting
