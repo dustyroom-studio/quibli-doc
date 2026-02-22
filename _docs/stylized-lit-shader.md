@@ -259,6 +259,11 @@ Render Faces menu
 **TIP.** Some of the parameters, like _Rim_, _Specular_, _Height Gradient_ and others work similarly to the according parameters in the analogous _Stylized Surface_ shader in **Flat Kit**. If you didn’t find some specific info about these parameters in this manual, you might want to have a look into the [Stylized Shader chapter of the Flat Kit manual](https://flatkit.dustyroom.com/stylized-surface/){:target="_blank"}.
 {: .notice--info}
 
+## DOTs Instancing
+
+To enable DOTs instancing, please locate the _StylizedLit.shader_ file (by default, it's in _Assets/Quibli/Shaders_) and open it in a text editor. Then, find and uncomment the line (102) with the following code:
+`// #define DR_DOTS_INSTANCING_ON //`
+
 ## Troubleshooting
 
 Below you can find answers to the typical possible questions when working with Stylized Lit shader.
